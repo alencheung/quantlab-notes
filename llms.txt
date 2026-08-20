@@ -1,0 +1,18 @@
+# QuantLab Research Notes
+
+> Market intelligence, computed: independent, code-first investigations of
+> regimes, volatility, rates, credit, crypto and strategy telemetry for
+> allocators and researchers. Every statistic is produced by code over
+> auditable data; every source and blind spot is disclosed; every falsifiable
+> claim becomes a machine-graded, timestamped standing call. Notes publish
+> every 12 hours and are editor-reviewed. Not investment advice.
+
+- [The Narrowest Record in Years: 62.5% Breadth at an All-Time High](https://alencheung.github.io/quantlab-notes/articles/breadth-at-records/): On the 601 days SPY closed at a record since 2007, median panel breadth was 87.5% and 73% of those days were above 80%. Today's record-adjacent breadth is 62.5% — the 13th percentile of record days. The index is narrow; the tape underneath is narrower. (Rotation Monitor #1 · 2026-08-19)
+- [Crypto Doesn't Sleep. It Takes a Lunch Break.](https://alencheung.github.io/quantlab-notes/articles/crypto-hourly-structure/): 66,889 hourly bars per symbol: volatility peaks at 14:00 UTC (10 a.m. ET, the heart of the US session), bottoms at 05:00 UTC, weekends run 24% calmer than weekdays — and all eight majors post negative 2026 returns. One beta, eight wrappers. (Crypto Microscope #1 · 2026-08-19)
+- [Twenty Strategies, Two Bets: the Diversification Math Nobody Shows You](https://alencheung.github.io/quantlab-notes/articles/library-three-bets/): The certified 20-strategy book earns Sharpe 1.09 by averaging streams that correlate 0.50 on average — an effective N of 1.9 since 2007, and just 1.4 today. Twenty lines on the factsheet; roughly two independent bets in the risk engine. (Library Telemetry #1 · 2026-08-19)
+- [Zero Fear at Record Highs — and the Hedge That Stopped Working](https://alencheung.github.io/quantlab-notes/articles/regime-radar-001/): P(bear) = 0.06%, the fear gauge pinned at its 3rd percentile, stocks and bonds now moving together — the August 2026 tape computed from six data sources, with every number and every blind spot disclosed. (Regime Radar #1 · 2026-08-19)
+- [220 Days of Broken Hedge: the Stock-Bond Correlation Stays Positive](https://alencheung.github.io/quantlab-notes/articles/stock-bond-correlation/): The 60-day SPY–TLT correlation has been positive since January 7 — nearly four times the average break — and the risk reduction a 60/40 earns from bonds has halved, from 44% to 22%. (Rates & Credit Watch #1 · 2026-08-19)
+- [Who Pays for the Calm? A Variance Risk Premium of 1.3 Points](https://alencheung.github.io/quantlab-notes/articles/vol-vrp-anatomy/): Implied vol trades just 1.27 points over realized — the 23rd percentile since 2007 — and the forward record says thin VRP is no sell signal either: the vol-carry trade's economics, computed. (Vol Desk Notes #1 · 2026-08-19)
+- [The $99 Billion Mirage: Record Volume That Is Mostly Record Price](https://alencheung.github.io/quantlab-notes/articles/volume-behind-the-record/): Universe dollar volume runs $98.9B a day — triple the median year, #1 of 19 — but share volume is up just 3.4%: the record tape is mostly record price, with liquidity rotating from SPY (−8.6pp) to QQQ (+10.0pp). (Liquidity Watch #1 · 2026-08-19)
+
+Machine index: https://alencheung.github.io/quantlab-notes/articles.json

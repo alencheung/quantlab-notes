@@ -1,0 +1,47 @@
+{
+  "numbers": {
+    "corr_last": 0.37417731270491755,
+    "corr_last_date": "2026-08-14",
+    "corr_neg_share": 0.7913846153846154,
+    "corr_mean": -0.2791001527421082,
+    "corr_2026_min": -0.05238133981674801,
+    "corr_2026_max": 0.5614436408829696,
+    "current_spell_sign": "positive",
+    "current_spell_days": 220,
+    "current_spell_start": "2026-01-07",
+    "longest_pos_spell_days": 386,
+    "longest_neg_spell_days": 2212,
+    "mean_pos_spell_days": 56.30769230769231,
+    "mean_neg_spell_days": 214.80769230769232,
+    "pos_spell_count": 26,
+    "neg_spell_count": 26,
+    "eq_vol_neg_regime": 0.17317439986897953,
+    "eq_vol_pos_regime": 0.15205809927848646,
+    "p6040_vol_neg_regime": 0.09640473151877589,
+    "p6040_vol_pos_regime": 0.11869986409475004,
+    "risk_reduction_neg_regime": 0.4433084128386535,
+    "risk_reduction_pos_regime": 0.21937822018044928,
+    "residual_vol_multiple_pos_vs_neg": 1.4022517994210362,
+    "rho_neg_days": 3855,
+    "rho_pos_days": 1017,
+    "credit_last": 1.67,
+    "credit_last_date": "2026-08-14",
+    "credit_pct_rank_1986": 0.18042150876501872
+  },
+  "lineage": [
+    {
+      "source": "16-ETF daily panel",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4935,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    },
+    {
+      "source": "FRED rates/vol cache",
+      "path": "data/rates/rates.parquet",
+      "rows": 26588,
+      "first": "1934-01-01 00:00:00",
+      "last": "2026-08-13 00:00:00"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuantLab Research Notes — market intelligence, computed</title>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="Independent, code-first quant research for allocators: a certified strategy library, a public machine-graded track record of standing calls, and market investigations where every number is computed by code and every data source and blind spot is disclosed.">
+<meta name="keywords" content="quant research, market regimes, volatility, systematic strategies">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "QuantLab Research Notes", "description": "Independent, code-first quant research for allocators: a certified strategy library, a public machine-graded track record of standing calls, and market investigations where every number is computed by code and every data source and blind spot is disclosed.", "inLanguage": "en", "hasPart": [{"@type": "Article", "headline": "The Narrowest Record in Years: 62.5% Breadth at an All-Time High", "url": "https://alencheung.github.io/quantlab-notes/articles/breadth-at-records/", "datePublished": "2026-08-19", "keywords": "breadth,rotation,equities,gold"}, {"@type": "Article", "headline": "Crypto Doesn't Sleep. It Takes a Lunch Break.", "url": "https://alencheung.github.io/quantlab-notes/articles/crypto-hourly-structure/", "datePublished": "2026-08-19", "keywords": "crypto,microstructure,volatility,beta"}, {"@type": "Article", "headline": "Twenty Strategies, Two Bets: the Diversification Math Nobody Shows You", "url": "https://alencheung.github.io/quantlab-notes/articles/library-three-bets/", "datePublished": "2026-08-19", "keywords": "strategy-library,diversification,allocation,risk"}, {"@type": "Article", "headline": "Zero Fear at Record Highs — and the Hedge That Stopped Working", "url": "https://alencheung.github.io/quantlab-notes/articles/regime-radar-001/", "datePublished": "2026-08-19", "keywords": "regimes,volatility,rates,credit,crypto,strategy-library,data-audit"}, {"@type": "Article", "headline": "220 Days of Broken Hedge: the Stock-Bond Correlation Stays Positive", "url": "https://alencheung.github.io/quantlab-notes/articles/stock-bond-correlation/", "datePublished": "2026-08-19", "keywords": "rates,correlation,allocation,credit"}, {"@type": "Article", "headline": "Who Pays for the Calm? A Variance Risk Premium of 1.3 Points", "url": "https://alencheung.github.io/quantlab-notes/articles/vol-vrp-anatomy/", "datePublished": "2026-08-19", "keywords": "volatility,vrp,options-carry,regimes"}, {"@type": "Article", "headline": "The $99 Billion Mirage: Record Volume That Is Mostly Record Price", "url": "https://alencheung.github.io/quantlab-notes/articles/volume-behind-the-record/", "datePublished": "2026-08-19", "keywords": "liquidity,volume,breadth,market-structure,equities"}]}</script>
+<link rel="alternate" type="application/json" href="articles.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f4ec;--paper2:#efe9d9;--ink:#1c1917;--ink2:#5c5648;
+--hair:#d8d1bd;--hair2:#c4bca3;--ox:#8c2f39;--moss:#3f6b52;--code:#ece6d4;
+--serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+--disp:'Fraunces',Georgia,serif;
+--mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:var(--serif);font-size:17px;line-height:1.7;
+-webkit-font-smoothing:antialiased}
+a{color:var(--ox);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ox) 35%,transparent)}
+a:hover{border-bottom-color:var(--ox)}
+code{font-family:var(--mono);font-size:.85em;background:var(--code);
+padding:.1em .35em;border-radius:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2)}
+.masthead{border-bottom:1px solid var(--ink);padding:18px 0 14px}
+.masthead .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.masthead .brand{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.01em}
+.masthead .brand em{font-style:normal;color:var(--ox)}
+.masthead .cadence{font-family:var(--mono);font-size:11.5px;color:var(--ink2);letter-spacing:.06em}
+.rule-double{border-top:3px double var(--ink);margin:0}
+footer{border-top:1px solid var(--hair2);margin-top:64px;padding:20px 0 40px;
+font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+
+.hero{padding:52px 0 8px}
+.hero h1{font-family:var(--disp);font-weight:600;font-size:clamp(34px,5vw,54px);
+line-height:1.08;margin:10px 0 14px;letter-spacing:-.01em}
+.hero .deck{font-size:19px;color:var(--ink2);max-width:56ch;margin:0}
+.hero .stamp{display:inline-block;font-family:var(--mono);font-size:11px;
+letter-spacing:.14em;text-transform:uppercase;color:var(--ox);
+border:1px solid var(--ox);padding:3px 10px;border-radius:999px}
+.controls{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);
+backdrop-filter:blur(6px);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
+padding:14px 0 12px;margin-top:26px}
+.bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.search{flex:1 1 260px;display:flex;align-items:center;gap:8px;
+border:1px solid var(--hair2);background:#fff;padding:8px 12px;border-radius:4px}
+.search input{border:0;outline:0;background:transparent;width:100%;
+font-family:var(--serif);font-size:15px;color:var(--ink)}
+.search kbd{font-family:var(--mono);font-size:10.5px;border:1px solid var(--hair2);
+border-bottom-width:2px;border-radius:3px;padding:1px 6px;color:var(--ink2)}
+select{font-family:var(--mono);font-size:12px;color:var(--ink);
+border:1px solid var(--hair2);background:#fff;border-radius:4px;padding:8px 10px;cursor:pointer}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.03em;cursor:pointer;
+border:1px solid var(--hair2);background:transparent;color:var(--ink2);
+padding:3px 10px;border-radius:999px;transition:all .12s}
+.chip:hover{border-color:var(--ink2);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip.reset{border-style:dashed}
+.group-label{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+text-transform:uppercase;color:var(--ink2);margin-right:2px}
+.count{font-family:var(--mono);font-size:11.5px;color:var(--ink2);margin:18px 0 10px;
+display:flex;justify-content:space-between;align-items:baseline}
+.count .active{color:var(--ox)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;padding-bottom:8px}
+.card{border:1px solid var(--hair);background:#fff;border-radius:6px;padding:20px 20px 16px;
+display:flex;flex-direction:column;gap:10px;position:relative;
+box-shadow:0 1px 0 var(--hair);transition:transform .14s,box-shadow .14s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(28,25,23,.08)}
+.card .date{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+text-transform:uppercase;color:var(--ink2);display:flex;justify-content:space-between}
+.card h2{font-family:var(--disp);font-weight:600;font-size:21px;line-height:1.25;margin:0}
+.card h2 a{color:var(--ink);border-bottom:0}
+.card h2 a:hover{color:var(--ox)}
+.card .deck{font-size:14.5px;color:var(--ink2);margin:0;flex:1}
+.card .meta{display:flex;gap:6px;flex-wrap:wrap}
+.card .meta .tag{font-family:var(--mono);font-size:10px;letter-spacing:.05em;
+color:var(--moss);border:1px solid color-mix(in srgb,var(--moss) 40%,transparent);
+padding:1px 8px;border-radius:999px}
+.card .foot{font-family:var(--mono);font-size:10.5px;color:var(--ink2);
+border-top:1px dotted var(--hair2);padding-top:8px;display:flex;gap:14px;flex-wrap:wrap}
+.empty{border:1px dashed var(--hair2);border-radius:6px;padding:44px 20px;text-align:center;
+color:var(--ink2);font-size:15px}
+.trackline{margin:20px 0 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em}
+.trackline a{display:inline-block;border:1px solid var(--hair2);border-radius:999px;
+padding:5px 14px;color:var(--ink2);background:#fff;transition:all .12s}
+.trackline a:hover{border-color:var(--ox);color:var(--ox)}
+.proof{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
+.proof li{border-left:3px solid var(--ox);padding:2px 0 2px 14px;font-size:15.5px}
+.proof b{font-weight:600}
+.verify{margin-top:36px;border-top:3px double var(--ink);padding-top:14px}
+.verify .t{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2);margin:0 0 10px}
+.verify ol{margin:0;padding-left:22px;columns:2;column-gap:40px;font-size:14.5px;
+color:var(--ink2)}
+.verify li{margin:0 0 10px;break-inside:avoid}
+.verify b{color:var(--ink);font-weight:600}
+.engage{margin:28px 0 0;font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.engage a{display:inline-block;border:1px solid var(--ox);color:var(--ox);
+border-radius:999px;padding:6px 16px;transition:all .12s}
+.engage a:hover{background:var(--ox);color:var(--paper)}
+@media(max-width:640px){.hero{padding-top:34px}.card{padding:16px}.verify ol{columns:1}}
+@media print{.controls,.hero .stamp{display:none}.card{box-shadow:none}}
+</style>
+</head>
+<body>
+
+<div class="masthead"><div class="wrap">
+<div class="brand">QuantLab <em>·</em> Research Notes</div>
+<div class="cadence">every 12 hours · editor-reviewed · 2026-08-19 latest</div>
+</div></div>
+<div class="rule-double"></div>
+<div class="wrap">
+<section class="hero">
+<span class="stamp">Issue #007 live</span>
+<h1>Market intelligence, computed &amp; disclosed.</h1>
+<p class="deck">An independent research desk that publishes its own scorecard: every
+investigation shows its data, its method and its blind spots — and every falsifiable
+claim is backed by a public, machine-graded track record. Built for allocators,
+researchers and collaborators evaluating the work; search, filter and sort below.</p>
+<ul class="proof"><li><b>20-strategy certified library.</b> Equal-weight book Sharpe 1.09 net of T1 costs, 2007–2026 full sample.</li><li><b>Net alpha 6.14% p.a.</b> after costs and market/vol beta (HAC t&nbsp;=&nbsp;5.17).</li><li><b>Capacity ceiling $985.0m</b> at 10% of ADV participation (base turnover) — the honest size limit of the edge.</li></ul>
+
+<p class="trackline"><a href="calls/">Track record: 5 standing calls — 0 hit · 0 miss · 5 open</a></p>
+<div class="verify">
+<p class="t">How you can trust these numbers</p>
+<ol>
+<li><b>Statistics are pure code.</b> Prose interprets, never invents: every number on
+this site regenerates from one analysis script per note, over auditable house data.</li>
+<li><b>Calls are timestamped and graded by code.</b> Every falsifiable line the desk
+publishes becomes a standing call; a deterministic grader scores it the moment its
+window matures — and a graded call is never revised.</li>
+<li><b>An editor gate before publication.</b> Each note passes an adversarial
+editor-role review that checks every quoted number against the machine output; a note
+that fails the gate stays a draft.</li>
+<li><b>Tamper-evident records.</b> Results append to a hash-chained, append-only
+ledger; the chain refuses to extend if any entry is altered after the fact.</li>
+</ol>
+</div>
+<p class="engage">Work with the desk — allocations, commissions, collaborations:
+<a href="https://www.linkedin.com/in/alen-cheung/" target="_blank" rel="noopener">
+reach the desk on LinkedIn</a></p>
+</section>
+<div class="controls"><div class="wrap" style="padding:0">
+<div class="bar">
+<label class="search"><span aria-hidden="true">⌕</span>
+<input id="q" type="search" placeholder="Search titles, tags, tools, full text…"
+aria-label="Search notes"><kbd>/</kbd></label>
+<select id="sort" aria-label="Sort notes">
+<option value="date-desc" selected>Newest first</option>
+<option value="date-asc">Oldest first</option>
+<option value="title-az">Title A–Z</option>
+<option value="reading-desc">Longest read</option>
+</select>
+<button id="reset" class="chip reset" type="button" style="display:none">clear filters ✕</button>
+</div>
+<div class="chips"><span class="group-label">topic</span><span id="tag-chips"
+style="display:contents"></span></div>
+<div class="chips"><span class="group-label">asset</span><span id="asset-chips"
+style="display:contents"></span></div>
+</div></div>
+<div class="count"><span id="count"></span><span class="active" id="active-filters"></span></div>
+<div class="grid" id="grid"></div>
+</div>
+<footer><div class="wrap">
+<span>QuantLab — statistics are pure code; prose interprets, never invents.</span>
+<span><a href="articles.json">articles.json</a> · machine-readable index</span>
+</div></footer>
+<script type="application/json" id="ql-data">[{"slug": "breadth-at-records", "title": "The Narrowest Record in Years: 62.5% Breadth at an All-Time High", "date": "2026-08-19", "series": "Rotation Monitor", "issue": "1", "deck": "On the 601 days SPY closed at a record since 2007, median panel breadth was 87.5% and 73% of those days were above 80%. Today's record-adjacent breadth is 62.5% — the 13th percentile of record days. The index is narrow; the tape underneath is narrower.", "authors": ["QuantLab Research Desk"], "tags": ["breadth", "rotation", "equities", "gold"], "assets": ["equities", "gold"], "tools": ["200d breadth series", "ATH-day conditioning", "63d momentum ranks", "rank churn"], "reading_minutes": 4, "words": 834, "sources_internal": 1, "sources_external": 4, "status": "published", "teaser": "The one-paragraph version. As of Aug 14, SPY sits 0.20% below its August 13 record, but only 62.5% of our 16-ETF universe trades above its 200-day mean. Conditioning on history: across 601 record-close days since 2007, median breadth was 87.5%, and 73.2% of record days had breadt", "search": "the narrowest record in years: 62.5% breadth at an all-time high on the 601 days spy closed at a record since 2007, median panel breadth was 87.5% and 73% of those days were above 80%. today's record-adjacent breadth is 62.5% — the 13th percentile of record days. the index is narrow; the tape underneath is narrower. breadth rotation equities gold equities gold 200d breadth series ath-day conditioning 63d momentum ranks rank churn the one-paragraph version. as of aug 14, spy sits 0.20% below its august 13 record, but only 62.5% of our 16-etf universe trades above its 200-day mean. conditioning on history: across 601 record-close days since 2007, median breadth was 87.5%, and 73.2% of record days had breadt", "url": "articles/breadth-at-records/"}, {"slug": "crypto-hourly-structure", "title": "Crypto Doesn't Sleep. It Takes a Lunch Break.", "date": "2026-08-19", "series": "Crypto Microscope", "issue": "1", "deck": "66,889 hourly bars per symbol: volatility peaks at 14:00 UTC (10 a.m. ET, the heart of the US session), bottoms at 05:00 UTC, weekends run 24% calmer than weekdays — and all eight majors post negative 2026 returns. One beta, eight wrappers.", "authors": ["QuantLab Research Desk"], "tags": ["crypto", "microstructure", "volatility", "beta"], "assets": ["crypto"], "tools": ["OKX 1h bars (8 symbols)", "hour-of-day profiles", "hourly OLS betas", "perp funding cache"], "reading_minutes": 4, "words": 847, "sources_internal": 9, "sources_external": 3, "status": "published", "teaser": "The one-paragraph version. The crypto market markets itself as 24/7; the data says it keeps US market hours. Across 66,889 hourly OKX bars per symbol (2019-01-01 through 2026-08-19), BTC's annualized volatility by hour of day runs from 47.8% at 05:00 UTC (the Asia-afternoon lull)", "search": "crypto doesn't sleep. it takes a lunch break. 66,889 hourly bars per symbol: volatility peaks at 14:00 utc (10 a.m. et, the heart of the us session), bottoms at 05:00 utc, weekends run 24% calmer than weekdays — and all eight majors post negative 2026 returns. one beta, eight wrappers. crypto microstructure volatility beta crypto okx 1h bars (8 symbols) hour-of-day profiles hourly ols betas perp funding cache the one-paragraph version. the crypto market markets itself as 24/7; the data says it keeps us market hours. across 66,889 hourly okx bars per symbol (2019-01-01 through 2026-08-19), btc's annualized volatility by hour of day runs from 47.8% at 05:00 utc (the asia-afternoon lull)", "url": "articles/crypto-hourly-structure/"}, {"slug": "library-three-bets", "title": "Twenty Strategies, Two Bets: the Diversification Math Nobody Shows You", "date": "2026-08-19", "series": "Library Telemetry", "issue": "1", "deck": "The certified 20-strategy book earns Sharpe 1.09 by averaging streams that correlate 0.50 on average — an effective N of 1.9 since 2007, and just 1.4 today. Twenty lines on the factsheet; roughly two independent bets in the risk engine.", "authors": ["QuantLab Research Desk"], "tags": ["strategy-library", "diversification", "allocation", "risk"], "assets": ["equities"], "tools": ["library net T1 streams", "correlation clustering", "effective-N (equal-vol)", "market vitals (price-universe eff-N)"], "reading_minutes": 4, "words": 818, "sources_internal": 4, "sources_external": 2, "status": "published", "teaser": "The one-paragraph version. The equal-weight 20-strategy book runs a full-sample net Sharpe of 1.09 — above every individual member (best single: 0.95). That gain is real, and it is all diversification math. But the same math that produces it says the book is much less diversified", "search": "twenty strategies, two bets: the diversification math nobody shows you the certified 20-strategy book earns sharpe 1.09 by averaging streams that correlate 0.50 on average — an effective n of 1.9 since 2007, and just 1.4 today. twenty lines on the factsheet; roughly two independent bets in the risk engine. strategy-library diversification allocation risk equities library net t1 streams correlation clustering effective-n (equal-vol) market vitals (price-universe eff-n) the one-paragraph version. the equal-weight 20-strategy book runs a full-sample net sharpe of 1.09 — above every individual member (best single: 0.95). that gain is real, and it is all diversification math. but the same math that produces it says the book is much less diversified", "url": "articles/library-three-bets/"}, {"slug": "regime-radar-001", "title": "Zero Fear at Record Highs — and the Hedge That Stopped Working", "date": "2026-08-19", "series": "Regime Radar", "issue": "1", "deck": "P(bear) = 0.06%, the fear gauge pinned at its 3rd percentile, stocks and bonds now moving together — the August 2026 tape computed from six data sources, with every number and every blind spot disclosed.", "authors": ["QuantLab Research Desk"], "tags": ["regimes", "volatility", "rates", "credit", "crypto", "strategy-library", "data-audit"], "assets": ["equities", "rates", "credit", "crypto", "gold"], "tools": ["HMM regime model", "macro operands ($vix", "$vix_term", "$credit_spread", "funding stress)", "market vitals (EWQ)", "certified library telemetry", "OKX 1h bars"], "reading_minutes": 12, "words": 2490, "sources_internal": 6, "sources_external": 6, "status": "published", "teaser": "The one-paragraph version. As of August 19, 2026, our data says the US equity tape is in a textbook quiet-grind regime: SPY sits 0.20% below its August 13 all-time high, our causal HMM puts the probability of the turbulent regime at 0.06%, and the VIX term structure is at its 3rd", "search": "zero fear at record highs — and the hedge that stopped working p(bear) = 0.06%, the fear gauge pinned at its 3rd percentile, stocks and bonds now moving together — the august 2026 tape computed from six data sources, with every number and every blind spot disclosed. regimes volatility rates credit crypto strategy-library data-audit equities rates credit crypto gold hmm regime model macro operands ($vix $vix_term $credit_spread funding stress) market vitals (ewq) certified library telemetry okx 1h bars the one-paragraph version. as of august 19, 2026, our data says the us equity tape is in a textbook quiet-grind regime: spy sits 0.20% below its august 13 all-time high, our causal hmm puts the probability of the turbulent regime at 0.06%, and the vix term structure is at its 3rd", "url": "articles/regime-radar-001/"}, {"slug": "stock-bond-correlation", "title": "220 Days of Broken Hedge: the Stock-Bond Correlation Stays Positive", "date": "2026-08-19", "series": "Rates & Credit Watch", "issue": "1", "deck": "The 60-day SPY–TLT correlation has been positive since January 7 — nearly four times the average break — and the risk reduction a 60/40 earns from bonds has halved, from 44% to 22%.", "authors": ["QuantLab Research Desk"], "tags": ["rates", "correlation", "allocation", "credit"], "assets": ["equities", "rates", "credit"], "tools": ["rolling 60d correlation", "spell analysis", "60/40 moment model", "credit_spread operand"], "reading_minutes": 4, "words": 709, "sources_internal": 2, "sources_external": 1, "status": "published", "teaser": "The one-paragraph version. The 60-day SPY–TLT correlation is +0.37 and has not seen a negative print since January 7, 2026 — 220 consecutive days, nearly four times the average positive-correlation spell of 56 days (record 386). This is not a curiosity: in negative-correlation re", "search": "220 days of broken hedge: the stock-bond correlation stays positive the 60-day spy–tlt correlation has been positive since january 7 — nearly four times the average break — and the risk reduction a 60/40 earns from bonds has halved, from 44% to 22%. rates correlation allocation credit equities rates credit rolling 60d correlation spell analysis 60/40 moment model credit_spread operand the one-paragraph version. the 60-day spy–tlt correlation is +0.37 and has not seen a negative print since january 7, 2026 — 220 consecutive days, nearly four times the average positive-correlation spell of 56 days (record 386). this is not a curiosity: in negative-correlation re", "url": "articles/stock-bond-correlation/"}, {"slug": "vol-vrp-anatomy", "title": "Who Pays for the Calm? A Variance Risk Premium of 1.3 Points", "date": "2026-08-19", "series": "Vol Desk Notes", "issue": "1", "deck": "Implied vol trades just 1.27 points over realized — the 23rd percentile since 2007 — and the forward record says thin VRP is no sell signal either: the vol-carry trade's economics, computed.", "authors": ["QuantLab Research Desk"], "tags": ["volatility", "vrp", "options-carry", "regimes"], "assets": ["equities", "volatility"], "tools": ["VIX−RV20 premium", "vix_term operand", "library stream vix_vrp_zgate (net T1)"], "reading_minutes": 4, "words": 746, "sources_internal": 3, "sources_external": 1, "status": "published", "teaser": "The one-paragraph version. The variance risk premium — VIX minus trailing 20-day realized S&P vol — stands at 1.27 vol points (Aug 14), against a median of 4.18 since 2007. That is the 23rd percentile: the insurance market is cheap, and the carry from selling it is thin. But befo", "search": "who pays for the calm? a variance risk premium of 1.3 points implied vol trades just 1.27 points over realized — the 23rd percentile since 2007 — and the forward record says thin vrp is no sell signal either: the vol-carry trade's economics, computed. volatility vrp options-carry regimes equities volatility vix−rv20 premium vix_term operand library stream vix_vrp_zgate (net t1) the one-paragraph version. the variance risk premium — vix minus trailing 20-day realized s&p vol — stands at 1.27 vol points (aug 14), against a median of 4.18 since 2007. that is the 23rd percentile: the insurance market is cheap, and the carry from selling it is thin. but befo", "url": "articles/vol-vrp-anatomy/"}, {"slug": "volume-behind-the-record", "title": "The $99 Billion Mirage: Record Volume That Is Mostly Record Price", "date": "2026-08-19", "series": "Liquidity Watch", "issue": "1", "deck": "Universe dollar volume runs $98.9B a day — triple the median year, #1 of 19 — but share volume is up just 3.4%: the record tape is mostly record price, with liquidity rotating from SPY (−8.6pp) to QQQ (+10.0pp).", "authors": ["QuantLab Research Desk"], "tags": ["liquidity", "volume", "breadth", "market-structure", "equities"], "assets": ["equities"], "tools": ["panel Volume field (first note use)", "dollar-volume decomposition", "up/down volume ratio", "share HHI"], "reading_minutes": 5, "words": 990, "sources_internal": 1, "sources_external": 3, "status": "published", "teaser": "The one-paragraph version. As of Aug 14, the 16-ETF universe trades $98.9 billion a day (63-day average) — its 93.6th percentile since 2007 and triple (+201.4%) the median year's Jan–Aug. But decompose it and the mirage appears: universe share volume is up just 3.4% versus the me", "search": "the $99 billion mirage: record volume that is mostly record price universe dollar volume runs $98.9b a day — triple the median year, #1 of 19 — but share volume is up just 3.4%: the record tape is mostly record price, with liquidity rotating from spy (−8.6pp) to qqq (+10.0pp). liquidity volume breadth market-structure equities equities panel volume field (first note use) dollar-volume decomposition up/down volume ratio share hhi the one-paragraph version. as of aug 14, the 16-etf universe trades $98.9 billion a day (63-day average) — its 93.6th percentile since 2007 and triple (+201.4%) the median year's jan–aug. but decompose it and the mirage appears: universe share volume is up just 3.4% versus the me", "url": "articles/volume-behind-the-record/"}]</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("ql-data").textContent);
+var state = {q:"", tags:new Set(), assets:new Set(), sort:"date-desc"};
+var elSearch = document.getElementById("q");
+var elSort = document.getElementById("sort");
+var elTags = document.getElementById("tag-chips");
+var elAssets = document.getElementById("asset-chips");
+var elGrid = document.getElementById("grid");
+var elCount = document.getElementById("count");
+var elReset = document.getElementById("reset");
+var elActive = document.getElementById("active-filters");
+
+function freq(key){
+  var m = new Map();
+  DATA.forEach(function(a){(a[key]||[]).forEach(function(t){m.set(t,(m.get(t)||0)+1)})});
+  return Array.from(m.entries()).sort(function(x,y){return y[1]-x[1]||x[0].localeCompare(y[0])});
+}
+function chip(label,count,group){
+  var b=document.createElement("button");
+  b.className="chip";b.type="button";b.setAttribute("aria-pressed","false");
+  b.textContent=label+(count>1?" ("+count+")":"");
+  b.addEventListener("click",function(){
+    var s=state[group];
+    s.has(label)?s.delete(label):s.add(label);
+    b.setAttribute("aria-pressed",s.has(label)?"true":"false");
+    apply();
+  });
+  return b;
+}
+function buildChips(){
+  freq("tags").forEach(function(x){elTags.appendChild(chip(x[0],x[1],"tags"))});
+  freq("assets").forEach(function(x){elAssets.appendChild(chip(x[0],x[1],"assets"))});
+}
+function matches(a){
+  if(state.q){
+    var q=state.q.toLowerCase();
+    if(a.search.indexOf(q)===-1)return false;
+  }
+  for(var t of state.tags)if(a.tags.indexOf(t)===-1)return false;
+  for(var s of state.assets)if(a.assets.indexOf(s)===-1)return false;
+  return true;
+}
+function sortFn(key){
+  if(key==="date-asc")return function(a,b){return a.date<b.date?-1:a.date>b.date?1:0};
+  if(key==="title-az")return function(a,b){return a.title.localeCompare(b.title)};
+  if(key==="reading-desc")return function(a,b){return b.reading_minutes-a.reading_minutes};
+  return function(a,b){return a.date>b.date?-1:a.date<b.date?1:0};
+}
+function card(a){
+  var c=document.createElement("article");c.className="card";
+  var d=document.createElement("div");d.className="date";
+  var sp=document.createElement("span");sp.textContent=a.date;
+  var rm=document.createElement("span");rm.textContent=a.reading_minutes+" min read";
+  d.appendChild(sp);d.appendChild(rm);
+  var h=document.createElement("h2");
+  var link=document.createElement("a");link.href=a.url;link.textContent=a.title;
+  h.appendChild(link);
+  var p=document.createElement("p");p.className="deck";p.textContent=a.deck;
+  var m=document.createElement("div");m.className="meta";
+  a.tags.forEach(function(t){var s=document.createElement("span");
+    s.className="tag";s.textContent=t;m.appendChild(s)});
+  var f=document.createElement("div");f.className="foot";
+  var f1=document.createElement("span");
+  f1.textContent=a.sources_internal+" internal · "+a.sources_external+" external sources";
+  var f2=document.createElement("span");
+  f2.textContent=(a.authors&&a.authors.length)?a.authors.join(", "):"";
+  f.appendChild(f1);if(f2.textContent)f.appendChild(f2);
+  c.appendChild(d);c.appendChild(h);c.appendChild(p);c.appendChild(m);c.appendChild(f);
+  return c;
+}
+function activeCount(){
+  return (state.q?1:0)+state.tags.size+state.assets.size;
+}
+function apply(){
+  var rows=DATA.filter(matches).sort(sortFn(state.sort));
+  elGrid.textContent="";
+  if(rows.length===0){
+    var e=document.createElement("div");e.className="empty";
+    e.textContent="No notes match — clear a filter or try a broader term.";
+    elGrid.appendChild(e);
+  } else rows.forEach(function(a){elGrid.appendChild(card(a))});
+  elCount.textContent=rows.length+(rows.length===1?" note":" notes");
+  var n=activeCount();
+  elActive.textContent=n?("· "+n+" filter"+(n===1?"":"s")+" active"):"";
+  elReset.style.display=n?"inline-block":"none";
+  syncHash();
+}
+function syncHash(){
+  var parts=[];
+  if(state.q)parts.push("q="+encodeURIComponent(state.q));
+  if(state.tags.size)parts.push("tags="+encodeURIComponent(Array.from(state.tags).join(",")));
+  if(state.assets.size)parts.push("assets="+encodeURIComponent(Array.from(state.assets).join(",")));
+  if(state.sort!=="date-desc")parts.push("sort="+state.sort);
+  history.replaceState(null,"",parts.length?"#"+parts.join("&"):location.pathname);
+}
+function fromHash(){
+  var h=new URLSearchParams(location.hash.slice(1));
+  if(h.get("q")){state.q=h.get("q");elSearch.value=state.q}
+  (h.get("tags")||"").split(",").filter(Boolean).forEach(function(t){state.tags.add(t)});
+  (h.get("assets")||"").split(",").filter(Boolean).forEach(function(s){state.assets.add(s)});
+  if(h.get("sort")){state.sort=h.get("sort");elSort.value=state.sort}
+  elSort.value=state.sort;
+}
+function markPressed(container,group){
+  Array.from(container.children).forEach(function(b){
+    b.setAttribute("aria-pressed",state[group].has(b.textContent.split(" (")[0])?"true":"false");
+  });
+}
+var t=null;
+elSearch.addEventListener("input",function(){
+  clearTimeout(t);
+  t=setTimeout(function(){state.q=elSearch.value.trim();apply()},120);
+});
+elSort.addEventListener("change",function(){state.sort=elSort.value;apply()});
+elReset.addEventListener("click",function(){
+  state.q="";state.tags.clear();state.assets.clear();state.sort="date-desc";
+  elSearch.value="";elSort.value=state.sort;
+  markPressed(elTags,"tags");markPressed(elAssets,"assets");apply();
+});
+document.addEventListener("keydown",function(e){
+  if(e.key==="/"&&document.activeElement!==elSearch){e.preventDefault();elSearch.focus()}
+  if(e.key==="Escape"&&document.activeElement===elSearch){
+    elSearch.value="";state.q="";apply();elSearch.blur();
+  }
+});
+buildChips();fromHash();markPressed(elTags,"tags");markPressed(elAssets,"assets");apply();
+})();
+</script>
+
+
+</body>
+</html>

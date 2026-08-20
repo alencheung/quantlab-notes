@@ -1,0 +1,129 @@
+{
+  "numbers": {
+    "bars_per_symbol": 66889,
+    "first_bar": "2019-01-01 00:00:00",
+    "last_bar": "2026-08-19 00:00:00",
+    "calmest_hour_utc": 5,
+    "calmest_hour_vol": 47.8472405745319,
+    "wildest_hour_utc": 14,
+    "wildest_hour_vol": 80.80913418428668,
+    "hour_vol_ratio": 1.688898528190144,
+    "us_open_hour_vol": 80.80913418428668,
+    "drift_best_hour": 21,
+    "drift_worst_hour": 23,
+    "weekday_vol_ann_pct": 66.13395417604573,
+    "weekend_vol_ann_pct": 50.43234543612694,
+    "weekend_vol_multiple": 0.7625787095971641,
+    "btc_eth_corr_last": 0.8715285849868672,
+    "btc_eth_corr_mean": 0.8392742907398631,
+    "btc_eth_corr_min": 0.6237720841573615,
+    "alt_beta_2026": {
+      "ETH": 1.1844,
+      "XRP": 1.0574,
+      "LTC": 0.9182,
+      "BCH": 0.8835,
+      "ADA": 1.2153,
+      "LINK": 1.2045,
+      "XLM": 1.1053
+    },
+    "alt_r2_2026": {
+      "ETH": 0.8031,
+      "XRP": 0.6421,
+      "LTC": 0.5895,
+      "BCH": 0.3579,
+      "ADA": 0.5624,
+      "LINK": 0.7222,
+      "XLM": 0.3498
+    },
+    "alt_beta_min": 0.8835,
+    "alt_beta_max": 1.2153,
+    "ytd_2026": {
+      "BTC": -0.2641,
+      "ETH": -0.3563,
+      "XRP": -0.4595,
+      "LTC": -0.4243,
+      "BCH": -0.6632,
+      "ADA": -0.4793,
+      "LINK": -0.2225,
+      "XLM": -0.236
+    },
+    "best_symbol_2026": {
+      "sym": "LINK",
+      "ytd": -0.22253083898374315
+    },
+    "worst_symbol_2026": {
+      "sym": "BCH",
+      "ytd": -0.6632416307590321
+    },
+    "n_positive_2026": 0,
+    "cross_disp_2026_mean_daily_pct": 1.4966708579347672,
+    "cross_disp_2026_max_daily_pct": 9.926918020039043,
+    "funding_last_date": "2026-07-31",
+    "funding_30d_mean_ann": 0.06717078956043955
+  },
+  "lineage": [
+    {
+      "source": "OKX 1h BTC/USDT",
+      "path": "data/ccxt_1h/BTC_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h ETH/USDT",
+      "path": "data/ccxt_1h/ETH_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h XRP/USDT",
+      "path": "data/ccxt_1h/XRP_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h LTC/USDT",
+      "path": "data/ccxt_1h/LTC_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h BCH/USDT",
+      "path": "data/ccxt_1h/BCH_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h ADA/USDT",
+      "path": "data/ccxt_1h/ADA_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h LINK/USDT",
+      "path": "data/ccxt_1h/LINK_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "OKX 1h XLM/USDT",
+      "path": "data/ccxt_1h/XLM_USDT_okx1h.parquet",
+      "rows": 66889,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "perp funding cache",
+      "path": "data/crypto/funding.parquet",
+      "rows": 7212,
+      "first": "2020-01-01 00:00:00",
+      "last": "2026-07-31 16:00:00"
+    }
+  ]
+}

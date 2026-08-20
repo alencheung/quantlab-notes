@@ -1,0 +1,90 @@
+{
+  "numbers": {
+    "n_members": 20,
+    "ew_sharpe_full": 1.090617118770297,
+    "member_sharpe_min": 0.6559,
+    "member_sharpe_max": 0.9527,
+    "sharpe_gain_over_best_member": 0.1379171187702971,
+    "mean_pairwise_corr": 0.5021571306198604,
+    "max_pairwise_corr": 0.7550172351076242,
+    "max_pair_names": [
+      "lowvol_lo",
+      "parkinson_zg"
+    ],
+    "pairs_above_060": 51,
+    "pairs_above_070": 14,
+    "n_clusters_060": 1,
+    "cluster_sizes_060": [
+      20
+    ],
+    "biggest_cluster_members": [
+      "anchor252_zg",
+      "autocorr252_zg",
+      "carry63_zg",
+      "curve_conn_lo",
+      "er_trend126_zg",
+      "gvz_vrp_zgate",
+      "leadlag_conn_zg",
+      "lowconn_lo",
+      "lowvol_lo",
+      "mom12_1_lo_zg",
+      "mom_lowvol",
+      "parkinson_zg",
+      "pricevol_zg",
+      "quiet_lowvol",
+      "quiet_vol_lo_zg",
+      "rsi_delta_zg",
+      "vix_vrp_zgate",
+      "volprice_leadlag",
+      "volprice_lo",
+      "volts_lo"
+    ],
+    "eff_n_last": 1.4258106156184907,
+    "eff_n_min": 1.2603119132604326,
+    "eff_n_min_date": "2024-06-07",
+    "eff_n_mean": 1.9498066333065993,
+    "ytd_dispersion": 0.1702618975711082,
+    "best_member_2026": {
+      "name": "rsi_delta_zg",
+      "ytd": 0.15297790462126848
+    },
+    "worst_member_2026": {
+      "name": "parkinson_zg",
+      "ytd": -0.017283992949839733
+    },
+    "members_positive_2026": 18,
+    "book_max_dd": -0.1852202183401518,
+    "book_max_dd_date": "2022-10-14",
+    "spy_max_dd": -0.5518943082325594,
+    "book_dd_2026_min": -0.06306680104553819,
+    "book_worst_day_2026": -0.018286211997238948,
+    "book_vol": 0.06931754278782186,
+    "book_ytd": 0.06248227152857022,
+    "pairs_total": 190,
+    "vitals_eff_n_price_universe": 3.0915702271351804
+  },
+  "lineage": [
+    {
+      "source": "library registry (20 members)",
+      "path": "data/loop/library_scratch/final20_metrics.json"
+    },
+    {
+      "source": "library net T1 streams (20)",
+      "path": "data/loop/library/*_T1.csv",
+      "rows": 4934,
+      "first": "2007-01-04 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    },
+    {
+      "source": "library correlation matrix",
+      "path": "data/loop/library/correlation_matrix.csv"
+    },
+    {
+      "source": "16-ETF daily panel (SPY)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4935,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    }
+  ]
+}

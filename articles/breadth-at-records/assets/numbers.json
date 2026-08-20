@@ -1,0 +1,77 @@
+{
+  "numbers": {
+    "breadth_last": 0.625,
+    "breadth_last_date": "2026-08-14",
+    "breadth_mean": 0.6842831813576494,
+    "breadth_pct_rank_all_days": 0.37365754812563323,
+    "ath_days": 601,
+    "breadth_at_ath_median": 0.875,
+    "breadth_at_ath_min": 0.0,
+    "breadth_at_ath_pct_rank": 0.1314475873544093,
+    "ath_share_breadth_above_80": 0.7321131447587355,
+    "spy_off_ath": -0.0019797115463531245,
+    "spy_ath_date": "2026-08-13",
+    "ath_days_breadth_le_70": 120,
+    "narrow_ath_years": [
+      "2007",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2021",
+      "2026"
+    ],
+    "fwd_worst63_after_narrow_med": -0.025626556622156182,
+    "fwd_worst63_after_narrow_min": -0.15427169183701572,
+    "fwd_worst63_after_narrow_n": 120,
+    "rs63_top3": [
+      [
+        "XLF",
+        0.1379
+      ],
+      [
+        "DIA",
+        0.0757
+      ],
+      [
+        "IWM",
+        0.0751
+      ]
+    ],
+    "rs63_bottom3": [
+      [
+        "LQD",
+        -0.011
+      ],
+      [
+        "TLT",
+        -0.0226
+      ],
+      [
+        "GLD",
+        -0.0602
+      ]
+    ],
+    "xlu_ret63": -0.006838735030247345,
+    "cyclical_63d": 0.05602874184350618,
+    "defensive_63d": -0.00415460842662041,
+    "cyc_def_spread": 0.06018335027012659,
+    "gld_vs_200d": -0.026366505702049348,
+    "gld_ret20": 0.08976414048340886,
+    "gld_ret63": -0.06022794640432827,
+    "gld_above_200d": false,
+    "rotation_last": 14.0,
+    "rotation_pct_rank": 0.2364741641337386,
+    "rotation_median": 21.0
+  },
+  "lineage": [
+    {
+      "source": "16-ETF daily panel",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4935,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    }
+  ]
+}

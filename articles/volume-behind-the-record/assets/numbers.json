@@ -1,0 +1,70 @@
+{
+  "numbers": {
+    "dv63_last": 98925970678.01997,
+    "dv63_last_date": "2026-08-14",
+    "dv63_pct_rank_all_days": 0.9357685204186332,
+    "dv63_median": 39381129747.2568,
+    "dv63_vs_median": 1.5120145438415449,
+    "dv63_2026_mean_pct_rank": 0.9750236656229518,
+    "dv63_partial_years": 19,
+    "dv63_2026_vs_partial_median": 2.0138427711909097,
+    "dv63_2026_partial_rank": 1,
+    "sv63_2026_vs_partial_median": 0.03363173301482858,
+    "sv63_2026_partial_rank": 8,
+    "px63_2026_vs_partial_median": 1.5274335309214164,
+    "dv_q20": 26497104058.16613,
+    "quiet_days_2026": 0,
+    "quiet_days_2026_share": 0.0,
+    "quiet_days_2025_same_window": 0,
+    "updown_ratio_last": 1.017480246365157,
+    "updown_ratio_last_date": "2026-08-14",
+    "updown_ratio_median": 1.1122992031145686,
+    "updown_ratio_pct_rank": 0.3617894520829058,
+    "updown_ratio_2026_max": 1.6441270406817612,
+    "updown_ratio_2026_min": 0.6778736678910022,
+    "share_top3_gainers": [
+      [
+        "QQQ",
+        0.0999
+      ],
+      [
+        "LQD",
+        0.0122
+      ],
+      [
+        "GLD",
+        0.0118
+      ]
+    ],
+    "share_top3_losers": [
+      [
+        "IWM",
+        -0.0134
+      ],
+      [
+        "EEM",
+        -0.0179
+      ],
+      [
+        "SPY",
+        -0.0855
+      ]
+    ],
+    "spy_share_2026": 0.3991994752549793,
+    "spy_share_hist": 0.4846993532854768,
+    "hhi_last": 0.26247394029411986,
+    "hhi_median": 0.3020344240089349,
+    "hhi_pct_rank": 0.22836879432624113,
+    "capacity_ceiling_usd": 985043064.909668,
+    "capacity_ceiling_source": "docs/capacity/capacity_memo.json"
+  },
+  "lineage": [
+    {
+      "source": "16-ETF daily panel (OHLCV, Volume field)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4935,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    }
+  ]
+}

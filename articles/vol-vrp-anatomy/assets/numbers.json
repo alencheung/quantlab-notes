@@ -1,0 +1,63 @@
+{
+  "numbers": {
+    "vix_obs_since_1990": 9251,
+    "vix_first_date": "1990-01-02",
+    "vix_last": 14.63,
+    "vix_last_date": "2026-08-14",
+    "rv20_last": 13.360198870214363,
+    "vrp_last": 1.2698011297856375,
+    "vrp_last_date": "2026-08-14",
+    "vrp_mean": 3.614667764074733,
+    "vrp_median": 4.1798028932328375,
+    "vrp_pct_rank": 0.2264496439471007,
+    "vrp_neg_share": 0.15666327568667346,
+    "vrp_min": -46.06485954974364,
+    "vrp_min_date": "2008-11-04",
+    "vrp_max": 25.186329166798597,
+    "vrp_max_date": "2009-01-20",
+    "vrp_min_year": {
+      "year": 2008,
+      "mean": -1.2264222001503593
+    },
+    "vrp_2026_mean": 5.576727217769139,
+    "vrp_q20": 0.7906105455599175,
+    "thin_days": 983,
+    "thin_share": 0.2,
+    "fwd63_after_thin_mean": 0.02396528967407778,
+    "fwd63_after_thin_med": 0.04297457227813006,
+    "fwd63_after_thin_neg_share": 0.2990844354018311,
+    "fwd63_all_mean": 0.029515003646563804,
+    "fwd63_all_neg_share": 0.2646998982706002,
+    "fwd63_after_thin_n": 969,
+    "vix_term_last": 0.786136485760344,
+    "vix_term_pct_rank": 0.03231979587497342,
+    "vix_term_days_below_1_last_90": 62,
+    "zgate_full_sharpe": 0.9368117218085592,
+    "zgate_2026_ytd": 0.03904949636606192,
+    "zgate_2026_vol": 0.10210942975087231,
+    "zgate_worst_day_2026": -0.0243374753241677
+  },
+  "lineage": [
+    {
+      "source": "16-ETF daily panel",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4935,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    },
+    {
+      "source": "FRED rates/vol cache",
+      "path": "data/rates/rates.parquet",
+      "rows": 26588,
+      "first": "1934-01-01 00:00:00",
+      "last": "2026-08-13 00:00:00"
+    },
+    {
+      "source": "library net stream (vix_vrp_zgate)",
+      "path": "data/loop/library/vix_vrp_zgate_T1.csv",
+      "rows": 4934,
+      "first": "2007-01-04 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    }
+  ]
+}
