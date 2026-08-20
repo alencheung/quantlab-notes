@@ -1,0 +1,237 @@
+{
+  "numbers": {
+    "panel_last": "2026-08-19",
+    "state": {
+      "AGG": {
+        "dd_now": -0.0215,
+        "ath": "2020-08-04",
+        "uw_days": 2206
+      },
+      "DIA": {
+        "dd_now": -0.0157,
+        "ath": "2026-08-05",
+        "uw_days": 14
+      },
+      "EEM": {
+        "dd_now": -0.0716,
+        "ath": "2026-06-22",
+        "uw_days": 58
+      },
+      "EFA": {
+        "dd_now": -0.0095,
+        "ath": "2026-08-13",
+        "uw_days": 6
+      },
+      "GLD": {
+        "dd_now": -0.1655,
+        "ath": "2026-01-29",
+        "uw_days": 202
+      },
+      "HYG": {
+        "dd_now": -0.001,
+        "ath": "2026-08-13",
+        "uw_days": 6
+      },
+      "IEF": {
+        "dd_now": -0.1134,
+        "ath": "2020-08-04",
+        "uw_days": 2206
+      },
+      "IWM": {
+        "dd_now": -0.011,
+        "ath": "2026-08-14",
+        "uw_days": 5
+      },
+      "LQD": {
+        "dd_now": -0.048,
+        "ath": "2021-09-22",
+        "uw_days": 1792
+      },
+      "QQQ": {
+        "dd_now": -0.0393,
+        "ath": "2026-06-02",
+        "uw_days": 78
+      },
+      "SPY": {
+        "dd_now": -0.0113,
+        "ath": "2026-08-13",
+        "uw_days": 6
+      },
+      "TLT": {
+        "dd_now": -0.4159,
+        "ath": "2020-08-04",
+        "uw_days": 2206
+      },
+      "VNQ": {
+        "dd_now": -0.0232,
+        "ath": "2026-07-28",
+        "uw_days": 22
+      },
+      "XLF": {
+        "dd_now": -0.0134,
+        "ath": "2026-08-13",
+        "uw_days": 6
+      },
+      "XLP": {
+        "dd_now": -0.0264,
+        "ath": "2026-02-27",
+        "uw_days": 173
+      },
+      "XLU": {
+        "dd_now": -0.0654,
+        "ath": "2026-02-27",
+        "uw_days": 173
+      }
+    },
+    "at_high_count": 0,
+    "at_high_names": [],
+    "deepest_now": {
+      "name": "TLT",
+      "dd": -0.4158748046983828
+    },
+    "longest_uw_now": {
+      "name": "AGG",
+      "days": 2206,
+      "years": 6.04,
+      "ath": "2020-08-04",
+      "dd": -0.021492502412218895
+    },
+    "spell_stats": {
+      "AGG": {
+        "spells": 193,
+        "median_days": 6.0,
+        "longest_days": 483,
+        "n_deep": 1,
+        "median_deep_days": 97.0
+      },
+      "DIA": {
+        "spells": 230,
+        "median_days": 7.0,
+        "longest_days": 1563,
+        "n_deep": 7,
+        "median_deep_days": 271.0
+      },
+      "EEM": {
+        "spells": 69,
+        "median_days": 6.0,
+        "longest_days": 3610,
+        "n_deep": 6,
+        "median_deep_days": 546.5
+      },
+      "EFA": {
+        "spells": 124,
+        "median_days": 6.5,
+        "longest_days": 2410,
+        "n_deep": 8,
+        "median_deep_days": 528.0
+      },
+      "GLD": {
+        "spells": 106,
+        "median_days": 5.5,
+        "longest_days": 3264,
+        "n_deep": 5,
+        "median_deep_days": 548.0
+      },
+      "HYG": {
+        "spells": 295,
+        "median_days": 6.0,
+        "longest_days": 805,
+        "n_deep": 5,
+        "median_deep_days": 450.0
+      },
+      "IEF": {
+        "spells": 107,
+        "median_days": 5.0,
+        "longest_days": 1054,
+        "n_deep": 1,
+        "median_deep_days": 545.0
+      },
+      "IWM": {
+        "spells": 135,
+        "median_days": 7.0,
+        "longest_days": 1306,
+        "n_deep": 9,
+        "median_deep_days": 503.0
+      },
+      "LQD": {
+        "spells": 176,
+        "median_days": 7.0,
+        "longest_days": 438,
+        "n_deep": 3,
+        "median_deep_days": 167.0
+      },
+      "QQQ": {
+        "spells": 266,
+        "median_days": 6.0,
+        "longest_days": 1134,
+        "n_deep": 17,
+        "median_deep_days": 125.0
+      },
+      "SPY": {
+        "spells": 290,
+        "median_days": 5.0,
+        "longest_days": 1773,
+        "n_deep": 7,
+        "median_deep_days": 204.0
+      },
+      "TLT": {
+        "spells": 57,
+        "median_days": 7.0,
+        "longest_days": 1089,
+        "n_deep": 7,
+        "median_deep_days": 496.0
+      },
+      "VNQ": {
+        "spells": 94,
+        "median_days": 7.0,
+        "longest_days": 2039,
+        "n_deep": 6,
+        "median_deep_days": 688.0
+      },
+      "XLF": {
+        "spells": 102,
+        "median_days": 7.0,
+        "longest_days": 3687,
+        "n_deep": 6,
+        "median_deep_days": 487.0
+      },
+      "XLP": {
+        "spells": 234,
+        "median_days": 7.0,
+        "longest_days": 708,
+        "n_deep": 6,
+        "median_deep_days": 323.5
+      },
+      "XLU": {
+        "spells": 131,
+        "median_days": 7.0,
+        "longest_days": 1648,
+        "n_deep": 10,
+        "median_deep_days": 317.0
+      }
+    },
+    "universe_median_deep_recovery_days": 468.5,
+    "spy_median_deep_recovery_days": 204.0,
+    "spy_longest_spell_days": 1773,
+    "spy_ath_price": 777.8800048828125,
+    "spy_last": 769.0599975585938,
+    "TLT_uw_years": 6.04,
+    "TLT_dd_now": -0.4158748046983828,
+    "IEF_uw_years": 6.04,
+    "IEF_dd_now": -0.11335531634977614,
+    "AGG_uw_years": 6.04,
+    "AGG_dd_now": -0.021492502412218895,
+    "LQD_uw_years": 4.91,
+    "LQD_dd_now": -0.047950349049036944,
+    "tlt_recovery_pct_needed": 0.7119617644358636
+  },
+  "lineage": [
+    {
+      "source": "16-ETF daily panel",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4938,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-19 00:00:00"
+    }
+  ]
+}

@@ -251,5 +251,41 @@
     "teaser": "The one-paragraph version. As of Aug 14, the 16-ETF universe trades $98.9 billion a day (63-day average) — its 93.6th percentile since 2007 and triple (+201.4%) the median year's Jan–Aug. But decompose it and the mirage appears: universe share volume is up just 3.4% versus the me",
     "search": "the $99 billion mirage: record volume that is mostly record price universe dollar volume runs $98.9b a day — triple the median year, #1 of 19 — but share volume is up just 3.4%: the record tape is mostly record price, with liquidity rotating from spy (−8.6pp) to qqq (+10.0pp). liquidity volume breadth market-structure equities equities panel volume field (first note use) dollar-volume decomposition up/down volume ratio share hhi the one-paragraph version. as of aug 14, the 16-etf universe trades $98.9 billion a day (63-day average) — its 93.6th percentile since 2007 and triple (+201.4%) the median year's jan–aug. but decompose it and the mirage appears: universe share volume is up just 3.4% versus the me",
     "url": "articles/volume-behind-the-record/"
+  },
+  {
+    "slug": "time-under-water",
+    "title": "Six Years Under Water: the Bond Spell Nobody Prices and the Anatomy of Recovery",
+    "date": "2026-08-20",
+    "series": "Recovery Lab",
+    "issue": "1",
+    "deck": "AGG, IEF and TLT have been below their shared 2020 peak for 6.04 years (TLT −41.6%); no asset closed within 0.1% of its high on Aug 19; SPY's median deep-spell recovery is 204 days — duration, not depth, is the risk nobody prices.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "drawdowns",
+      "recovery",
+      "rates",
+      "gold",
+      "equities"
+    ],
+    "assets": [
+      "equities",
+      "rates",
+      "gold"
+    ],
+    "tools": [
+      "underwater-spell anatomy",
+      "peak-to-recovery durations",
+      "deep-spell conditioning"
+    ],
+    "reading_minutes": 5,
+    "words": 1036,
+    "sources_internal": 1,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. As of Aug 19, the bond complex has been under water for 6.04 years — AGG, IEF, and TLT are tied at exactly 2,206 calendar days below their shared 2020-08-04 peak, and none has reclaimed it; TLT sits 41.6% below its peak, the deepest reading in the unive",
+    "search": "six years under water: the bond spell nobody prices and the anatomy of recovery agg, ief and tlt have been below their shared 2020 peak for 6.04 years (tlt −41.6%); no asset closed within 0.1% of its high on aug 19; spy's median deep-spell recovery is 204 days — duration, not depth, is the risk nobody prices. drawdowns recovery rates gold equities equities rates gold underwater-spell anatomy peak-to-recovery durations deep-spell conditioning the one-paragraph version. as of aug 19, the bond complex has been under water for 6.04 years — agg, ief, and tlt are tied at exactly 2,206 calendar days below their shared 2020-08-04 peak, and none has reclaimed it; tlt sits 41.6% below its peak, the deepest reading in the unive",
+    "url": "articles/time-under-water/"
   }
 ]

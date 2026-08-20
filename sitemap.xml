@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://alencheung.github.io/quantlab-notes/</loc><lastmod>2026-08-19</lastmod></url>
+  <url><loc>https://alencheung.github.io/quantlab-notes/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://alencheung.github.io/quantlab-notes/articles/breadth-at-records/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://alencheung.github.io/quantlab-notes/articles/crypto-hourly-structure/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://alencheung.github.io/quantlab-notes/articles/library-three-bets/</loc><lastmod>2026-08-19</lastmod></url>
@@ -8,4 +8,5 @@
   <url><loc>https://alencheung.github.io/quantlab-notes/articles/stock-bond-correlation/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://alencheung.github.io/quantlab-notes/articles/vol-vrp-anatomy/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://alencheung.github.io/quantlab-notes/articles/volume-behind-the-record/</loc><lastmod>2026-08-19</lastmod></url>
+  <url><loc>https://alencheung.github.io/quantlab-notes/articles/time-under-water/</loc><lastmod>2026-08-20</lastmod></url>
 </urlset>
