@@ -287,5 +287,41 @@
     "teaser": "The one-paragraph version. As of Aug 19, the bond complex has been under water for 6.04 years — AGG, IEF, and TLT are tied at exactly 2,206 calendar days below their shared 2020-08-04 peak, and none has reclaimed it; TLT sits 41.6% below its peak, the deepest reading in the unive",
     "search": "six years under water: the bond spell nobody prices and the anatomy of recovery agg, ief and tlt have been below their shared 2020 peak for 6.04 years (tlt −41.6%); no asset closed within 0.1% of its high on aug 19; spy's median deep-spell recovery is 204 days — duration, not depth, is the risk nobody prices. drawdowns recovery rates gold equities equities rates gold underwater-spell anatomy peak-to-recovery durations deep-spell conditioning the one-paragraph version. as of aug 19, the bond complex has been under water for 6.04 years — agg, ief, and tlt are tied at exactly 2,206 calendar days below their shared 2020-08-04 peak, and none has reclaimed it; tlt sits 41.6% below its peak, the deepest reading in the unive",
     "url": "articles/time-under-water/"
+  },
+  {
+    "slug": "btc-vs-first-spy-dip",
+    "title": "+21.1% in Three UTC Days: Bitcoin Broke Its Own Rule While SPY Slipped",
+    "date": "2026-08-21",
+    "series": "Crypto Microscope",
+    "issue": "2",
+    "deck": "BTC compounded +21.1% across the three complete UTC days to Aug 21 while SPY slipped −0.23%, closing $78,409 and +13.6% above its 200-day mean — a break from a 2026 regime of −0.97% SPY-down-day means and 1.62 down-beta.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "crypto",
+      "beta",
+      "divergence",
+      "short-squeeze",
+      "equities"
+    ],
+    "assets": [
+      "crypto",
+      "equities"
+    ],
+    "tools": [
+      "OKX 1h bars (through Aug 21 23:00 UTC)",
+      "down/up-day conditioning",
+      "beta split",
+      "panel SPY"
+    ],
+    "reading_minutes": 6,
+    "words": 1242,
+    "sources_internal": 2,
+    "sources_external": 5,
+    "status": "published",
+    "teaser": "The one-paragraph version. Across the three complete UTC days to Aug 21, BTC compounded +21.1% (+7.12%, +4.83%, +7.88%) to $78,409.4 — while SPY slipped just −0.23% over the same span, closing Aug 20 at −1.96% below its Aug-13 high before bouncing +0.41% on Aug 21. That is a brea",
+    "search": "+21.1% in three utc days: bitcoin broke its own rule while spy slipped btc compounded +21.1% across the three complete utc days to aug 21 while spy slipped −0.23%, closing $78,409 and +13.6% above its 200-day mean — a break from a 2026 regime of −0.97% spy-down-day means and 1.62 down-beta. crypto beta divergence short-squeeze equities crypto equities okx 1h bars (through aug 21 23:00 utc) down/up-day conditioning beta split panel spy the one-paragraph version. across the three complete utc days to aug 21, btc compounded +21.1% (+7.12%, +4.83%, +7.88%) to $78,409.4 — while spy slipped just −0.23% over the same span, closing aug 20 at −1.96% below its aug-13 high before bouncing +0.41% on aug 21. that is a brea",
+    "url": "articles/btc-vs-first-spy-dip/"
   }
 ]
