@@ -323,5 +323,43 @@
     "teaser": "The one-paragraph version. Across the three complete UTC days to Aug 21, BTC compounded +21.1% (+7.12%, +4.83%, +7.88%) to $78,409.4 — while SPY slipped just −0.23% over the same span, closing Aug 20 at −1.96% below its Aug-13 high before bouncing +0.41% on Aug 21. That is a brea",
     "search": "+21.1% in three utc days: bitcoin broke its own rule while spy slipped btc compounded +21.1% across the three complete utc days to aug 21 while spy slipped −0.23%, closing $78,409 and +13.6% above its 200-day mean — a break from a 2026 regime of −0.97% spy-down-day means and 1.62 down-beta. crypto beta divergence short-squeeze equities crypto equities okx 1h bars (through aug 21 23:00 utc) down/up-day conditioning beta split panel spy the one-paragraph version. across the three complete utc days to aug 21, btc compounded +21.1% (+7.12%, +4.83%, +7.88%) to $78,409.4 — while spy slipped just −0.23% over the same span, closing aug 20 at −1.96% below its aug-13 high before bouncing +0.41% on aug 21. that is a brea",
     "url": "articles/btc-vs-first-spy-dip/"
+  },
+  {
+    "slug": "nine-sectors-one-trade",
+    "title": "Nine sectors, 0.85: the sector book's best trade is the trade we already own",
+    "date": "2026-08-22",
+    "series": "Sector Lab",
+    "issue": "1",
+    "deck": "We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "sector-rotation",
+      "diversification",
+      "strategy-library",
+      "etf",
+      "defensive",
+      "correlation"
+    ],
+    "assets": [
+      "fig_sharpe_mdd.svg",
+      "fig_maxcorr.svg",
+      "fig_pair.svg"
+    ],
+    "tools": [
+      "quantlab-loop-engine",
+      "battery-metrics",
+      "yfinance",
+      "matplotlib"
+    ],
+    "reading_minutes": 8,
+    "words": 1698,
+    "sources_internal": 3,
+    "sources_external": 3,
+    "status": "published",
+    "teaser": "The one-paragraph version. The industry sells sector rotation as a\ndiversifying sleeve; we finally tested the pure US sector cross-section with\nour own engine and the honest answer is: there is no second trade there. We\nbuilt a 12-ticker sector book (the nine classic Select Secto",
+    "search": "nine sectors, 0.85: the sector book's best trade is the trade we already own we searched a pure us sector etf cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-etf library already holds. sector-rotation diversification strategy-library etf defensive correlation fig_sharpe_mdd.svg fig_maxcorr.svg fig_pair.svg quantlab-loop-engine battery-metrics yfinance matplotlib the one-paragraph version. the industry sells sector rotation as a\ndiversifying sleeve; we finally tested the pure us sector cross-section with\nour own engine and the honest answer is: there is no second trade there. we\nbuilt a 12-ticker sector book (the nine classic select secto",
+    "url": "articles/nine-sectors-one-trade/"
   }
 ]

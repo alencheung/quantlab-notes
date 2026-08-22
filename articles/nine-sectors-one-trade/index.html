@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nine sectors, 0.85: the sector book&#x27;s best trade is the trade we already own | QuantLab Research Notes</title>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.">
+<meta name="keywords" content="sector-rotation, diversification, strategy-library, etf, defensive, correlation">
+<link rel="canonical" href="https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/">
+<meta property="og:site_name" content="QuantLab Research Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/">
+<meta property="og:title" content="Nine sectors, 0.85: the sector book&#x27;s best trade is the trade we already own | QuantLab Research Notes">
+<meta property="og:description" content="We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.">
+<meta property="og:image" content="https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/assets/fig_maxcorr.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nine sectors, 0.85: the sector book&#x27;s best trade is the trade we already own | QuantLab Research Notes">
+<meta name="twitter:description" content="We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.">
+<meta name="twitter:image" content="https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/assets/fig_maxcorr.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Nine sectors, 0.85: the sector book's best trade is the trade we already own", "alternativeHeadline": "We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.", "description": "We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.", "datePublished": "2026-08-22", "dateModified": "2026-08-22", "inLanguage": "en", "author": [{"@type": "Organization", "name": "QuantLab Research Desk"}], "publisher": {"@type": "Organization", "name": "QuantLab"}, "keywords": "sector-rotation,diversification,strategy-library,etf,defensive,correlation", "about": [{"@type": "Thing", "name": "fig_sharpe_mdd.svg"}, {"@type": "Thing", "name": "fig_maxcorr.svg"}, {"@type": "Thing", "name": "fig_pair.svg"}], "isAccessibleForFree": true, "isPartOf": {"@type": "BookSeries", "name": "Sector Lab"}, "mainEntityOfPage": "https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/", "image": "https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/assets/fig_maxcorr.png"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f4ec;--paper2:#efe9d9;--ink:#1c1917;--ink2:#5c5648;
+--hair:#d8d1bd;--hair2:#c4bca3;--ox:#8c2f39;--moss:#3f6b52;--code:#ece6d4;
+--serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+--disp:'Fraunces',Georgia,serif;
+--mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:var(--serif);font-size:17px;line-height:1.7;
+-webkit-font-smoothing:antialiased}
+a{color:var(--ox);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ox) 35%,transparent)}
+a:hover{border-bottom-color:var(--ox)}
+code{font-family:var(--mono);font-size:.85em;background:var(--code);
+padding:.1em .35em;border-radius:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2)}
+.masthead{border-bottom:1px solid var(--ink);padding:18px 0 14px}
+.masthead .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.masthead .brand{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.01em}
+.masthead .brand em{font-style:normal;color:var(--ox)}
+.masthead .cadence{font-family:var(--mono);font-size:11.5px;color:var(--ink2);letter-spacing:.06em}
+.rule-double{border-top:3px double var(--ink);margin:0}
+footer{border-top:1px solid var(--hair2);margin-top:64px;padding:20px 0 40px;
+font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+
+.head{padding:44px 0 6px;max-width:860px}
+.head h1{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.4vw,44px);
+line-height:1.12;margin:12px 0 16px;letter-spacing:-.01em}
+.head .deck{font-size:19.5px;line-height:1.55;color:var(--ink2);margin:0 0 18px;font-style:italic}
+.byline{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;
+color:var(--ink2);letter-spacing:.04em;padding-bottom:14px}
+.byline b{color:var(--ink);font-weight:500}
+.share{display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+padding-bottom:24px;font-family:var(--mono)}
+.share .lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.share a,.share button{display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--ink2);
+border:1px solid var(--hair2);background:#fff;border-radius:999px;padding:4px 12px;
+transition:all .12s}
+.share a:hover,.share button:hover{border-color:var(--ox);color:var(--ox)}
+.share svg{width:13px;height:13px;stroke:currentColor;fill:none;
+stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.share a[data-ok="copied"]{border-color:var(--moss);color:var(--moss)}
+.cols{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;padding-bottom:20px}
+.toc{position:sticky;top:24px;align-self:start;font-family:var(--mono);font-size:11.5px;
+line-height:2.1;padding-top:8px;max-height:calc(100vh - 48px);overflow-y:auto;
+overscroll-behavior:contain;scrollbar-width:thin}
+.toc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;
+align-items:center;gap:8px;letter-spacing:.16em;text-transform:uppercase;
+color:var(--ink2);font-size:10px;margin-bottom:4px}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"▾";font-size:9px;letter-spacing:0;color:var(--hair2)}
+.toc details[open] summary::after{content:"▴"}
+.toc a{color:var(--ink2);border-bottom:0;display:block;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc a:hover{color:var(--ox)}
+.toc a.cur{color:var(--ox);font-weight:500}
+.toc .n{color:var(--hair2);margin-right:8px}
+.toc .n b{color:var(--ox);font-weight:500}
+.body{max-width:70ch}
+.body h2{font-family:var(--disp);font-weight:600;font-size:26px;line-height:1.25;
+margin:52px 0 14px;padding-top:18px;border-top:1px solid var(--hair)}
+.body h3{font-family:var(--disp);font-weight:600;font-size:19px;margin:32px 0 10px}
+.body p{margin:0 0 18px}
+.body blockquote{margin:22px 0;padding:10px 22px;border-left:3px solid var(--ox);
+background:var(--paper2);font-style:italic}
+.body blockquote p{margin:6px 0}
+.body ul,.body ol{padding-left:26px;margin:0 0 18px}
+.body li{margin-bottom:8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;
+font-variant-numeric:tabular-nums}
+.body thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+text-transform:uppercase;text-align:left;color:var(--ink2);
+border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);padding:8px 10px}
+.body tbody td{border-bottom:1px solid var(--hair);padding:8px 10px;vertical-align:top}
+.body tbody tr:nth-child(even){background:color-mix(in srgb,var(--paper2) 45%,transparent)}
+.body figure{margin:30px 0;background:#fff;border:1px solid var(--hair);
+border-radius:6px;padding:14px 14px 10px}
+.body figure img{width:100%;height:auto;display:block}
+.body figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+color:var(--ink2);padding:10px 2px 2px;border-top:1px dotted var(--hair2);margin-top:8px}
+.body hr{border:0;border-top:1px solid var(--hair);margin:36px 0}
+.nav{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:56px}
+.nav a{border:1px solid var(--hair);border-radius:6px;background:#fff;padding:16px 18px;
+display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--hair)}
+.nav a:hover{border-color:var(--ink2)}
+.nav a.next{text-align:right;align-items:flex-end}
+.nav .dir{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+text-transform:uppercase;color:var(--ink2)}
+.nav .t{font-family:var(--disp);font-size:16.5px;font-weight:600;color:var(--ink)}
+.nav .ghost{border:1px dashed var(--hair2);border-radius:6px;padding:16px 18px;
+font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.backline{padding:18px 0 0;font-family:var(--mono);font-size:11.5px}
+@media(max-width:900px){
+.cols{grid-template-columns:1fr;gap:0}
+.toc{top:0;z-index:20;padding:0 0 4px;max-height:none;overflow:visible;
+background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);
+border-bottom:1px solid var(--hair)}
+.toc summary{padding:12px 0 10px;margin:0}
+.toc .l{max-height:calc(100vh - 140px);overflow-y:auto;overscroll-behavior:contain;
+padding-bottom:8px}
+.body{max-width:none}
+.body h2,.body h3{scroll-margin-top:64px}
+.nav{grid-template-columns:1fr}}
+@media print{.toc,.nav,footer,.backline,.share{display:none}.cols{grid-template-columns:1fr}
+.body{max-width:none}.head{padding-top:8px}}
+</style>
+</head>
+<body>
+
+<div class="masthead"><div class="wrap">
+<div class="brand"><a href="../../index.html" style="border-bottom:0;color:inherit">
+QuantLab <em>·</em> Research Notes</a></div>
+<div class="cadence">every 12 hours · editor-reviewed</div>
+</div></div>
+<div class="rule-double"></div>
+<div class="wrap">
+<div class="backline"><a href="../../index.html">← all notes</a></div>
+<header class="head">
+<span class="kicker">2026-08-22 · Sector Lab #1</span>
+<h1>Nine sectors, 0.85: the sector book&#x27;s best trade is the trade we already own</h1>
+<p class="deck">We searched a pure US sector ETF cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-ETF library already holds.</p>
+<div class="byline">
+<span>by <b>QuantLab Research Desk</b></span>
+<span>8 min read · 1,698 words</span>
+<span>3 internal / 3 external sources</span>
+</div>
+
+<div class="share" aria-label="Share this note">
+<span class="lbl">share</span>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fnine-sectors-one-trade%2F&text=Nine%20sectors%2C%200.85%3A%20the%20sector%20book%27s%20best%20trade%20is%20the%20trade%20we%20already%20own" target="_blank"
+rel="noopener" aria-label="Share on X"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>X</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fnine-sectors-one-trade%2F" target="_blank"
+rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M5.5 7v4M5.5 5.2v.1M8.5 11V8.6a1.6 1.6 0 0 1 3.2 0V11"/></svg>LinkedIn</a>
+<a href="https://reddit.com/submit?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fnine-sectors-one-trade%2F&title=Nine%20sectors%2C%200.85%3A%20the%20sector%20book%27s%20best%20trade%20is%20the%20trade%20we%20already%20own" target="_blank"
+rel="noopener" aria-label="Share on Reddit"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="9" r="5.5"/><circle cx="5.8" cy="9" r=".4" fill="currentColor"/><circle cx="10.2" cy="9" r=".4" fill="currentColor"/><path d="M6.2 11.2c1.1.7 2.5.7 3.6 0M8 3.5l3-1"/></svg>Reddit</a>
+<a href="mailto:?subject=Nine%20sectors%2C%200.85%3A%20the%20sector%20book%27s%20best%20trade%20is%20the%20trade%20we%20already%20own&body=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fnine-sectors-one-trade%2F" aria-label="Share by email"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="M2.5 4.5L8 8.8l5.5-4.3"/></svg>Email</a>
+<button type="button" id="copy-link" data-url="https://alencheung.github.io/quantlab-notes/articles/nine-sectors-one-trade/"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3"/><path d="M7.5 5l1.2-1.2a2.4 2.4 0 0 1 3.4 3.4L11 8.4"/><path d="M8.5 11l-1.2 1.2a2.4 2.4 0 0 1-3.4-3.4L5 7.6"/></svg>Copy link</button>
+</div>
+</header>
+<div class="cols">
+<nav class="toc" aria-label="Contents"><details open><summary class="t">Contents</summary><div class="l"><a href="#how-we-worked-this-problem"><span class="n"><b>01</b></span>How we worked this problem</a><a href="#the-data-audit"><span class="n"><b>02</b></span>The data audit</a><a href="#the-external-read"><span class="n"><b>03</b></span>The external read</a><a href="#exhibits"><span class="n"><b>04</b></span>Exhibits</a><a href="#so-what-opportunities"><span class="n"><b>05</b></span>So what - opportunities</a><a href="#so-what-risks"><span class="n"><b>06</b></span>So what - risks</a><a href="#machinery-how-this-piece-was-produced"><span class="n"><b>07</b></span>Machinery: how this piece was produced</a><a href="#sources-external-reading-list"><span class="n"><b>08</b></span>Sources - external reading list</a></div></details></nav>
+<main class="body">
+<p><strong>The one-paragraph version.</strong> The industry sells sector rotation as a diversifying sleeve; we finally tested the pure US sector cross-section with our own engine and the honest answer is: there is no second trade there. We built a 12-ticker sector book (the nine classic Select Sector SPDRs plus SPY/QQQ/MDY, daily since 2007) and ran 21 pre-registered constructions through realistic frictions. Five cleared every performance threshold - the best at Sharpe 0.97 with a -30% max drawdown - and all five failed our diversity rule at correlation 0.77-0.85 against defensive members we already hold. The sector book&#x27;s alpha and the library&#x27;s defensive tilt are the same trade wearing different suits.</p>
+<h2 id="how-we-worked-this-problem">How we worked this problem</h2>
+<p>Until this week, every equity strategy in our library ran on our 16-ETF mixed book (<code>STRATEGY_LIBRARY.md</code>&#x27;s core panel) - bonds, gold, international, and only three sectors - which made pure sector rotation inexpressible: there was no sector cross-section to rank. So we built one (<code>data/cache_sector_2007_2026.parquet</code>): the nine classic Select Sector SPDRs including energy (XLE had never been fetched into any house book), plus SPY, QQQ and mid-cap MDY as market shells - all twelve predate the 2007 sample start, giving a clean sample with no stitched history. We pre-registered 18 constructions in five families before running anything (three canonical long/short cells joined via the disclosed amendment below - 21 in total): classic rotation (12-1 and 3-month sector momentum, long-only and long/short), per-sector trend following, defensive tilts, quality/carry tilts, and composites. Every cell ran through the funnel&#x27;s own engine at T1 frictions ($100k account; 0.5bps commission + 3bps slippage + 50bps borrow, the T1 schedule in <code>quantlab/backtest/frictions.py</code>) with monthly re-formation (one pre-registered weekly variant), then faced the library&#x27;s unchanged six-metric battery (thresholds frozen in <code>STRATEGY_LIBRARY.md</code> §battery) and the diversity rule: correlation below 0.75 against all 24 existing member streams. One process note for the record: the first execution clipped the trend cells&#x27; short legs (long-only-by-default), producing one structurally empty cell; we diagnosed it, re-ran both readings, and disclosed the whole episode in the pre-registration document rather than quietly overwriting it.</p>
+<h2 id="the-data-audit">The data audit</h2>
+<table><thead><tr><th>Source</th><th>Coverage</th><th>As-of</th><th>Role</th></tr></thead><tbody><tr><td><code>data/cache_sector_2007_2026.parquet</code></td><td>12 tickers, daily OHLCV</td><td>2026-08-21</td><td>the sector book (all exhibits)</td></tr><tr><td><code>data/loop/library_scratch/wave3_sector/*_T1.csv</code></td><td>20 net-return streams</td><td>2026-08-21</td><td>wave-3 cells (metrics recomputed in this note, not quoted)</td></tr><tr><td><code>data/loop/library/</code> + top-tier + crypto wave streams</td><td>24 member streams</td><td>2026-08-14 (equity) / 2026-08-18 (crypto)</td><td>the diversity-rule comparison set</td></tr></tbody></table>
+<p>All metrics in this note - Sharpes, drawdowns, correlations, volatilities - are recomputed by this note&#x27;s own script from the raw streams; the sweep&#x27;s own JSON output is never quoted directly. Correlations are computed on overlapping dates with member streams re-indexed to each cell&#x27;s dates.</p>
+<h2 id="the-external-read">The external read</h2>
+<p>The sector-rotation theme is a staple of ETF marketing: State Street packages it as a fund that &quot;tactically allocat[es] among the GICS-defined sectors of the S&amp;P 500&quot; (<a href="https://www.ssga.com/us/en/intermediary/etfs/state-street-us-sector-rotation-etf-xlsr">XLSR product page</a>), and practitioner guides name healthcare, utilities and staples as the defensive sectors that &quot;hold up better when the economy weakens&quot; (<a href="https://www.thrivent.com/insights/investing/sector-etfs-explained-benefits-risks-overall-strategy">Thrivent</a>). We cross-checked the defensive-leadership narrative circulating in August 2026 commentary (&quot;utilities are outperforming the S&amp;P 500&quot;, <a href="https://articles.stockcharts.com/article/utilities-staples-health-care-are-defensive-sectors-signaling-market-trouble/">StockCharts</a>) against our own book - and it does not hold: 2026 year-to-date XLU +0.4% vs SPY +12.7%, a -10.9% relative gap through 2026-08-21. The defensive trio&#x27;s role in our results is about realized volatility and drawdown behavior over 19 years, not 2026 leadership.</p>
+<h2 id="exhibits">Exhibits</h2>
+<p><strong>Exhibit 1 - the metrics box is clearable; diversity is not.</strong> Five of the 20 evaluated constructions pass all six thresholds (Sharpe &gt;= 0.60, Sortino</p>
+<blockquote><p>= 0.90, monthly win &gt;= 0.52, vol &lt;= 20%, max drawdown &gt;= -35%, PnL &gt; 0).</p></blockquote>
+<p>The best cell, a low-vol + parkinson + quiet-volume rank-sum composite with our VIX jump-state gate (<code>sect_def_tri_zg</code>), delivers Sharpe 0.97, Sortino 1.36, monthly win 0.63, and a -30.4% max drawdown - genuinely strong numbers. The classic rotation family fails next to it on the risk legs: 12-1 sector momentum with the same gate earns Sharpe 0.79 but a -38.3% max drawdown, and its long/short form is exactly flat (Sharpe -0.01) - nine sectors are too correlated for cross-sectional dispersion to pay.</p>
+<figure><img src="assets/fig_sharpe_mdd.svg" alt="Sharpe vs max drawdown across all sector constructions" loading="lazy"><figcaption>Sharpe vs max drawdown across all sector constructions</figcaption></figure>
+<p><strong>Exhibit 2 - the diversity wall.</strong> Each metrics-passer&#x27;s maximum correlation against the 24 existing library members sits between 0.77 and 0.85, above the 0.75 admission line - led by the composite at 0.85 against <code>quiet_vol_lo_zg</code>, our volume-stability defensive member from the 16-ETF book. The mechanism is visible in the book itself: the three lowest-volatility tickers across the full sample are exactly the defensive trio - XLP at 14.6% annualized volatility, XLV at 17.2%, XLU at 19.1%, versus 22.7% for consumer discretionary and 30.2% for energy. Any low-vol or quality tilt on this cross-section buys the same three sectors our mixed-book defensives already own the bond-and-gold version of.</p>
+<figure><img src="assets/fig_maxcorr.svg" alt="Maximum correlation of each metrics-passer vs the existing library" loading="lazy"><figcaption>Maximum correlation of each metrics-passer vs the existing library</figcaption></figure>
+<p><strong>Exhibit 3 - same trade, different suit.</strong> Overlaid equity curves of the sector composite and the library member it correlates 0.85 with: the drawdown dates line up stress for stress. This is what &quot;one structural trade&quot; looks like when you plot it - the major drawdowns (2008, 2020 and 2022 among them) arrive together in both books.</p>
+<figure><img src="assets/fig_pair.svg" alt="Equity curves of the sector composite and quiet_vol_lo_zg" loading="lazy"><figcaption>Equity curves of the sector composite and quiet_vol_lo_zg</figcaption></figure>
+<p><strong>The trend-family footnote.</strong> Per-sector trend following only survives in its long-only-clipped form (long above the 200-day average, flat below): Sharpe 0.66, but 0.77 correlated with our curve-sensitivity member. The canonical long/short version - long each sector above its trend, short below</p>
+<ul>
+<li>earns Sharpe 0.30, and a 126-day Donchian breakout version loses badly</li>
+<p>(Sharpe -0.72, max drawdown -96.4%): shorting sectors that are making 126-day highs through a two-decade bull market is a slow bleed.</p>
+</ul>
+<h2 id="so-what-opportunities">So what - opportunities</h2>
+<ul>
+<li><strong>The sector book is a confirmation engine, not a new alpha source.</strong> It</li>
+<p>independently rediscovers the defensive rotation that already carries the library - out-of-family replication is real evidence the tilt is a market structure, not a 16-ETF artifact.</p>
+<li><strong>The book earns its keep as a monitoring surface.</strong> Nine clean sector</li>
+<p>histories back to 2007 (energy finally included) upgrade our breadth and rotation diagnostics - the Rotation Monitor series now has a proper cross-section to watch.</p>
+<li><strong>For allocation work, the finding cuts cost:</strong> a sector-rotation sleeve</li>
+<p>is often marketed as diversification for a multi-asset book; on our numbers it would be a levered-up restatement of the defensive exposure already present. That is a reason not to pay for it twice.</p>
+</ul>
+<h2 id="so-what-risks">So what - risks</h2>
+<ul>
+<li><strong>Correlation is regime-dependent.</strong> 0.85 is a full-sample average; in a</li>
+<p>rates-driven drawdown that hits both bonds and defensives (2022&#x27;s shape), the sector and mixed-book versions of &quot;defensive&quot; could de-diversify further. The battery&#x27;s -35% drawdown ceiling (frozen with the other thresholds in <code>STRATEGY_LIBRARY.md</code> §battery) is calibrated on the mixed book, not this one.</p>
+<li><strong>The momentum result is a drawdown risk, not a dead signal.</strong> Sector</li>
+<p>momentum at Sharpe 0.79 with -38% drawdowns failed our thresholds, but an operator willing to size it down could still hold it - we just won&#x27;t certify what fails our own risk legs.</p>
+<li><strong>Nine tickers is a thin cross-section.</strong> Tercile construction means</li>
+<p>three-name legs; idiosyncratic single-sector news (an FDA cycle in XLV, a rate case in XLU) moves these cells more than it would a 16-ETF book.</p>
+</ul>
+<h2 id="machinery-how-this-piece-was-produced">Machinery: how this piece was produced</h2>
+<p><code>articles/2026-08-22-nine-sectors-one-trade/analysis.py</code> recomputes every number in this note from the sector book parquet, the 20 wave-3 net-return streams, and the 24 library member streams, then writes <code>assets/numbers.json</code> and the three figures (SVG + PNG twins). The sweep itself is <code>experiments/run_library_wave3_sector.py</code> (the funnel engine, T1 frictions); the book builder is <code>experiments/build_sector_book.py</code>; the frozen candidate list and full 21-cell results table are in <code>docs/equity-sector-wave-prereg.md</code>.</p>
+<p>Reproduce with: ``<code>bash .venv/Scripts/python experiments/build_sector_book.py .venv/Scripts/python experiments/run_library_wave3_sector.py .venv/Scripts/python articles/2026-08-22-nine-sectors-one-trade/analysis.py </code>``</p>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>yfinance daily OHLCV, survivorship-disclosed: the nine SPDRs exist today</li>
+<p>and all predate the sample, so listing survivorship is not an issue here, but adjusted-price revisions are (our core panel refresh is currently blocked by exactly that; this book was fetched fresh and ends 2026-08-21).</p>
+<li>The diversity rule compares full-sample daily-return correlations; it does</li>
+<p>not test tail co-movement (see the 2022 risk above).</p>
+<li>Frictions are T1 ($100k, 0.5bps commission + 3bps slippage, 50bps borrow -</li>
+<p>the <code>quantlab/backtest/frictions.py</code> schedule); the short legs the battery rejects would face more.</p>
+<li>21 cells is one wave, pre-registered and fully reported - but the</li>
+<p>lifetime-searched count across the library program is now roughly 179 constructions (<code>STRATEGY_LIBRARY.md</code> disclosure 5b), and multiple-testing shrinkage applies to everything above.</p>
+</ul>
+<h2 id="sources-external-reading-list">Sources - external reading list</h2>
+<p>Full links for the three external claims discussed in &quot;The external read&quot; above: <a href="https://www.ssga.com/us/en/intermediary/etfs/state-street-us-sector-rotation-etf-xlsr">State Street US Sector Rotation ETF (XLSR)</a>, <a href="https://www.thrivent.com/insights/investing/sector-etfs-explained-benefits-risks-overall-strategy">Thrivent - Sector ETFs Explained</a>, <a href="https://articles.stockcharts.com/article/utilities-staples-health-care-are-defensive-sectors-signaling-market-trouble/">StockCharts - Are Defensive Sectors Signaling Trouble?</a>.</p>
+<div class="kicker" style="margin-top:44px">toolchain</div>
+<p style="font-family:var(--mono);font-size:12px;color:var(--ink2)">quantlab-loop-engine; battery-metrics; yfinance; matplotlib</p>
+<div class="nav"><a class="prev" href="../btc-vs-first-spy-dip/"><span class="dir">← earlier</span><span class="t">+21.1% in Three UTC Days: Bitcoin Broke Its Own Rule While SPY Slipped</span></a><div class="ghost">latest note</div></div>
+</main>
+</div>
+</div>
+<footer><div class="wrap">
+<span>sector-rotation · diversification · strategy-library · etf · defensive · correlation</span>
+<span>numbers from code · prose by the desk · not investment advice</span>
+</div></footer>
+
+<script>
+(function(){
+"use strict";
+var b=document.getElementById("copy-link");
+if(!b)return;
+b.addEventListener("click",function(){
+  var url=b.getAttribute("data-url");
+  function done(){var t=b.textContent;b.textContent="copied ✓";b.setAttribute("data-ok","copied");
+    setTimeout(function(){b.textContent=t;b.removeAttribute("data-ok")},1600)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(done,function(){fallback()});
+  } else fallback();
+  function fallback(){
+    var i=document.createElement("input");i.value=url;document.body.appendChild(i);
+    i.select();try{document.execCommand("copy");done()}catch(e){}
+    document.body.removeChild(i);
+  }
+});
+})();
+
+(function(){
+"use strict";
+var d=document.querySelector(".toc details");
+if(!d)return;
+var mq=window.matchMedia?window.matchMedia("(max-width:900px)"):null;
+function narrow(){return mq?mq.matches:window.innerWidth<=900}
+if(narrow())d.removeAttribute("open");
+if(mq&&mq.addEventListener)mq.addEventListener("change",function(e){
+  if(e.matches)d.removeAttribute("open")});
+d.addEventListener("click",function(e){
+  if(e.target&&e.target.closest&&e.target.closest("a")&&narrow())
+    d.removeAttribute("open")});
+var links=[].slice.call(d.querySelectorAll("a[href^='#']"));
+var heads=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1))});
+var cur=null;
+function spy(){
+  var hit=null;
+  for(var i=0;i<heads.length;i++){var h=heads[i];
+    if(h&&h.getBoundingClientRect().top<=110)hit=links[i]}
+  if(hit===cur)return;
+  cur=hit;
+  for(var i=0;i<links.length;i++)links[i].classList.toggle("cur",links[i]===hit);
+}
+var tick=false;
+window.addEventListener("scroll",function(){
+  if(tick)return;tick=true;
+  requestAnimationFrame(function(){spy();tick=false})},{passive:true});
+spy();
+})();
+</script>
+</body>
+</html>
