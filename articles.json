@@ -361,5 +361,42 @@
     "teaser": "The one-paragraph version. The industry sells sector rotation as a\ndiversifying sleeve; we finally tested the pure US sector cross-section with\nour own engine and the honest answer is: there is no second trade there. We\nbuilt a 12-ticker sector book (the nine classic Select Secto",
     "search": "nine sectors, 0.85: the sector book's best trade is the trade we already own we searched a pure us sector etf cross-section for the first time - 21 pre-registered constructions, five passed every performance metric, and every one of them correlated 0.77-0.85 with the defensive rotation our 16-etf library already holds. sector-rotation diversification strategy-library etf defensive correlation fig_sharpe_mdd.svg fig_maxcorr.svg fig_pair.svg quantlab-loop-engine battery-metrics yfinance matplotlib the one-paragraph version. the industry sells sector rotation as a\ndiversifying sleeve; we finally tested the pure us sector cross-section with\nour own engine and the honest answer is: there is no second trade there. we\nbuilt a 12-ticker sector book (the nine classic select secto",
     "url": "articles/nine-sectors-one-trade/"
+  },
+  {
+    "slug": "crypto-weekends-58-pairs",
+    "title": "55% of weekday vol: the quiet weekend regime on the 58-pair crypto book",
+    "date": "2026-08-23",
+    "series": "Crypto Microscope",
+    "issue": "3",
+    "deck": "Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC's weekend volatility has run at roughly half its weekday level over the last 90 days.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "crypto",
+      "weekend-effect",
+      "volatility",
+      "liquidity",
+      "okx",
+      "market-structure"
+    ],
+    "assets": [
+      "fig_vol_ratio.svg",
+      "fig_volume_profile.svg",
+      "fig_this_weekend.svg"
+    ],
+    "tools": [
+      "okx-ccxt-fetch",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 8,
+    "words": 1518,
+    "sources_internal": 2,
+    "sources_external": 4,
+    "status": "published",
+    "teaser": "The one-paragraph version. While the equity book waits for Monday, the\ncrypto book has already printed 36 straight hourly bars this weekend (35\nreturn bars) - and what it prints is quiet. On our 58-pair OKX universe,\nweekends are a measurably calmer regime, not a wilder one: BTC'",
+    "search": "55% of weekday vol: the quiet weekend regime on the 58-pair crypto book crypto never closes, but it does doze: on our 58-pair okx book every pair with a year of history runs quieter on weekends, and btc's weekend volatility has run at roughly half its weekday level over the last 90 days. crypto weekend-effect volatility liquidity okx market-structure fig_vol_ratio.svg fig_volume_profile.svg fig_this_weekend.svg okx-ccxt-fetch pandas matplotlib the one-paragraph version. while the equity book waits for monday, the\ncrypto book has already printed 36 straight hourly bars this weekend (35\nreturn bars) - and what it prints is quiet. on our 58-pair okx universe,\nweekends are a measurably calmer regime, not a wilder one: btc'",
+    "url": "articles/crypto-weekends-58-pairs/"
   }
 ]

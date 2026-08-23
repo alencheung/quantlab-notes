@@ -1,0 +1,60 @@
+{
+  "numbers": {
+    "pairs_total": 58,
+    "book_last": "2026-08-23 11:00:00",
+    "window_days": 90,
+    "ann_hours": 8760,
+    "btc_first": "2019-01-01",
+    "btc_full_wknd_vol": 0.5040865528929163,
+    "btc_full_wkday_vol": 0.6616348408572482,
+    "btc_full_vol_ratio": 0.7618803027963215,
+    "btc_wknd_volume_share": 0.22687244642490795,
+    "btc_wknd_hour_share": 0.28568869783270645,
+    "btc_90d_wknd_vol": 0.25593578560364555,
+    "btc_90d_wkday_vol": 0.46608027159082677,
+    "btc_90d_vol_ratio": 0.5491238338196223,
+    "btc_90d_wknd_volume_share": 0.1564912216123106,
+    "btc_full_wknd_mean_hr": 2.1740715773611496e-05,
+    "btc_full_wkday_mean_hr": 5.4678626306209315e-05,
+    "btc_90d_wknd_mean_hr": 0.00014883014968337203,
+    "btc_90d_wkday_mean_hr": -6.47289612255848e-05,
+    "pairs_used": 53,
+    "ratio_median": 0.8255085454834145,
+    "ratio_below1_share": 1.0,
+    "ratio_min": 0.6899582333411475,
+    "ratio_max": 0.9881986449787518,
+    "corr_wknd_avg": 0.5799970095856178,
+    "corr_wkday_avg": 0.6516394149863992,
+    "pairs_corr_used": 53,
+    "weekend_bars_so_far": 35,
+    "weekend_ret_so_far": -0.014210038116669432,
+    "weekend_vol_so_far": 0.3521170953283383,
+    "weekend_hours_since_equity": 36,
+    "xchk_weekends_total": 398,
+    "xchk_neg_weekends": 187,
+    "xchk_neg_then_monday_mean": -0.0004369266594926429,
+    "xchk_pos_then_monday_mean": 0.0017939172480676635,
+    "xchk_neg_then_neg_monday_share": 0.42780748663101603,
+    "xchk_pos_then_neg_monday_share": 0.4028436018957346,
+    "us_session_utc": [
+      13,
+      21
+    ]
+  },
+  "lineage": [
+    {
+      "source": "OKX 1h book, 58 USDT pairs (close/volume, ragged listings)",
+      "path": "data/ccxt_1h/*_okx1h.parquet",
+      "rows": 66996,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-23 11:00:00"
+    },
+    {
+      "source": "16-ETF daily panel (SPY Mondays)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4940,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-21 00:00:00"
+    }
+  ]
+}

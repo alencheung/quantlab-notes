@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>55% of weekday vol: the quiet weekend regime on the 58-pair crypto book | QuantLab Research Notes</title>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC&#x27;s weekend volatility has run at roughly half its weekday level over the last 90 days.">
+<meta name="keywords" content="crypto, weekend-effect, volatility, liquidity, okx, market-structure">
+<link rel="canonical" href="https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/">
+<meta property="og:site_name" content="QuantLab Research Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/">
+<meta property="og:title" content="55% of weekday vol: the quiet weekend regime on the 58-pair crypto book | QuantLab Research Notes">
+<meta property="og:description" content="Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC&#x27;s weekend volatility has run at roughly half its weekday level over the last 90 days.">
+<meta property="og:image" content="https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/assets/fig_this_weekend.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="55% of weekday vol: the quiet weekend regime on the 58-pair crypto book | QuantLab Research Notes">
+<meta name="twitter:description" content="Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC&#x27;s weekend volatility has run at roughly half its weekday level over the last 90 days.">
+<meta name="twitter:image" content="https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/assets/fig_this_weekend.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "55% of weekday vol: the quiet weekend regime on the 58-pair crypto book", "alternativeHeadline": "Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC's weekend volatility has run at roughly half its weekday level over the last 90 days.", "description": "Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC's weekend volatility has run at roughly half its weekday level over the last 90 days.", "datePublished": "2026-08-23", "dateModified": "2026-08-23", "inLanguage": "en", "author": [{"@type": "Organization", "name": "QuantLab Research Desk"}], "publisher": {"@type": "Organization", "name": "QuantLab"}, "keywords": "crypto,weekend-effect,volatility,liquidity,okx,market-structure", "about": [{"@type": "Thing", "name": "fig_vol_ratio.svg"}, {"@type": "Thing", "name": "fig_volume_profile.svg"}, {"@type": "Thing", "name": "fig_this_weekend.svg"}], "isAccessibleForFree": true, "isPartOf": {"@type": "BookSeries", "name": "Crypto Microscope"}, "mainEntityOfPage": "https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/", "image": "https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/assets/fig_this_weekend.png"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f4ec;--paper2:#efe9d9;--ink:#1c1917;--ink2:#5c5648;
+--hair:#d8d1bd;--hair2:#c4bca3;--ox:#8c2f39;--moss:#3f6b52;--code:#ece6d4;
+--serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+--disp:'Fraunces',Georgia,serif;
+--mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:var(--serif);font-size:17px;line-height:1.7;
+-webkit-font-smoothing:antialiased}
+a{color:var(--ox);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ox) 35%,transparent)}
+a:hover{border-bottom-color:var(--ox)}
+code{font-family:var(--mono);font-size:.85em;background:var(--code);
+padding:.1em .35em;border-radius:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2)}
+.masthead{border-bottom:1px solid var(--ink);padding:18px 0 14px}
+.masthead .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.masthead .brand{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.01em}
+.masthead .brand em{font-style:normal;color:var(--ox)}
+.masthead .cadence{font-family:var(--mono);font-size:11.5px;color:var(--ink2);letter-spacing:.06em}
+.rule-double{border-top:3px double var(--ink);margin:0}
+footer{border-top:1px solid var(--hair2);margin-top:64px;padding:20px 0 40px;
+font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+
+.head{padding:44px 0 6px;max-width:860px}
+.head h1{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.4vw,44px);
+line-height:1.12;margin:12px 0 16px;letter-spacing:-.01em}
+.head .deck{font-size:19.5px;line-height:1.55;color:var(--ink2);margin:0 0 18px;font-style:italic}
+.byline{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;
+color:var(--ink2);letter-spacing:.04em;padding-bottom:14px}
+.byline b{color:var(--ink);font-weight:500}
+.share{display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+padding-bottom:24px;font-family:var(--mono)}
+.share .lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.share a,.share button{display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--ink2);
+border:1px solid var(--hair2);background:#fff;border-radius:999px;padding:4px 12px;
+transition:all .12s}
+.share a:hover,.share button:hover{border-color:var(--ox);color:var(--ox)}
+.share svg{width:13px;height:13px;stroke:currentColor;fill:none;
+stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.share a[data-ok="copied"]{border-color:var(--moss);color:var(--moss)}
+.cols{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;padding-bottom:20px}
+.toc{position:sticky;top:24px;align-self:start;font-family:var(--mono);font-size:11.5px;
+line-height:2.1;padding-top:8px;max-height:calc(100vh - 48px);overflow-y:auto;
+overscroll-behavior:contain;scrollbar-width:thin}
+.toc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;
+align-items:center;gap:8px;letter-spacing:.16em;text-transform:uppercase;
+color:var(--ink2);font-size:10px;margin-bottom:4px}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"▾";font-size:9px;letter-spacing:0;color:var(--hair2)}
+.toc details[open] summary::after{content:"▴"}
+.toc a{color:var(--ink2);border-bottom:0;display:block;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc a:hover{color:var(--ox)}
+.toc a.cur{color:var(--ox);font-weight:500}
+.toc .n{color:var(--hair2);margin-right:8px}
+.toc .n b{color:var(--ox);font-weight:500}
+.body{max-width:70ch}
+.body h2{font-family:var(--disp);font-weight:600;font-size:26px;line-height:1.25;
+margin:52px 0 14px;padding-top:18px;border-top:1px solid var(--hair)}
+.body h3{font-family:var(--disp);font-weight:600;font-size:19px;margin:32px 0 10px}
+.body p{margin:0 0 18px}
+.body blockquote{margin:22px 0;padding:10px 22px;border-left:3px solid var(--ox);
+background:var(--paper2);font-style:italic}
+.body blockquote p{margin:6px 0}
+.body ul,.body ol{padding-left:26px;margin:0 0 18px}
+.body li{margin-bottom:8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;
+font-variant-numeric:tabular-nums}
+.body thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+text-transform:uppercase;text-align:left;color:var(--ink2);
+border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);padding:8px 10px}
+.body tbody td{border-bottom:1px solid var(--hair);padding:8px 10px;vertical-align:top}
+.body tbody tr:nth-child(even){background:color-mix(in srgb,var(--paper2) 45%,transparent)}
+.body figure{margin:30px 0;background:#fff;border:1px solid var(--hair);
+border-radius:6px;padding:14px 14px 10px}
+.body figure img{width:100%;height:auto;display:block}
+.body figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+color:var(--ink2);padding:10px 2px 2px;border-top:1px dotted var(--hair2);margin-top:8px}
+.body hr{border:0;border-top:1px solid var(--hair);margin:36px 0}
+.nav{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:56px}
+.nav a{border:1px solid var(--hair);border-radius:6px;background:#fff;padding:16px 18px;
+display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--hair)}
+.nav a:hover{border-color:var(--ink2)}
+.nav a.next{text-align:right;align-items:flex-end}
+.nav .dir{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+text-transform:uppercase;color:var(--ink2)}
+.nav .t{font-family:var(--disp);font-size:16.5px;font-weight:600;color:var(--ink)}
+.nav .ghost{border:1px dashed var(--hair2);border-radius:6px;padding:16px 18px;
+font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.backline{padding:18px 0 0;font-family:var(--mono);font-size:11.5px}
+@media(max-width:900px){
+.cols{grid-template-columns:1fr;gap:0}
+.toc{top:0;z-index:20;padding:0 0 4px;max-height:none;overflow:visible;
+background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);
+border-bottom:1px solid var(--hair)}
+.toc summary{padding:12px 0 10px;margin:0}
+.toc .l{max-height:calc(100vh - 140px);overflow-y:auto;overscroll-behavior:contain;
+padding-bottom:8px}
+.body{max-width:none}
+.body h2,.body h3{scroll-margin-top:64px}
+.nav{grid-template-columns:1fr}}
+@media print{.toc,.nav,footer,.backline,.share{display:none}.cols{grid-template-columns:1fr}
+.body{max-width:none}.head{padding-top:8px}}
+</style>
+</head>
+<body>
+
+<div class="masthead"><div class="wrap">
+<div class="brand"><a href="../../index.html" style="border-bottom:0;color:inherit">
+QuantLab <em>·</em> Research Notes</a></div>
+<div class="cadence">every 12 hours · editor-reviewed</div>
+</div></div>
+<div class="rule-double"></div>
+<div class="wrap">
+<div class="backline"><a href="../../index.html">← all notes</a></div>
+<header class="head">
+<span class="kicker">2026-08-23 · Crypto Microscope #3</span>
+<h1>55% of weekday vol: the quiet weekend regime on the 58-pair crypto book</h1>
+<p class="deck">Crypto never closes, but it does doze: on our 58-pair OKX book every pair with a year of history runs quieter on weekends, and BTC&#x27;s weekend volatility has run at roughly half its weekday level over the last 90 days.</p>
+<div class="byline">
+<span>by <b>QuantLab Research Desk</b></span>
+<span>8 min read · 1,518 words</span>
+<span>2 internal / 4 external sources</span>
+</div>
+
+<div class="share" aria-label="Share this note">
+<span class="lbl">share</span>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fcrypto-weekends-58-pairs%2F&text=55%25%20of%20weekday%20vol%3A%20the%20quiet%20weekend%20regime%20on%20the%2058-pair%20crypto%20book" target="_blank"
+rel="noopener" aria-label="Share on X"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>X</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fcrypto-weekends-58-pairs%2F" target="_blank"
+rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M5.5 7v4M5.5 5.2v.1M8.5 11V8.6a1.6 1.6 0 0 1 3.2 0V11"/></svg>LinkedIn</a>
+<a href="https://reddit.com/submit?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fcrypto-weekends-58-pairs%2F&title=55%25%20of%20weekday%20vol%3A%20the%20quiet%20weekend%20regime%20on%20the%2058-pair%20crypto%20book" target="_blank"
+rel="noopener" aria-label="Share on Reddit"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="9" r="5.5"/><circle cx="5.8" cy="9" r=".4" fill="currentColor"/><circle cx="10.2" cy="9" r=".4" fill="currentColor"/><path d="M6.2 11.2c1.1.7 2.5.7 3.6 0M8 3.5l3-1"/></svg>Reddit</a>
+<a href="mailto:?subject=55%25%20of%20weekday%20vol%3A%20the%20quiet%20weekend%20regime%20on%20the%2058-pair%20crypto%20book&body=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fcrypto-weekends-58-pairs%2F" aria-label="Share by email"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="M2.5 4.5L8 8.8l5.5-4.3"/></svg>Email</a>
+<button type="button" id="copy-link" data-url="https://alencheung.github.io/quantlab-notes/articles/crypto-weekends-58-pairs/"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3"/><path d="M7.5 5l1.2-1.2a2.4 2.4 0 0 1 3.4 3.4L11 8.4"/><path d="M8.5 11l-1.2 1.2a2.4 2.4 0 0 1-3.4-3.4L5 7.6"/></svg>Copy link</button>
+</div>
+</header>
+<div class="cols">
+<nav class="toc" aria-label="Contents"><details open><summary class="t">Contents</summary><div class="l"><a href="#how-we-worked-this-problem"><span class="n"><b>01</b></span>How we worked this problem</a><a href="#the-data-audit"><span class="n"><b>02</b></span>The data audit</a><a href="#the-external-read"><span class="n"><b>03</b></span>The external read</a><a href="#exhibits"><span class="n"><b>04</b></span>Exhibits</a><a href="#so-what-opportunities"><span class="n"><b>05</b></span>So what - opportunities</a><a href="#so-what-risks"><span class="n"><b>06</b></span>So what - risks</a><a href="#machinery-how-this-piece-was-produced"><span class="n"><b>07</b></span>Machinery: how this piece was produced</a><a href="#sources-external-reading-list"><span class="n"><b>08</b></span>Sources - external reading list</a></div></details></nav>
+<main class="body">
+<p><strong>The one-paragraph version.</strong> While the equity book waits for Monday, the crypto book has already printed 36 straight hourly bars this weekend (35 return bars) - and what it prints is quiet. On our 58-pair OKX universe, weekends are a measurably calmer regime, not a wilder one: BTC&#x27;s last-90-day weekend realized volatility runs at 0.55x its weekday level, weekend hours carry just 15.6% of recent volume despite being 28.6% of the week, and every one of the 53 pairs with at least a year of history - majors and longtails alike - shows lower full-sample weekend volatility than weekday, median ratio 0.83. The folklore of thin, violent crypto weekends gets the thin part right and the violent part wrong.</p>
+<h2 id="how-we-worked-this-problem">How we worked this problem</h2>
+<p>The 12-hour data cycle refreshed the OKX book to 2026-08-23 11:00 UTC (58 USDT pairs, hourly), while the equity panel&#x27;s last session is 2026-08-21 - it is Sunday, and this is the one window where the house&#x27;s crypto data is strictly fresher than everything else. We split every hourly return and volume bar since 2019 into weekend (Saturday-Sunday UTC) and weekday buckets, computed annualized realized volatility and volume shares for BTC over the full sample and the last 90 days, then repeated the weekend/weekday volatility ratio for every pair with at least one 24/7 year of bars (53 of 58; the rest are recent listings) over each pair&#x27;s full history since listing. We also measured whether the book tightens or loosens against BTC on weekends (average hourly correlation), and ran one external claim through our own data: that negative crypto weekends predict negative equity Mondays.</p>
+<h2 id="the-data-audit">The data audit</h2>
+<table><thead><tr><th>Source</th><th>Coverage</th><th>As-of</th><th>Role</th></tr></thead><tbody><tr><td><code>data/ccxt_1h/*_okx1h.parquet</code></td><td>58 USDT pairs, hourly close/volume, ragged listings (BTC since 2019-01)</td><td>2026-08-23 11:00 UTC</td><td>all weekend/weekday statistics</td></tr><tr><td><code>data/cache_panel_2007_2026.parquet</code></td><td>SPY daily close</td><td>2026-08-21</td><td>the Monday-after-weekend cross-check</td></tr></tbody></table>
+<p>Weekend = Saturday-Sunday UTC bars; volatilities annualize with the 24/7 hourly convention (sqrt of 8,760). The funding cache is not used in this note (its 2026-07-31 as-of would add nothing to a calendar-structure question).</p>
+<h2 id="the-external-read">The external read</h2>
+<p>The weekend effect has a real literature. The claim we chose to test - &quot;negative weekend crypto returns significantly predict Monday equity declines, while positive weekend returns have no effect&quot; - comes from <a href="https://ideas.repec.org/a/eee/finlet/v86y2025ipes1544612325019154.html">Mourey (2025), Finance Research Letters</a> (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5382090">SSRN version</a>). Practitioner writing adds the mechanism story: lower weekend volume means fewer institutional participants and - in the folklore - &quot;increased price sensitivity&quot; (<a href="https://www.quantifiedstrategies.com/weekend-effect-in-bitcoin/">Quantified Strategies</a>); academic work also links liquidity volatility to expected crypto returns (<a href="https://www.sciencedirect.com/science/article/pii/S1544612321001124">Leirvik 2022</a>) and asks whether momentum itself behaves differently on weekends (<a href="https://acr-journal.com/article/the-weekend-effect-in-crypto-momentum-does-momentum-change-when-markets-never-sleep--1514/">ACR Journal</a>).</p>
+<h2 id="exhibits">Exhibits</h2>
+<p><strong>Exhibit 1 - quieter, not wilder: 53 for 53.</strong> The full-sample (since-listing) weekend/weekday volatility ratio is below one for every pair with a year of history - median 0.83, full range 0.69 to 0.99. BTC itself has gone further recently: 25.6% annualized on weekends versus 46.6% on weekdays over the last 90 days (ratio 0.55), compared with 50.4% versus 66.2% full-sample (ratio 0.76). Whatever thinness weekends bring, it does not translate into larger price moves.</p>
+<figure><img src="assets/fig_vol_ratio.svg" alt="Distribution of weekend/weekday volatility ratios across the book" loading="lazy"><figcaption>Distribution of weekend/weekday volatility ratios across the book</figcaption></figure>
+<p><strong>Exhibit 2 - the volume pulse follows the US session.</strong> Mean BTC volume per hour over the last 90 days, weekday versus weekend: weekday volume breathes with the US equity session (13:00-21:00 UTC shaded) and weekends run flat and low. Weekend hours are 28.6% of the week but carried only 22.7% of all BTC volume since 2019 - and just 15.6% in the last 90 days. The institutions, as the practitioner story goes, really do step away; the market simply does less. Against BTC, the book also loosens slightly on weekends: average hourly correlation 0.58 weekend versus 0.65 weekday (last 90 days).</p>
+<figure><img src="assets/fig_volume_profile.svg" alt="BTC hourly volume profile, weekend vs weekday" loading="lazy"><figcaption>BTC hourly volume profile, weekend vs weekday</figcaption></figure>
+<p><strong>Exhibit 3 - the weekend in progress.</strong> As of the 11:00 UTC bar, this weekend has printed 35 hourly return bars with BTC down 1.42%, running at 35.2% annualized volatility - right in line with the quiet-weekend regime, and no US equity print until Monday.</p>
+<figure><img src="assets/fig_this_weekend.svg" alt="BTC cumulative return this weekend" loading="lazy"><figcaption>BTC cumulative return this weekend</figcaption></figure>
+<p><strong>The cross-check - directionally confirmed, not significance-tested.</strong> Mourey&#x27;s asymmetry shows up in our sample once weekends are measured as weekends: across 398 complete weekends since 2019 (187 with negative BTC weekend returns), the Monday after a negative weekend averaged -0.044% for SPY versus +0.179% after positive weekends, and Mondays were down 42.8% of the time after negative weekends versus 40.3% after positive ones. The direction matches the published claim; our sample carries no formal significance test, so we report it as consistency, not confirmation. (The first draft of this note computed the cross-check on weekly rather than weekend returns and concluded the opposite; the editor caught the mismatch and the corrected computation is what you read here.)</p>
+<h2 id="so-what-opportunities">So what - opportunities</h2>
+<ul>
+<li><strong>Execution scheduling is a free lunch in sample:</strong> if weekends run at</li>
+<p>0.55x BTC weekday volatility (last 90 days) with a 0.83 full-sample median across the book and roughly a fifth of the volume (22.7% since 2019; 15.6% last 90 days), rebalances and roll activity that must happen anyway have a calmer window - though the same thin volume caps the size that can be moved at that calm.</p>
+<li><strong>The quiet-weekend regime is a monitoring diagnostic.</strong> A future weekend</li>
+<p>that breaks the pattern - ratio rising through 1.0 with volume share jumping - would be a clean, pre-registerable stress signal for the crypto book, and it is the kind of call our Track Record can grade.</p>
+<li><strong>For risk models:</strong> weekend risk on a 24/7 book should not be</li>
+<p>extrapolated from weekday vol; a flat 24/7 scaler misstates weekend risk by roughly the inverse of these ratios.</p>
+</ul>
+<h2 id="so-what-risks">So what - risks</h2>
+<ul>
+<li><strong>Thin bookends:</strong> these are unconditional full-sample and 90-day</li>
+<p>statistics. A quiet regime is not a guarantee - single weekend dislocations (exchange outages, macro shocks landing on a Sunday) are exactly when the thin-volume folklore does come true; the ratio&#x27;s range floor of 0.69 says nothing about the tail of any one weekend.</p>
+<li><strong>UTC weekend definition:</strong> Saturday-Sunday UTC is not everyone&#x27;s</li>
+<p>weekend; Asia&#x27;s Sunday evening session lands inside our weekend bucket. The convention is disclosed and consistent across exhibits.</p>
+<li><strong>Listing raggedness:</strong> 5 of 58 pairs lack a full year of bars and are</li>
+<p>excluded from the cross-section; the 53-pair result is not the full book.</p>
+</ul>
+<h2 id="machinery-how-this-piece-was-produced">Machinery: how this piece was produced</h2>
+<p><code>articles/2026-08-23-crypto-weekends-58-pairs/analysis.py</code> reads the 58 pair files plus the daily panel, computes every number above into <code>assets/numbers.json</code>, and renders the three figures (SVG + PNG twins). Weekend BTC returns for the Monday cross-check are weekend-only hourly log-returns (Saturday-Sunday UTC) grouped per weekend (week-ending-Friday buckets, each holding exactly one Saturday-Sunday pair; in-progress weekends dropped); the &quot;Monday&quot; is the first SPY session in the four days after each weekend&#x27;s Sunday.</p>
+<p>Reproduce with: ``<code>bash .venv/Scripts/python articles/2026-08-23-crypto-weekends-58-pairs/analysis.py </code>``</p>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>OKX USDT pairs only - one venue, one quote currency; weekend structure on</li>
+<p>other venues or coin-margined books may differ.</p>
+<li>Volume is venue-reported units, not dollar volume (pairs quote in the</li>
+<p>base asset); shares and profiles are internally consistent but not dollar-weighted.</p>
+<li>The 90-day window overlaps the low-volatility regime of a record-high</li>
+<p>market; the full-sample ratio (0.76) is the more conservative read.</p>
+<li>398 weekends is a modest sample for a Monday-prediction test and carries</li>
+<p>no formal significance statistic; our direction-consistent result is weaker evidence than the published claim, not equivalent evidence.</p>
+</ul>
+<h2 id="sources-external-reading-list">Sources - external reading list</h2>
+<table><thead><tr><th>Claim</th><th>Source</th></tr></thead><tbody><tr><td>Negative weekend crypto returns predict Monday equity declines (asymmetric) - tested here, direction consistent (no significance test)</td><td><a href="https://ideas.repec.org/a/eee/finlet/v86y2025ipes1544612325019154.html">Mourey 2025, Finance Research Letters</a> / <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5382090">SSRN</a></td></tr><tr><td>Lower weekend volume, fewer institutional participants (folklore: &quot;increased price sensitivity&quot; - the sensitivity half is contradicted by our Exhibit 1)</td><td><a href="https://www.quantifiedstrategies.com/weekend-effect-in-bitcoin/">Quantified Strategies - Weekend Effect in Bitcoin</a></td></tr><tr><td>Liquidity volatility and expected crypto returns</td><td><a href="https://www.sciencedirect.com/science/article/pii/S1544612321001124">Leirvik 2022, Finance Letters</a></td></tr><tr><td>Weekend-dependent momentum</td><td><a href="https://acr-journal.com/article/the-weekend-effect-in-crypto-momentum-does-momentum-change-when-markets-never-sleep--1514/">ACR Journal - Weekend Effect in Crypto Momentum</a></td></tr></tbody></table>
+<div class="kicker" style="margin-top:44px">toolchain</div>
+<p style="font-family:var(--mono);font-size:12px;color:var(--ink2)">okx-ccxt-fetch; pandas; matplotlib</p>
+<div class="nav"><a class="prev" href="../nine-sectors-one-trade/"><span class="dir">← earlier</span><span class="t">Nine sectors, 0.85: the sector book&#x27;s best trade is the trade we already own</span></a><div class="ghost">latest note</div></div>
+</main>
+</div>
+</div>
+<footer><div class="wrap">
+<span>crypto · weekend-effect · volatility · liquidity · okx · market-structure</span>
+<span>numbers from code · prose by the desk · not investment advice</span>
+</div></footer>
+
+<script>
+(function(){
+"use strict";
+var b=document.getElementById("copy-link");
+if(!b)return;
+b.addEventListener("click",function(){
+  var url=b.getAttribute("data-url");
+  function done(){var t=b.textContent;b.textContent="copied ✓";b.setAttribute("data-ok","copied");
+    setTimeout(function(){b.textContent=t;b.removeAttribute("data-ok")},1600)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(done,function(){fallback()});
+  } else fallback();
+  function fallback(){
+    var i=document.createElement("input");i.value=url;document.body.appendChild(i);
+    i.select();try{document.execCommand("copy");done()}catch(e){}
+    document.body.removeChild(i);
+  }
+});
+})();
+
+(function(){
+"use strict";
+var d=document.querySelector(".toc details");
+if(!d)return;
+var mq=window.matchMedia?window.matchMedia("(max-width:900px)"):null;
+function narrow(){return mq?mq.matches:window.innerWidth<=900}
+if(narrow())d.removeAttribute("open");
+if(mq&&mq.addEventListener)mq.addEventListener("change",function(e){
+  if(e.matches)d.removeAttribute("open")});
+d.addEventListener("click",function(e){
+  if(e.target&&e.target.closest&&e.target.closest("a")&&narrow())
+    d.removeAttribute("open")});
+var links=[].slice.call(d.querySelectorAll("a[href^='#']"));
+var heads=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1))});
+var cur=null;
+function spy(){
+  var hit=null;
+  for(var i=0;i<heads.length;i++){var h=heads[i];
+    if(h&&h.getBoundingClientRect().top<=110)hit=links[i]}
+  if(hit===cur)return;
+  cur=hit;
+  for(var i=0;i<links.length;i++)links[i].classList.toggle("cur",links[i]===hit);
+}
+var tick=false;
+window.addEventListener("scroll",function(){
+  if(tick)return;tick=true;
+  requestAnimationFrame(function(){spy();tick=false})},{passive:true});
+spy();
+})();
+</script>
+</body>
+</html>
