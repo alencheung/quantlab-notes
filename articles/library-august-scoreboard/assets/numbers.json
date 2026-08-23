@@ -1,0 +1,64 @@
+{
+  "numbers": {
+    "members_run": 20,
+    "panel_last": "2026-08-21",
+    "spy_aug_mtd": 0.02501899612233971,
+    "spy_ytd": 0.1288556088950048,
+    "spy_off_high": 0.015632275033884424,
+    "carryforward_sessions": 5,
+    "crypto_members": 3,
+    "aug_up_count": 17,
+    "aug_median": 0.016284165713987164,
+    "aug_mean": 0.018824623438659715,
+    "aug_best_name": "mom12_1_lo_zg",
+    "aug_best": 0.054500069311131494,
+    "aug_worst_name": "volprice_lo",
+    "aug_worst": -0.0047236660292848676,
+    "aug_spread": 0.05922373534041636,
+    "ytd_best_name": "rsi_delta_zg",
+    "ytd_best": 0.1588742600801345,
+    "ytd_worst_name": "parkinson_zg",
+    "ytd_worst": -0.01858476910478224,
+    "ytd_median": 0.07062251971902134,
+    "mom12_1_lo_zg_aug": 0.054500069311131494,
+    "mom12_1_lo_zg_ytd": 0.11663927016944564,
+    "lowvol_lo_aug": 0.002947447391474567,
+    "lowvol_lo_ytd": -0.007681424078134991,
+    "quiet_vol_lo_zg_aug": 0.043100791321297516,
+    "quiet_vol_lo_zg_ytd": 0.08085636122733453,
+    "er_trend126_zg_aug": 0.04906174760245041,
+    "er_trend126_zg_ytd": 0.09699458927824578,
+    "book_ytd": 0.0645457294440197,
+    "book_aug_mtd": 0.01875274519090686,
+    "book_ytd_sharpe": 1.1396797048072131,
+    "book_vs_spy_ytd": -0.05696909236597203,
+    "sector_ticker_count": 12,
+    "xlu_aug": -0.03562566112103449,
+    "xlp_aug": 0.011052260767583366,
+    "xlv_aug": 0.07425402546185422,
+    "xle_aug": 0.06868178345907472
+  },
+  "lineage": [
+    {
+      "source": "16-ETF daily panel (OHLCV, library book)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4940,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-21 00:00:00"
+    },
+    {
+      "source": "re-run member net streams (engine T1, monthly)",
+      "path": "data/loop/library/library_specs.json -> run_tier",
+      "rows": 4939,
+      "first": "2007-01-04 00:00:00",
+      "last": "2026-08-21 00:00:00"
+    },
+    {
+      "source": "US sector book (cross-check)",
+      "path": "data/cache_sector_2007_2026.parquet",
+      "rows": 4940,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-21 00:00:00"
+    }
+  ]
+}

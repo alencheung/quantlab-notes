@@ -398,5 +398,43 @@
     "teaser": "The one-paragraph version. While the equity book waits for Monday, the\ncrypto book has already printed 36 straight hourly bars this weekend (35\nreturn bars) - and what it prints is quiet. On our 58-pair OKX universe,\nweekends are a measurably calmer regime, not a wilder one: BTC'",
     "search": "55% of weekday vol: the quiet weekend regime on the 58-pair crypto book crypto never closes, but it does doze: on our 58-pair okx book every pair with a year of history runs quieter on weekends, and btc's weekend volatility has run at roughly half its weekday level over the last 90 days. crypto weekend-effect volatility liquidity okx market-structure fig_vol_ratio.svg fig_volume_profile.svg fig_this_weekend.svg okx-ccxt-fetch pandas matplotlib the one-paragraph version. while the equity book waits for monday, the\ncrypto book has already printed 36 straight hourly bars this weekend (35\nreturn bars) - and what it prints is quiet. on our 58-pair okx universe,\nweekends are a measurably calmer regime, not a wilder one: btc'",
     "url": "articles/crypto-weekends-58-pairs/"
+  },
+  {
+    "slug": "library-august-scoreboard",
+    "title": "17 of 20 up: the strategy library's August scoreboard",
+    "date": "2026-08-23",
+    "series": "Library Telemetry",
+    "issue": "2",
+    "deck": "We re-ran all 20 equity strategies through the engine on data through Friday: 17 are up in August with a +1.6% median, the momentum wing leads, and the honest headline is that the defensive book trails a tape that set records into mid-August.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "strategy-library",
+      "scoreboard",
+      "august-2026",
+      "momentum",
+      "defensive",
+      "performance"
+    ],
+    "assets": [
+      "fig_aug_bars.svg",
+      "fig_aug_vs_ytd.svg",
+      "fig_book_vs_spy.svg"
+    ],
+    "tools": [
+      "quantlab-loop-engine",
+      "battery-metrics",
+      "yfinance",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1136,
+    "sources_internal": 3,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. With the panel refreshed through Friday\n2026-08-21, we re-ran every one of the library's 20 equity members through\nthe same engine that certified them and graded the month: 17 of 20 are up\nin August with a +1.63% median net return, led by 12-1 momentum ",
+    "search": "17 of 20 up: the strategy library's august scoreboard we re-ran all 20 equity strategies through the engine on data through friday: 17 are up in august with a +1.6% median, the momentum wing leads, and the honest headline is that the defensive book trails a tape that set records into mid-august. strategy-library scoreboard august-2026 momentum defensive performance fig_aug_bars.svg fig_aug_vs_ytd.svg fig_book_vs_spy.svg quantlab-loop-engine battery-metrics yfinance matplotlib the one-paragraph version. with the panel refreshed through friday\n2026-08-21, we re-ran every one of the library's 20 equity members through\nthe same engine that certified them and graded the month: 17 of 20 are up\nin august with a +1.63% median net return, led by 12-1 momentum ",
+    "url": "articles/library-august-scoreboard/"
   }
 ]
