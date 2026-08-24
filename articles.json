@@ -436,5 +436,42 @@
     "teaser": "The one-paragraph version. With the panel refreshed through Friday\n2026-08-21, we re-ran every one of the library's 20 equity members through\nthe same engine that certified them and graded the month: 17 of 20 are up\nin August with a +1.63% median net return, led by 12-1 momentum ",
     "search": "17 of 20 up: the strategy library's august scoreboard we re-ran all 20 equity strategies through the engine on data through friday: 17 are up in august with a +1.6% median, the momentum wing leads, and the honest headline is that the defensive book trails a tape that set records into mid-august. strategy-library scoreboard august-2026 momentum defensive performance fig_aug_bars.svg fig_aug_vs_ytd.svg fig_book_vs_spy.svg quantlab-loop-engine battery-metrics yfinance matplotlib the one-paragraph version. with the panel refreshed through friday\n2026-08-21, we re-ran every one of the library's 20 equity members through\nthe same engine that certified them and graded the month: 17 of 20 are up\nin august with a +1.63% median net return, led by 12-1 momentum ",
     "url": "articles/library-august-scoreboard/"
+  },
+  {
+    "slug": "stock-bond-corr-60d",
+    "title": "+0.33 and holding: the stock-bond correlation that forgot to break",
+    "date": "2026-08-24",
+    "series": "Rates & Credit Watch",
+    "issue": "2",
+    "deck": "Our standing call said the 60-day SPY-TLT correlation would break below zero within 166 sessions - through Friday it has spent 157 straight sessions above it, and at +0.33 it now exceeds even its 2022 inflation-shock peak.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "stock-bond-correlation",
+      "diversification",
+      "rates",
+      "tlt",
+      "standing-call",
+      "regime"
+    ],
+    "assets": [
+      "fig_corr60_full.svg",
+      "fig_corr60_2026.svg",
+      "fig_spy_tlt_2026.svg"
+    ],
+    "tools": [
+      "pandas",
+      "calls-grader-parity",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1292,
+    "sources_internal": 1,
+    "sources_external": 3,
+    "status": "published",
+    "teaser": "The one-paragraph version. On August 19 we stood behind a falsifiable\ncall: the 60-day SPY-TLT correlation - positive for 220 consecutive days\nthen - would print below zero before its spell ties the all-time record of\n386 (calendar) days. Through Friday the score is sobering: the",
+    "search": "+0.33 and holding: the stock-bond correlation that forgot to break our standing call said the 60-day spy-tlt correlation would break below zero within 166 sessions - through friday it has spent 157 straight sessions above it, and at +0.33 it now exceeds even its 2022 inflation-shock peak. stock-bond-correlation diversification rates tlt standing-call regime fig_corr60_full.svg fig_corr60_2026.svg fig_spy_tlt_2026.svg pandas calls-grader-parity matplotlib the one-paragraph version. on august 19 we stood behind a falsifiable\ncall: the 60-day spy-tlt correlation - positive for 220 consecutive days\nthen - would print below zero before its spell ties the all-time record of\n386 (calendar) days. through friday the score is sobering: the",
+    "url": "articles/stock-bond-corr-60d/"
   }
 ]
