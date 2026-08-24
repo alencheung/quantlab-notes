@@ -438,6 +438,43 @@
     "url": "articles/library-august-scoreboard/"
   },
   {
+    "slug": "live-desk-first-two-sessions",
+    "title": "+0.20% in two sessions: the live ledger opens, and the evidence clock starts",
+    "date": "2026-08-24",
+    "series": "Live Desk",
+    "issue": "1",
+    "deck": "Our paper-live book wrote its second hash-chained session and flipped positive (+0.20% cumulative, chain valid, kill stage GREEN) - and the platform's own tested Minimum-Track-Record-Length maths says exactly how much evidence the book still owes: 585 sessions.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "live-ledger",
+      "paper-trading",
+      "mintrl",
+      "evidence-clock",
+      "library-book",
+      "telemetry"
+    ],
+    "assets": [
+      "fig_ledger.svg",
+      "fig_clock.svg",
+      "fig_te.svg"
+    ],
+    "tools": [
+      "quantlab-live-engine",
+      "min-track-record-length",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1226,
+    "sources_internal": 2,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. The paper-live ledger wrote its second\nsession on 2026-08-24: +0.38% on the day, +0.20% cumulative, NAV $1,002,050\non the $1.0M start, hash chain valid, kill stage GREEN, sixteen orders and\nzero rejections, tracking error 0.28%. Two good days prove noth",
+    "search": "+0.20% in two sessions: the live ledger opens, and the evidence clock starts our paper-live book wrote its second hash-chained session and flipped positive (+0.20% cumulative, chain valid, kill stage green) - and the platform's own tested minimum-track-record-length maths says exactly how much evidence the book still owes: 585 sessions. live-ledger paper-trading mintrl evidence-clock library-book telemetry fig_ledger.svg fig_clock.svg fig_te.svg quantlab-live-engine min-track-record-length matplotlib the one-paragraph version. the paper-live ledger wrote its second\nsession on 2026-08-24: +0.38% on the day, +0.20% cumulative, nav $1,002,050\non the $1.0m start, hash chain valid, kill stage green, sixteen orders and\nzero rejections, tracking error 0.28%. two good days prove noth",
+    "url": "articles/live-desk-first-two-sessions/"
+  },
+  {
     "slug": "stock-bond-corr-60d",
     "title": "+0.33 and holding: the stock-bond correlation that forgot to break",
     "date": "2026-08-24",

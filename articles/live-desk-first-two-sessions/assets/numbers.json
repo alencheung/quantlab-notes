@@ -1,0 +1,53 @@
+{
+  "numbers": {
+    "ledger_rows": 2,
+    "chain_valid": true,
+    "go_live": "2026-08-20",
+    "kill_stage": "GREEN",
+    "halted": false,
+    "cumulative_net_return": 0.002049501680188248,
+    "tracking_error_last": 0.002812489287353403,
+    "weights_source": "member_weights_v1",
+    "orders": 16,
+    "rejected": 0,
+    "row1_net": -0.0017670132968786,
+    "row2_net": 0.0038232707473149,
+    "row2_date": "2026-08-24",
+    "nav_last": 1002049.501680188,
+    "nav_first": 998232.9867031212,
+    "te_row1": 0.0021584161178421,
+    "te_row2": 0.0028124892873534,
+    "book_sharpe_full": 1.090617118770297,
+    "book_skew": -0.18122928103938407,
+    "book_kurt": 6.188806512374432,
+    "book_ann_vol": 0.06931754278782186,
+    "mintrl_years": 2.3208419353896947,
+    "mintrl_months": 27.85010322467634,
+    "mintrl_sessions": 585,
+    "mintrl_normal_years": 2.283961840731542,
+    "mintrl_normal_sessions": 576,
+    "alpha": 0.05,
+    "confidence_pct": 95,
+    "kill_dd_latch": 1.5,
+    "mintrl_sr1_ruleofthumb_years": 2.714879849837667,
+    "clock_share_elapsed": 0.003418803418803419,
+    "nav_initial": 999999.9999999998,
+    "row1_date": "2026-08-21"
+  },
+  "lineage": [
+    {
+      "source": "live ledger (hash-chained net returns)",
+      "path": "data/loop/live/live_returns.csv",
+      "rows": 2,
+      "first": "0",
+      "last": "1"
+    },
+    {
+      "source": "equal-weight 20-member library book (net T1)",
+      "path": "data/loop/library/*_T1.csv",
+      "rows": 4934,
+      "first": "2007-01-04 00:00:00",
+      "last": "2026-08-14 00:00:00"
+    }
+  ]
+}
