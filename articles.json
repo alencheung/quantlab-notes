@@ -547,5 +547,43 @@
     "teaser": "The one-paragraph version. The standing call rotation-breadth-70\n(issued 2026-08-19) says the share of our 16-ETF panel above its 200-day\nmean closes above 70% within 20 sessions. Through Monday the score: three\nsessions elapsed, all three printed exactly 68.75% - 11 of 16, one t",
     "search": "11 of 16 for three straight sessions: breadth knocks on the 70% door our standing call says panel breadth closes above 70% within 20 sessions - it has now printed exactly 11 of 16 etfs above their 200-day mean for three straight sessions, one tick short, with the entire below-line complex being bonds and utilities. market-breadth rotation standing-call etf-panel 200-day bonds fig_breadth_2026.svg fig_dist.svg fig_breadth_full.svg calls-grader-parity pandas matplotlib the one-paragraph version. the standing call rotation-breadth-70\n(issued 2026-08-19) says the share of our 16-etf panel above its 200-day\nmean closes above 70% within 20 sessions. through monday the score: three\nsessions elapsed, all three printed exactly 68.75% - 11 of 16, one t",
     "url": "articles/rotation-breadth-one-tick/"
+  },
+  {
+    "slug": "wing-rotation-six-cells",
+    "title": "5 of 6 pass, 0 admitted: wing rotation survives costs but not the diversity rule",
+    "date": "2026-08-25",
+    "series": "Library Telemetry",
+    "issue": "3",
+    "deck": "We pre-registered six strategies that rotate between the library's momentum and defensive wings; our first run mis-charged their trading costs 10x, and at the correct 3.5 bps five of six pass the battery - but all five are refused by the corr-below-0.75 diversity rule at 0.77-0.94.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "strategy-library",
+      "wing-rotation",
+      "market-timing",
+      "diversification",
+      "pre-registered",
+      "cost-error-disclosure"
+    ],
+    "assets": [
+      "fig_cells.svg",
+      "fig_blend.svg",
+      "fig_stability.svg"
+    ],
+    "tools": [
+      "quantlab-battery",
+      "pre-registered-wave",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 7,
+    "words": 1463,
+    "sources_internal": 3,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. The operator asked this cycle to run\nresearch until something was worth publishing; the something has two\nparts. First, the process catch: our first execution of the\npre-registered wing-rotation family charged switching costs at 35 bps -\n10 times the pr",
+    "search": "5 of 6 pass, 0 admitted: wing rotation survives costs but not the diversity rule we pre-registered six strategies that rotate between the library's momentum and defensive wings; our first run mis-charged their trading costs 10x, and at the correct 3.5 bps five of six pass the battery - but all five are refused by the corr-below-0.75 diversity rule at 0.77-0.94. strategy-library wing-rotation market-timing diversification pre-registered cost-error-disclosure fig_cells.svg fig_blend.svg fig_stability.svg quantlab-battery pre-registered-wave pandas matplotlib the one-paragraph version. the operator asked this cycle to run\nresearch until something was worth publishing; the something has two\nparts. first, the process catch: our first execution of the\npre-registered wing-rotation family charged switching costs at 35 bps -\n10 times the pr",
+    "url": "articles/wing-rotation-six-cells/"
   }
 ]
