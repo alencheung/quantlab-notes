@@ -510,5 +510,42 @@
     "teaser": "The one-paragraph version. On August 19 we stood behind a falsifiable\ncall: the 60-day SPY-TLT correlation - positive for 220 consecutive days\nthen - would print below zero before its spell ties the all-time record of\n386 (calendar) days. Through Friday the score is sobering: the",
     "search": "+0.33 and holding: the stock-bond correlation that forgot to break our standing call said the 60-day spy-tlt correlation would break below zero within 166 sessions - through friday it has spent 157 straight sessions above it, and at +0.33 it now exceeds even its 2022 inflation-shock peak. stock-bond-correlation diversification rates tlt standing-call regime fig_corr60_full.svg fig_corr60_2026.svg fig_spy_tlt_2026.svg pandas calls-grader-parity matplotlib the one-paragraph version. on august 19 we stood behind a falsifiable\ncall: the 60-day spy-tlt correlation - positive for 220 consecutive days\nthen - would print below zero before its spell ties the all-time record of\n386 (calendar) days. through friday the score is sobering: the",
     "url": "articles/stock-bond-corr-60d/"
+  },
+  {
+    "slug": "rotation-breadth-one-tick",
+    "title": "11 of 16 for three straight sessions: breadth knocks on the 70% door",
+    "date": "2026-08-25",
+    "series": "Rotation Monitor",
+    "issue": "2",
+    "deck": "Our standing call says panel breadth closes above 70% within 20 sessions - it has now printed exactly 11 of 16 ETFs above their 200-day mean for three straight sessions, one tick short, with the entire below-line complex being bonds and utilities.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "market-breadth",
+      "rotation",
+      "standing-call",
+      "etf-panel",
+      "200-day",
+      "bonds"
+    ],
+    "assets": [
+      "fig_breadth_2026.svg",
+      "fig_dist.svg",
+      "fig_breadth_full.svg"
+    ],
+    "tools": [
+      "calls-grader-parity",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1177,
+    "sources_internal": 1,
+    "sources_external": 3,
+    "status": "published",
+    "teaser": "The one-paragraph version. The standing call rotation-breadth-70\n(issued 2026-08-19) says the share of our 16-ETF panel above its 200-day\nmean closes above 70% within 20 sessions. Through Monday the score: three\nsessions elapsed, all three printed exactly 68.75% - 11 of 16, one t",
+    "search": "11 of 16 for three straight sessions: breadth knocks on the 70% door our standing call says panel breadth closes above 70% within 20 sessions - it has now printed exactly 11 of 16 etfs above their 200-day mean for three straight sessions, one tick short, with the entire below-line complex being bonds and utilities. market-breadth rotation standing-call etf-panel 200-day bonds fig_breadth_2026.svg fig_dist.svg fig_breadth_full.svg calls-grader-parity pandas matplotlib the one-paragraph version. the standing call rotation-breadth-70\n(issued 2026-08-19) says the share of our 16-etf panel above its 200-day\nmean closes above 70% within 20 sessions. through monday the score: three\nsessions elapsed, all three printed exactly 68.75% - 11 of 16, one t",
+    "url": "articles/rotation-breadth-one-tick/"
   }
 ]

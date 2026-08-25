@@ -1,0 +1,59 @@
+{
+  "numbers": {
+    "call_issued": "2026-08-19",
+    "call_deadline_sessions": 20,
+    "call_deadline_date": "2026-09-16",
+    "call_threshold": 0.7,
+    "call_breadth_at_issue_prose": 0.625,
+    "prose_panel_cut": "2026-08-14",
+    "revision_resolved": "2026-08-23",
+    "panel_last": "2026-08-24",
+    "breadth_now": 0.6875,
+    "breadth_now_count": 11,
+    "panel_tickers": 16,
+    "seat_pct": 0.0625,
+    "anchor_date": "2026-08-19",
+    "breadth_anchor_current_panel": 0.75,
+    "sessions_elapsed": 3,
+    "sessions_remaining": 17,
+    "sessions_at_6875": 3,
+    "max_since_issue": 0.6875,
+    "below_list": [
+      "TLT",
+      "XLU",
+      "LQD",
+      "IEF",
+      "AGG"
+    ],
+    "above_count": 11,
+    "dist_tlt": -0.029648499725567046,
+    "dist_xlu": -0.02495231789632768,
+    "dist_lqd": -0.011469914112433144,
+    "dist_ief": -0.008955664425921106,
+    "dist_agg": -0.0026696637593242034,
+    "dist_hyg": 0.016317770118819075,
+    "dist_spy": 0.08224293904586344,
+    "dist_qqq": 0.08299834375989557,
+    "dist_iwm": 0.10601399226587427,
+    "dist_gld": 0.031188696660469306,
+    "days_2026": 161,
+    "days26_ge70": 116,
+    "b26_min": 0.4375,
+    "b26_max": 1.0,
+    "b26_aug_mean": 0.64453125,
+    "fullshare_ge70": 0.5679012345679012
+  },
+  "lineage": [
+    {
+      "source": "standing call terms",
+      "path": "articles/calls.json (rotation-breadth-70)"
+    },
+    {
+      "source": "16-ETF daily panel (Close) -> breadth",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4941,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-24 00:00:00"
+    }
+  ]
+}
