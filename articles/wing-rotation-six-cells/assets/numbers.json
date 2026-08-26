@@ -74,7 +74,10 @@
     "book_s3": 1.0505040081665473,
     "members_all_positive": 28,
     "members_s3_min": 0.29756640338890905,
-    "members_s3_min_name": "volprice_leadlag"
+    "members_s3_min_name": "volprice_leadlag",
+    "prereg_first_run_cost_per_day": 0.0035,
+    "prereg_corrected_cost_per_day": 0.00035,
+    "next_equity_member_ordinal": 29
   },
   "lineage": [
     {
@@ -91,5 +94,10 @@
       "first": "2007-01-04 00:00:00",
       "last": "2026-08-24 00:00:00"
     }
-  ]
+  ],
+  "supplement": {
+    "prereg_first_run_cost_per_day": "pre-registration amendment: first (erroneous) run constant",
+    "prereg_corrected_cost_per_day": "pre-registration amendment: corrected run constant",
+    "next_equity_member_ordinal": "library member count at writing plus one"
+  }
 }

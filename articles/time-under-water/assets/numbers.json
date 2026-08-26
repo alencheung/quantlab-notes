@@ -223,7 +223,9 @@
     "AGG_dd_now": -0.021492502412218895,
     "LQD_uw_years": 4.91,
     "LQD_dd_now": -0.047950349049036944,
-    "tlt_recovery_pct_needed": 0.7119617644358636
+    "tlt_recovery_pct_needed": 0.7119617644358636,
+    "top_tier_recovery_wall_years": 1.5,
+    "anchor_capital_tlt_max_interim_depth_pct": 48.0
   },
   "lineage": [
     {
@@ -232,6 +234,14 @@
       "rows": 4938,
       "first": "2007-01-03 00:00:00",
       "last": "2026-08-19 00:00:00"
+    },
+    {
+      "source": "house feasibility study (docs/TOP_TIER_FEASIBILITY.md)",
+      "path": "supplement"
+    },
+    {
+      "source": "external: Anchor Capital piece, linked in sources table",
+      "path": "supplement"
     }
   ]
 }

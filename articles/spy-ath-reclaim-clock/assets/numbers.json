@@ -1,0 +1,45 @@
+{
+  "numbers": {
+    "call_issued": "2026-08-20",
+    "call_level": 777.88,
+    "call_deadline_sessions": 20,
+    "call_gap_prose": 0.0113,
+    "panel_last": "2026-08-26",
+    "spy_last": 766.0800170898438,
+    "record": 777.8800048828125,
+    "record_date": "2026-08-13",
+    "gap_pct": 0.015169419086362046,
+    "spell_age": 9,
+    "anchor_date": "2026-08-20",
+    "sessions_observed": 4,
+    "sessions_remaining": 16,
+    "max_since_issue": 766.0800170898438,
+    "needed_gain_pct": 0.01540306840920036,
+    "spells_total": 291,
+    "spells_median_dur": 2.0,
+    "shallow_total": 236,
+    "shallow_median_dur": 2.0,
+    "shallow_share_le10": 0.961864406779661,
+    "shallow_share_le20": 1.0,
+    "aged9_total": 14,
+    "aged9_share_le25": 1.0,
+    "surv_age10": 0.038135593220338986,
+    "surv_age20": 0.0,
+    "surv_age30": 0.0,
+    "current_spell_depth": -1.9643170156015133,
+    "current_spell_start": "2026-08-14"
+  },
+  "lineage": [
+    {
+      "source": "standing call terms",
+      "path": "articles/calls.json (recovery-spy-reclaim-ath)"
+    },
+    {
+      "source": "16-ETF daily panel (SPY close)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4943,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-26 00:00:00"
+    }
+  ]
+}

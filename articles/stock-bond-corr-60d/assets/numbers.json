@@ -35,7 +35,8 @@
     "corr22_max_date": "2022-12-19",
     "spy_ytd": 0.1288556088950048,
     "tlt_ytd": -0.03340280660763417,
-    "ief_ytd": -0.012430798293498024
+    "ief_ytd": -0.012430798293498024,
+    "allianz_blended_corr": 0.037
   },
   "lineage": [
     {
@@ -48,6 +49,10 @@
     {
       "source": "standing call terms",
       "path": "articles/calls.json (rates-corr-below-zero)"
+    },
+    {
+      "source": "external: Allianz blended estimator, linked in sources table",
+      "path": "supplement"
     }
   ]
 }

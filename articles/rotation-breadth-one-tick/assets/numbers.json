@@ -41,7 +41,9 @@
     "b26_min": 0.4375,
     "b26_max": 1.0,
     "b26_aug_mean": 0.64453125,
-    "fullshare_ge70": 0.5679012345679012
+    "fullshare_ge70": 0.5679012345679012,
+    "external_breadth_pct": 72.1,
+    "sp500_seat_count": 500
   },
   "lineage": [
     {
@@ -55,5 +57,9 @@
       "first": "2007-01-03 00:00:00",
       "last": "2026-08-24 00:00:00"
     }
-  ]
+  ],
+  "supplement": {
+    "external_breadth_pct": "external: MacroMicro/Barchart single-stock breadth, linked in sources table",
+    "sp500_seat_count": "external: S&P index seat convention"
+  }
 }

@@ -100,7 +100,10 @@
     "mom126_ls_mdd": -0.3801423294190107,
     "mom126_ls_pnl": -0.20053905716292475,
     "mom126_ls_maxcorr": 0.2599080120869359,
-    "mom126_ls_argmax": "mom12_1_lo_zg"
+    "mom126_ls_argmax": "mom12_1_lo_zg",
+    "battery_mdd_ceiling": -0.35,
+    "t1_borrow_bps": 50,
+    "lifetime_searched_constructions": 179
   },
   "lineage": [
     {
@@ -124,5 +127,10 @@
       "first": "2007-01-04 00:00:00",
       "last": "2026-08-18 00:00:00"
     }
-  ]
+  ],
+  "supplement": {
+    "battery_mdd_ceiling": "pre-registered six-metric battery (frozen thresholds)",
+    "t1_borrow_bps": "Tier-one friction schedule (FrictionConfig)",
+    "lifetime_searched_constructions": "program-wide searched-construction count at publication (battery disclosure)"
+  }
 }

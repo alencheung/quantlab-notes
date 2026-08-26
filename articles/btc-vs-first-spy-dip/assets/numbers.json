@@ -43,7 +43,9 @@
     "btc_hour_ret_us_open_0820": 0.0018674089699803886,
     "btc_cum_us_session_0820": 0.009828357368268925,
     "btc_us_session_avg_vol": 0.6736473965206974,
-    "btc_vol_30d_ann": 0.34850831709873326
+    "btc_vol_30d_ann": 0.34850831709873326,
+    "btc_consolidation_range_low_usd": 62000.0,
+    "btc_consolidation_range_high_usd": 66900.0
   },
   "lineage": [
     {
@@ -59,6 +61,14 @@
       "rows": 66960,
       "first": "2019-01-01 00:00:00",
       "last": "2026-08-21 23:00:00"
+    },
+    {
+      "source": "house crypto panel, consolidation range cited in the note",
+      "path": "supplement"
+    },
+    {
+      "source": "house crypto panel, consolidation range cited in the note",
+      "path": "supplement"
     }
   ]
 }
