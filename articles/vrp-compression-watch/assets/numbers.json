@@ -1,0 +1,51 @@
+{
+  "numbers": {
+    "call_issued": "2026-08-19",
+    "call_threshold": 2.0,
+    "call_deadline_sessions": 60,
+    "call_deadline_date": "2026-11-11",
+    "call_vrp_at_issue_prose": 1.27,
+    "panel_last": "2026-08-25",
+    "vix_source_last": "2026-08-13",
+    "ffill_sessions": 5,
+    "rv20_last": 13.289788416958265,
+    "vrp_last": 1.4723532176324792,
+    "vrp_last_date": "2026-08-20",
+    "vrp_at_issue_current_panel": 1.0054186037007167,
+    "vrp_median_full": 4.173312766432488,
+    "anchor_date": "2026-08-19",
+    "sessions_observed": 1,
+    "sessions_remaining": 59,
+    "max_since_issue": 1.4723532176324792,
+    "days26": 159,
+    "days26_ge2": 118,
+    "vrp26_mean": 5.465114074655742,
+    "vrp26_min": -2.7971462773988556,
+    "vrp26_min_date": "2026-07-06",
+    "external_vix_spot": 15.45,
+    "external_vix_spot_date": "2026-08-25",
+    "vrp_external_estimate": 2.1602115830417343,
+    "funding_as_of": "2026-07-31",
+    "panel_cut_at_issue": "2026-08-14"
+  },
+  "lineage": [
+    {
+      "source": "standing call terms",
+      "path": "articles/calls.json (vol-vrp-recovers-2)"
+    },
+    {
+      "source": "16-ETF daily panel (SPY close)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4942,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-25 00:00:00"
+    },
+    {
+      "source": "FRED rates cache (VIXCLS)",
+      "path": "data/rates/rates.parquet",
+      "rows": 9251,
+      "first": "1990-01-02 00:00:00",
+      "last": "2026-08-13 00:00:00"
+    }
+  ]
+}

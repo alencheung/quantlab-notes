@@ -585,5 +585,42 @@
     "teaser": "The one-paragraph version. The operator asked this cycle to run\nresearch until something was worth publishing; the something has two\nparts. First, the process catch: our first execution of the\npre-registered wing-rotation family charged switching costs at 35 bps -\n10 times the pr",
     "search": "5 of 6 pass, 0 admitted: wing rotation survives costs but not the diversity rule we pre-registered six strategies that rotate between the library's momentum and defensive wings; our first run mis-charged their trading costs 10x, and at the correct 3.5 bps five of six pass the battery - but all five are refused by the corr-below-0.75 diversity rule at 0.77-0.94. strategy-library wing-rotation market-timing diversification pre-registered cost-error-disclosure fig_cells.svg fig_blend.svg fig_stability.svg quantlab-battery pre-registered-wave pandas matplotlib the one-paragraph version. the operator asked this cycle to run\nresearch until something was worth publishing; the something has two\nparts. first, the process catch: our first execution of the\npre-registered wing-rotation family charged switching costs at 35 bps -\n10 times the pr",
     "url": "articles/wing-rotation-six-cells/"
+  },
+  {
+    "slug": "vrp-compression-watch",
+    "title": "118 of 159 days above 2.0, then 1.47: the VRP compression the call is waiting out",
+    "date": "2026-08-26",
+    "series": "Vol Desk Notes",
+    "issue": "2",
+    "deck": "The standing call says the VRP recovers above 2.0 vol points within 60 sessions; the grader last saw 1.47 on August 20, while Cboe's fresher spot print implies an estimated 2.16 - and the call now waits on a cache that refreshes in September.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "variance-risk-premium",
+      "vix",
+      "realized-vol",
+      "standing-call",
+      "staleness",
+      "vol-regime"
+    ],
+    "assets": [
+      "fig_vrp_2026.svg",
+      "fig_vrp_hist.svg",
+      "fig_vix_rv.svg"
+    ],
+    "tools": [
+      "calls-grader-parity",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1280,
+    "sources_internal": 2,
+    "sources_external": 3,
+    "status": "published",
+    "teaser": "The one-paragraph version. The standing call vol-vrp-recovers-2\n(issued 2026-08-19) says the variance risk premium - VIX minus 20-day\nrealized SPY vol - recovers above 2.0 vol points within 60 sessions, a\nlow bar in a year that spent 118 of 159 sessions above it (mean 5.47,\nfull-",
+    "search": "118 of 159 days above 2.0, then 1.47: the vrp compression the call is waiting out the standing call says the vrp recovers above 2.0 vol points within 60 sessions; the grader last saw 1.47 on august 20, while cboe's fresher spot print implies an estimated 2.16 - and the call now waits on a cache that refreshes in september. variance-risk-premium vix realized-vol standing-call staleness vol-regime fig_vrp_2026.svg fig_vrp_hist.svg fig_vix_rv.svg calls-grader-parity pandas matplotlib the one-paragraph version. the standing call vol-vrp-recovers-2\n(issued 2026-08-19) says the variance risk premium - vix minus 20-day\nrealized spy vol - recovers above 2.0 vol points within 60 sessions, a\nlow bar in a year that spent 118 of 159 sessions above it (mean 5.47,\nfull-",
+    "url": "articles/vrp-compression-watch/"
   }
 ]
