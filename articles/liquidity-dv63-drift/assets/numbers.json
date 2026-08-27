@@ -1,0 +1,47 @@
+{
+  "numbers": {
+    "call_issued": "2026-08-19",
+    "call_multiple": 2.0,
+    "call_deadline_sessions": 60,
+    "window_sessions": 63,
+    "panel_last": "2026-08-26",
+    "ratio_now": 2.4559076269155553,
+    "dv_now_b": 96.72606766045674,
+    "dv_median_b": 39.385059356624815,
+    "ratio_at_issue": 2.482528898122257,
+    "ratio_2026_max": 3.7841074560018293,
+    "ratio_2026_max_date": "2026-04-02",
+    "days26_ge2": 163,
+    "days26": 163,
+    "anchor_date": "2026-08-19",
+    "sessions_observed": 5,
+    "sessions_remaining": 55,
+    "min_since_issue": 2.4559076269155553,
+    "px_ratio_now": 2.769237933415829,
+    "sh_ratio_now": 0.8023873532712704,
+    "sh_ratio_at_issue": 0.8126934501851881,
+    "decomp_product": 2.2220014959719294,
+    "decomp_residual": 0.2339061309436259,
+    "drift_since_issue": 0.026621271206701547,
+    "apex_fall": 1.328199829086274,
+    "remaining_ratio": 0.4559076269155553,
+    "remaining_over_apex_fall": 0.34325228548568165,
+    "linear_extrap_end": 2.1630736436418383,
+    "price_fall_for_2x": -0.1856371232855133,
+    "share_below1_post2022": 0.5344262295081967,
+    "max_monthly_close_dd_since_apex": -0.04494652583696357
+  },
+  "lineage": [
+    {
+      "source": "standing call terms",
+      "path": "articles/calls.json (liquidity-dv63-back-under-2x)"
+    },
+    {
+      "source": "16-ETF daily panel (Close, Volume)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4943,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-26 00:00:00"
+    }
+  ]
+}

@@ -659,5 +659,42 @@
     "teaser": "The one-paragraph version. The standing call vol-vrp-recovers-2\n(issued 2026-08-19) says the variance risk premium - VIX minus 20-day\nrealized SPY vol - recovers above 2.0 vol points within 60 sessions, a\nlow bar in a year that spent 118 of 159 sessions above it (mean 5.47,\nfull-",
     "search": "118 of 159 days above 2.0, then 1.47: the vrp compression the call is waiting out the standing call says the vrp recovers above 2.0 vol points within 60 sessions; the grader last saw 1.47 on august 20, while cboe's fresher spot print implies an estimated 2.16 - and the call now waits on a cache that refreshes in september. variance-risk-premium vix realized-vol standing-call staleness vol-regime fig_vrp_2026.svg fig_vrp_hist.svg fig_vix_rv.svg calls-grader-parity pandas matplotlib the one-paragraph version. the standing call vol-vrp-recovers-2\n(issued 2026-08-19) says the variance risk premium - vix minus 20-day\nrealized spy vol - recovers above 2.0 vol points within 60 sessions, a\nlow bar in a year that spent 118 of 159 sessions above it (mean 5.47,\nfull-",
     "url": "articles/vrp-compression-watch/"
+  },
+  {
+    "slug": "liquidity-dv63-drift",
+    "title": "2.46x median and drifting down: the liquidity call's long road back",
+    "date": "2026-08-27",
+    "series": "Liquidity Watch",
+    "issue": "2",
+    "deck": "Our standing call says 63-day dollar volume falls back under 2x its long-run median; it has printed 2.46x through Wednesday - and the decomposition says the call is secretly a price call, because share volume is 0.80x its own median while prices run 2.77x theirs.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "liquidity",
+      "dollar-volume",
+      "standing-call",
+      "volume-decomposition",
+      "etf-panel",
+      "participation"
+    ],
+    "assets": [
+      "fig_ratio.svg",
+      "fig_decomp.svg",
+      "fig_2026.svg"
+    ],
+    "tools": [
+      "calls-grader-parity",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1216,
+    "sources_internal": 1,
+    "sources_external": 3,
+    "status": "published",
+    "teaser": "The one-paragraph version. The standing call\nliquidity-dv63-back-under-2x (issued 2026-08-19, 60 sessions) says the\n16-ETF universe's 63-day dollar volume falls back under twice its\nfull-sample median. Through Wednesday it prints 2.46x - $96.7 billion a\nday against a $39.4 billio",
+    "search": "2.46x median and drifting down: the liquidity call's long road back our standing call says 63-day dollar volume falls back under 2x its long-run median; it has printed 2.46x through wednesday - and the decomposition says the call is secretly a price call, because share volume is 0.80x its own median while prices run 2.77x theirs. liquidity dollar-volume standing-call volume-decomposition etf-panel participation fig_ratio.svg fig_decomp.svg fig_2026.svg calls-grader-parity pandas matplotlib the one-paragraph version. the standing call\nliquidity-dv63-back-under-2x (issued 2026-08-19, 60 sessions) says the\n16-etf universe's 63-day dollar volume falls back under twice its\nfull-sample median. through wednesday it prints 2.46x - $96.7 billion a\nday against a $39.4 billio",
+    "url": "articles/liquidity-dv63-drift/"
   }
 ]
