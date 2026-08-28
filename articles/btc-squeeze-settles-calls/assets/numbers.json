@@ -1,0 +1,52 @@
+{
+  "numbers": {
+    "rec_issued": "2026-08-19",
+    "rec_deadline_sessions": 120,
+    "rec_deadline_date": "2026-12-17",
+    "rec_prose_price": 64613.0,
+    "hold_issued": "2026-08-22",
+    "hold_deadline_sessions": 10,
+    "hold_level": 75000.0,
+    "ma_window": 200,
+    "btc_last": 80263.6,
+    "btc_last_date": "2026-08-27",
+    "sma200_now": 69257.9755,
+    "ratio_now": 1.1589076842132067,
+    "dist_75k": 0.07018133333333343,
+    "low30": 62820.2,
+    "low30_date": "2026-08-01",
+    "off_low30": 0.2776718316719782,
+    "rec_anchor_date": "2026-08-19",
+    "rec_anchor_close": 69337.1,
+    "rec_anchor_ratio": 1.0043694578521087,
+    "rec_window_sessions": 8,
+    "rec_window_above": 8,
+    "rec_first_clear_date": "2026-08-20",
+    "hold_anchor_date": "2026-08-22",
+    "hold_anchor_close": 76970.7,
+    "hold_window_sessions": 5,
+    "hold_window_above": 5,
+    "ratio_max_2026": 1.1589076842132067,
+    "ratio_max_2026_date": "2026-08-27",
+    "last_80k_before_move": "2026-05-14",
+    "thresh_80k": 80000.0,
+    "first_win_close": 77525.1,
+    "first_win_date": "2026-08-23",
+    "giveback_0822": -0.018348565350582935,
+    "pre_min": 62903.9,
+    "pre_max": 64899.3
+  },
+  "lineage": [
+    {
+      "source": "standing call terms",
+      "path": "articles/calls.json (crypto-btc-*)"
+    },
+    {
+      "source": "OKX 1h BTC/USDT bars (resampled 1D, complete days)",
+      "path": "data/ccxt_1h/BTC_USDT_okx1h.parquet",
+      "rows": 2796,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-08-27 00:00:00"
+    }
+  ]
+}

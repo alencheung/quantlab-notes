@@ -661,6 +661,43 @@
     "url": "articles/vrp-compression-watch/"
   },
   {
+    "slug": "btc-squeeze-settles-calls",
+    "title": "8 for 8 and 5 for 5: the squeeze settled both BTC calls",
+    "date": "2026-08-27",
+    "series": "Crypto Microscope",
+    "issue": "4",
+    "deck": "Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call's anchor closed above the 200-day mean, all 5 since the $75,000 call's anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "bitcoin",
+      "standing-call",
+      "short-squeeze",
+      "200-day-mean",
+      "okx",
+      "track-record"
+    ],
+    "assets": [
+      "fig_2026.svg",
+      "fig_window.svg",
+      "fig_ratio.svg"
+    ],
+    "tools": [
+      "calls-grader-parity",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 7,
+    "words": 1309,
+    "sources_internal": 2,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. The two fastest-moving calls on the Track\nRecord look settled. The reclaim call (crypto-btc-reclaims-200d, issued\n2026-08-19) required BTC back above its 200-day mean within 120\nsessions: all 8 window sessions since its anchor have closed above it.\nThe ",
+    "search": "8 for 8 and 5 for 5: the squeeze settled both btc calls both standing btc calls look resolved: every one of the 8 window sessions since the reclaim call's anchor closed above the 200-day mean, all 5 since the $75,000 call's anchor closed above $75,000, and btc now prints $80,264 - 27.8% off the august 1 low. bitcoin standing-call short-squeeze 200-day-mean okx track-record fig_2026.svg fig_window.svg fig_ratio.svg calls-grader-parity pandas matplotlib the one-paragraph version. the two fastest-moving calls on the track\nrecord look settled. the reclaim call (crypto-btc-reclaims-200d, issued\n2026-08-19) required btc back above its 200-day mean within 120\nsessions: all 8 window sessions since its anchor have closed above it.\nthe ",
+    "url": "articles/btc-squeeze-settles-calls/"
+  },
+  {
     "slug": "liquidity-dv63-drift",
     "title": "2.46x median and drifting down: the liquidity call's long road back",
     "date": "2026-08-27",

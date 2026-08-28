@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>8 for 8 and 5 for 5: the squeeze settled both BTC calls | QuantLab Research Notes</title>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call&#x27;s anchor closed above the 200-day mean, all 5 since the $75,000 call&#x27;s anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.">
+<meta name="keywords" content="bitcoin, standing-call, short-squeeze, 200-day-mean, okx, track-record">
+<link rel="canonical" href="https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/">
+<meta property="og:site_name" content="QuantLab Research Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/">
+<meta property="og:title" content="8 for 8 and 5 for 5: the squeeze settled both BTC calls | QuantLab Research Notes">
+<meta property="og:description" content="Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call&#x27;s anchor closed above the 200-day mean, all 5 since the $75,000 call&#x27;s anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.">
+<meta property="og:image" content="https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/assets/fig_2026.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="8 for 8 and 5 for 5: the squeeze settled both BTC calls | QuantLab Research Notes">
+<meta name="twitter:description" content="Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call&#x27;s anchor closed above the 200-day mean, all 5 since the $75,000 call&#x27;s anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.">
+<meta name="twitter:image" content="https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/assets/fig_2026.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "8 for 8 and 5 for 5: the squeeze settled both BTC calls", "alternativeHeadline": "Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call's anchor closed above the 200-day mean, all 5 since the $75,000 call's anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.", "description": "Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call's anchor closed above the 200-day mean, all 5 since the $75,000 call's anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.", "datePublished": "2026-08-27", "dateModified": "2026-08-27", "inLanguage": "en", "author": [{"@type": "Organization", "name": "QuantLab Research Desk"}], "publisher": {"@type": "Organization", "name": "QuantLab"}, "keywords": "bitcoin,standing-call,short-squeeze,200-day-mean,okx,track-record", "about": [{"@type": "Thing", "name": "fig_2026.svg"}, {"@type": "Thing", "name": "fig_window.svg"}, {"@type": "Thing", "name": "fig_ratio.svg"}], "isAccessibleForFree": true, "isPartOf": {"@type": "BookSeries", "name": "Crypto Microscope"}, "mainEntityOfPage": "https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/", "image": "https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/assets/fig_2026.png"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f4ec;--paper2:#efe9d9;--ink:#1c1917;--ink2:#5c5648;
+--hair:#d8d1bd;--hair2:#c4bca3;--ox:#8c2f39;--moss:#3f6b52;--code:#ece6d4;
+--serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+--disp:'Fraunces',Georgia,serif;
+--mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:var(--serif);font-size:17px;line-height:1.7;
+-webkit-font-smoothing:antialiased}
+a{color:var(--ox);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ox) 35%,transparent)}
+a:hover{border-bottom-color:var(--ox)}
+code{font-family:var(--mono);font-size:.85em;background:var(--code);
+padding:.1em .35em;border-radius:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2)}
+.masthead{border-bottom:1px solid var(--ink);padding:18px 0 14px}
+.masthead .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.masthead .brand{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.01em}
+.masthead .brand em{font-style:normal;color:var(--ox)}
+.masthead .cadence{font-family:var(--mono);font-size:11.5px;color:var(--ink2);letter-spacing:.06em}
+.rule-double{border-top:3px double var(--ink);margin:0}
+footer{border-top:1px solid var(--hair2);margin-top:64px;padding:20px 0 40px;
+font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+
+.head{padding:44px 0 6px;max-width:860px}
+.head h1{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.4vw,44px);
+line-height:1.12;margin:12px 0 16px;letter-spacing:-.01em}
+.head .deck{font-size:19.5px;line-height:1.55;color:var(--ink2);margin:0 0 18px;font-style:italic}
+.byline{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;
+color:var(--ink2);letter-spacing:.04em;padding-bottom:14px}
+.byline b{color:var(--ink);font-weight:500}
+.share{display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+padding-bottom:24px;font-family:var(--mono)}
+.share .lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.share a,.share button{display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--ink2);
+border:1px solid var(--hair2);background:#fff;border-radius:999px;padding:4px 12px;
+transition:all .12s}
+.share a:hover,.share button:hover{border-color:var(--ox);color:var(--ox)}
+.share svg{width:13px;height:13px;stroke:currentColor;fill:none;
+stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.share a[data-ok="copied"]{border-color:var(--moss);color:var(--moss)}
+.cols{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;padding-bottom:20px}
+.toc{position:sticky;top:24px;align-self:start;font-family:var(--mono);font-size:11.5px;
+line-height:2.1;padding-top:8px;max-height:calc(100vh - 48px);overflow-y:auto;
+overscroll-behavior:contain;scrollbar-width:thin}
+.toc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;
+align-items:center;gap:8px;letter-spacing:.16em;text-transform:uppercase;
+color:var(--ink2);font-size:10px;margin-bottom:4px}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"▾";font-size:9px;letter-spacing:0;color:var(--hair2)}
+.toc details[open] summary::after{content:"▴"}
+.toc a{color:var(--ink2);border-bottom:0;display:block;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc a:hover{color:var(--ox)}
+.toc a.cur{color:var(--ox);font-weight:500}
+.toc .n{color:var(--hair2);margin-right:8px}
+.toc .n b{color:var(--ox);font-weight:500}
+.body{max-width:70ch}
+.body h2{font-family:var(--disp);font-weight:600;font-size:26px;line-height:1.25;
+margin:52px 0 14px;padding-top:18px;border-top:1px solid var(--hair)}
+.body h3{font-family:var(--disp);font-weight:600;font-size:19px;margin:32px 0 10px}
+.body p{margin:0 0 18px}
+.body blockquote{margin:22px 0;padding:10px 22px;border-left:3px solid var(--ox);
+background:var(--paper2);font-style:italic}
+.body blockquote p{margin:6px 0}
+.body ul,.body ol{padding-left:26px;margin:0 0 18px}
+.body li{margin-bottom:8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;
+font-variant-numeric:tabular-nums}
+.body thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+text-transform:uppercase;text-align:left;color:var(--ink2);
+border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);padding:8px 10px}
+.body tbody td{border-bottom:1px solid var(--hair);padding:8px 10px;vertical-align:top}
+.body tbody tr:nth-child(even){background:color-mix(in srgb,var(--paper2) 45%,transparent)}
+.body figure{margin:30px 0;background:#fff;border:1px solid var(--hair);
+border-radius:6px;padding:14px 14px 10px}
+.body figure img{width:100%;height:auto;display:block}
+.body figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+color:var(--ink2);padding:10px 2px 2px;border-top:1px dotted var(--hair2);margin-top:8px}
+.body hr{border:0;border-top:1px solid var(--hair);margin:36px 0}
+.nav{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:56px}
+.nav a{border:1px solid var(--hair);border-radius:6px;background:#fff;padding:16px 18px;
+display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--hair)}
+.nav a:hover{border-color:var(--ink2)}
+.nav a.next{text-align:right;align-items:flex-end}
+.nav .dir{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+text-transform:uppercase;color:var(--ink2)}
+.nav .t{font-family:var(--disp);font-size:16.5px;font-weight:600;color:var(--ink)}
+.nav .ghost{border:1px dashed var(--hair2);border-radius:6px;padding:16px 18px;
+font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.backline{padding:18px 0 0;font-family:var(--mono);font-size:11.5px}
+@media(max-width:900px){
+.cols{grid-template-columns:1fr;gap:0}
+/* narrow screens: the TOC bar scrolls away with the article rather than
+   pinning over the body text (opened link lists blocked content on phones) */
+.toc{position:static;padding:0 0 4px;max-height:none;overflow:visible}
+.toc summary{padding:12px 0 10px;margin:0}
+.toc .l{max-height:calc(100vh - 140px);overflow-y:auto;overscroll-behavior:contain;
+padding-bottom:8px}
+.body{max-width:none}
+.body h2,.body h3{scroll-margin-top:64px}
+.nav{grid-template-columns:1fr}}
+@media print{.toc,.nav,footer,.backline,.share{display:none}.cols{grid-template-columns:1fr}
+.body{max-width:none}.head{padding-top:8px}}
+</style>
+</head>
+<body>
+
+<div class="masthead"><div class="wrap">
+<div class="brand"><a href="../../index.html" style="border-bottom:0;color:inherit">
+QuantLab <em>·</em> Research Notes</a></div>
+<div class="cadence">every 12 hours · editor-reviewed</div>
+</div></div>
+<div class="rule-double"></div>
+<div class="wrap">
+<div class="backline"><a href="../../index.html">← all notes</a></div>
+<header class="head">
+<span class="kicker">2026-08-27 · Crypto Microscope #4</span>
+<h1>8 for 8 and 5 for 5: the squeeze settled both BTC calls</h1>
+<p class="deck">Both standing BTC calls look resolved: every one of the 8 window sessions since the reclaim call&#x27;s anchor closed above the 200-day mean, all 5 since the $75,000 call&#x27;s anchor closed above $75,000, and BTC now prints $80,264 - 27.8% off the August 1 low.</p>
+<div class="byline">
+<span>by <b>QuantLab Research Desk</b></span>
+<span>7 min read · 1,309 words</span>
+<span>2 internal / 2 external sources</span>
+</div>
+
+<div class="share" aria-label="Share this note">
+<span class="lbl">share</span>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fbtc-squeeze-settles-calls%2F&text=8%20for%208%20and%205%20for%205%3A%20the%20squeeze%20settled%20both%20BTC%20calls" target="_blank"
+rel="noopener" aria-label="Share on X"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>X</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fbtc-squeeze-settles-calls%2F" target="_blank"
+rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M5.5 7v4M5.5 5.2v.1M8.5 11V8.6a1.6 1.6 0 0 1 3.2 0V11"/></svg>LinkedIn</a>
+<a href="https://reddit.com/submit?url=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fbtc-squeeze-settles-calls%2F&title=8%20for%208%20and%205%20for%205%3A%20the%20squeeze%20settled%20both%20BTC%20calls" target="_blank"
+rel="noopener" aria-label="Share on Reddit"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="9" r="5.5"/><circle cx="5.8" cy="9" r=".4" fill="currentColor"/><circle cx="10.2" cy="9" r=".4" fill="currentColor"/><path d="M6.2 11.2c1.1.7 2.5.7 3.6 0M8 3.5l3-1"/></svg>Reddit</a>
+<a href="mailto:?subject=8%20for%208%20and%205%20for%205%3A%20the%20squeeze%20settled%20both%20BTC%20calls&body=https%3A%2F%2Falencheung.github.io%2Fquantlab-notes%2Farticles%2Fbtc-squeeze-settles-calls%2F" aria-label="Share by email"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="M2.5 4.5L8 8.8l5.5-4.3"/></svg>Email</a>
+<button type="button" id="copy-link" data-url="https://alencheung.github.io/quantlab-notes/articles/btc-squeeze-settles-calls/"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3"/><path d="M7.5 5l1.2-1.2a2.4 2.4 0 0 1 3.4 3.4L11 8.4"/><path d="M8.5 11l-1.2 1.2a2.4 2.4 0 0 1-3.4-3.4L5 7.6"/></svg>Copy link</button>
+</div>
+</header>
+<div class="cols">
+<nav class="toc" aria-label="Contents"><details open><summary class="t">Contents</summary><div class="l"><a href="#how-we-worked-this-problem"><span class="n"><b>01</b></span>How we worked this problem</a><a href="#the-data-audit"><span class="n"><b>02</b></span>The data audit</a><a href="#the-external-read"><span class="n"><b>03</b></span>The external read</a><a href="#exhibits"><span class="n"><b>04</b></span>Exhibits</a><a href="#so-what-opportunities"><span class="n"><b>05</b></span>So what - opportunities</a><a href="#so-what-risks"><span class="n"><b>06</b></span>So what - risks</a><a href="#machinery-how-this-piece-was-produced"><span class="n"><b>07</b></span>Machinery: how this piece was produced</a><a href="#sources-external-reading-list"><span class="n"><b>08</b></span>Sources - external reading list</a></div></details></nav>
+<main class="body">
+<p><strong>The one-paragraph version.</strong> The two fastest-moving calls on the Track Record look settled. The reclaim call (<code>crypto-btc-reclaims-200d</code>, issued 2026-08-19) required BTC back above its 200-day mean within 120 sessions: all 8 window sessions since its anchor have closed above it. The conviction call (<code>crypto-btc-holds-75k</code>, issued 2026-08-22) required a close above $75,000 within 10 sessions: all 5 window sessions have, starting at $77,525 on August 23. BTC prints $80,264 as of Thursday - 1.159x its 200-day mean ($69,258), 7.0% above the $75,000 line, and 27.8% off the August 1 low of $62,820. The grader still shows both calls &quot;open&quot; by design (it grades once, at maturity, one-way), but on current data both conditions are satisfied.</p>
+<h2 id="how-we-worked-this-problem">How we worked this problem</h2>
+<p>This is Crypto Microscope issue 4 and a resolution report on both BTC calls. Both series are built exactly as the grader builds them - 1h OKX bars resampled to daily closes, the 200-day mean on that series, and the fixed $75,000 level - so every number reconciles with the Track Record to the decimal. Two disclosure items the reconciliation surfaces. First, the reclaim call&#x27;s frozen prose said &quot;BTC - $64,613 and below its 200-day daily mean at issue&quot;: that price was the drafting cut (the ten sessions before issuance printed a $62,904-$64,899 range), but by the anchor session&#x27;s close ($69,337 on August 19) BTC was already marginally back above the mean at 1.004x - the reclaim was effectively done the day the call was written, and the window then confirmed it 8-for-8. Second, the $75,000 call&#x27;s anchor close ($76,971) was itself above the line; the grader counts sessions strictly after the anchor, and all 5 have cleared it. We report both facts rather than let the prose&#x27;s drama stand in for the window&#x27;s arithmetic.</p>
+<h2 id="the-data-audit">The data audit</h2>
+<table><thead><tr><th>Source</th><th>Coverage</th><th>As-of</th><th>Role</th></tr></thead><tbody><tr><td><code>data/ccxt_1h/BTC_USDT_okx1h.parquet</code></td><td>BTC/USDT 1h bars, 2019-2026</td><td>2026-08-28 11:00 UTC; complete days through 2026-08-27</td><td>daily closes, 200d mean, call windows</td></tr><tr><td><code>articles/calls.json</code></td><td>both BTC call terms</td><td>registry as of this run</td><td>anchors, levels, deadlines</td></tr></tbody></table>
+<p>The FRED rates cache (as-of 2026-08-13) and the funding cache (as-of 2026-07-31) are not used.</p>
+<h2 id="the-external-read">The external read</h2>
+<p>The breakout&#x27;s drivers per outside coverage: US debt worries, spot-ETF inflows and a weaker dollar fueled the rebound past $80,000 (<a href="https://www.morningstar.com/alternative-investments/why-bitcoin-just-surged-back-80000-what-may-come-next">Morningstar, Aug 26</a>), on top of the short-squeeze cascade our issue-2 note documented at its inception. Our cross-check: the six-week $62,000-$66,900 consolidation range cited in outside technical commentary (<a href="https://www.coindesk.com/markets/2026/08/20/bitcoin-breaks-out-of-six-week-range-tops-usd71-000-as-usd3-billion-in-shorts-get-wiped-out">CoinDesk</a>) matches our recomputed pre-break range&#x27;s neighborhood (the last ten pre-issue sessions printed $62,904-$64,899), and the three-month-high timing is exact on the house series: no daily close reached $80,000 between May 14 and Thursday (<a href="https://www.morningstar.com/alternative-investments/why-bitcoin-just-surged-back-80000-what-may-come-next">Morningstar, Aug 26</a>).</p>
+<h2 id="exhibits">Exhibits</h2>
+<p><strong>Exhibit 1 - the year in one picture.</strong> BTC&#x27;s 2026 path against its 200-day mean and the $75,000 call line: the long basing below the trend line, the August breakout, and Thursday&#x27;s $80,264 close at 1.159x the mean.</p>
+<figure><img src="assets/fig_2026.svg" alt="BTC 2026 with both call lines" loading="lazy"><figcaption>BTC 2026 with both call lines</figcaption></figure>
+<p><strong>Exhibit 2 - the windows.</strong> Since the reclaim anchor (August 19): 8-for-8 sessions above the 200-day mean, including the August 22 giveback day (-1.8%, $76,971) which held above both lines. Since the $75,000 anchor: 5-for-5, opening at $77,525.</p>
+<figure><img src="assets/fig_window.svg" alt="The call windows" loading="lazy"><figcaption>The call windows</figcaption></figure>
+<p><strong>Exhibit 3 - the trend-line ratio.</strong> BTC&#x27;s close-to-200d-mean ratio across 2026: the below-trend stretch that prompted the call, the reclaim, and the current 1.159x - 2026&#x27;s highest reading (set Thursday).</p>
+<figure><img src="assets/fig_ratio.svg" alt="BTC/200d ratio" loading="lazy"><figcaption>BTC/200d ratio</figcaption></figure>
+<h2 id="so-what-opportunities">So what - opportunities</h2>
+<ul>
+<li><strong>The Track Record&#x27;s first pending hits:</strong> when the maturity dates</li>
+<p>arrive (the $75,000 call&#x27;s window closes within days; the reclaim call&#x27;s on 2026-12-17), the grader will score on data, and both windows are currently clean sweeps. Two hits from one regime move - the calls were designed to be falsifiable, and they will resolve as designed.</p>
+<li><strong>The base-out structure is the lesson:</strong> the reclaim call was drafted</li>
+<p>at the range&#x27;s edge ($62,904-$64,899 pre-break) - where falsifiable claims carry the most information - while the $75,000 conviction call followed three sessions into the break, a cheaper test by construction.</p>
+<li><strong>For the crypto book:</strong> BTC back above its 200-day trend with the</li>
+<p>range broken upward is the regime state the crypto members&#x27; reversal-and-trend constructions were certified across; the live crypto sleeve&#x27;s environment has shifted.</p>
+</ul>
+<h2 id="so-what-risks">So what - risks</h2>
+<ul>
+<li><strong>&quot;Settled&quot; is not &quot;graded&quot;:</strong> the grader scores once, at maturity -</li>
+<p>but under its any-hit, one-way semantics both calls have already banked clearing sessions (the reclaim window&#x27;s first session cleared the trend line; the $75,000 window&#x27;s first cleared the level), so each grade is arithmetically locked; the remaining window sessions only delay the formal stamp.</p>
+<li><strong>The anchor-already-above subtlety cuts both ways:</strong> the reclaim</li>
+<p>call&#x27;s prose described a below-mean BTC that no longer existed at the anchor; had the anchor closed a fraction lower, the same call would have needed a genuine reclaim. Registrar precision matters more than prose drama.</p>
+<li><strong>Squeeze-driven rallies retrace:</strong> our issue-2 note&#x27;s own risk</li>
+<p>section said failure back into the range re-imposes the old regime; the +27.8% off the low has retraced nothing yet, and squeeze legs often give back the break.</p>
+</ul>
+<h2 id="machinery-how-this-piece-was-produced">Machinery: how this piece was produced</h2>
+<p><code>articles/2026-08-27-btc-squeeze-settles-calls/analysis.py</code> builds both grader-identical series (1h bars resampled to daily closes; the 200-day mean; the fixed level), reads both calls&#x27; terms from <code>articles/calls.json</code>, computes the window statistics, and writes every number above to <code>assets/numbers.json</code> plus the three figures (SVG + PNG twins).</p>
+<p>Reproduce with: ``<code>bash .venv/Scripts/python articles/2026-08-27-btc-squeeze-settles-calls/analysis.py </code>``</p>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>Daily closes from 1h bars (the grader&#x27;s construction); intraday</li>
+<p>spikes above/below the lines are not what either call grades.</p>
+<li>The pre-break range ($62,904-$64,899) is the last ten sessions before</li>
+<p>the reclaim call&#x27;s issue date - a window choice, not the full six-week base cited externally.</p>
+<li>Both calls remain formally open until their maturity dates; this note</li>
+<p>reports the window arithmetic, not the grade.</p>
+<li>The series here trims trailing PARTIAL UTC days (fewer than 20 of 24</li>
+<p>hourly bars) so every quoted &quot;close&quot; is a complete day; the grader resamples whatever the parquet holds at grading time, partial days included.</p>
+<li>The prose-vs-anchor price gap ($64,613 prose vs $69,337 anchor close)</li>
+<p>reflects the drafting cut; the call&#x27;s terms are frozen as issued.</p>
+</ul>
+<h2 id="sources-external-reading-list">Sources - external reading list</h2>
+<table><thead><tr><th>Claim</th><th>Source</th></tr></thead><tbody><tr><td>Rebound drivers past $80,000: US debt worries, spot-ETF inflows, weaker dollar</td><td><a href="https://www.morningstar.com/alternative-investments/why-bitcoin-just-surged-back-80000-what-may-come-next">Morningstar - Why Bitcoin Surged to $80,000</a></td></tr><tr><td>Six-week $62,000-$66,900 consolidation range / short-squeeze cascade</td><td><a href="https://www.coindesk.com/markets/2026/08/20/bitcoin-breaks-out-of-six-week-range-tops-usd71-000-as-usd3-billion-in-shorts-get-wiped-out">CoinDesk (issue-2 lineage)</a></td></tr></tbody></table>
+<div class="kicker" style="margin-top:44px">toolchain</div>
+<p style="font-family:var(--mono);font-size:12px;color:var(--ink2)">calls-grader-parity; pandas; matplotlib</p>
+<div class="nav"><a class="prev" href="../vrp-compression-watch/"><span class="dir">← earlier</span><span class="t">118 of 159 days above 2.0, then 1.47: the VRP compression the call is waiting out</span></a><a class="next" href="../liquidity-dv63-drift/"><span class="dir">later →</span><span class="t">2.46x median and drifting down: the liquidity call&#x27;s long road back</span></a></div>
+</main>
+</div>
+</div>
+<footer><div class="wrap">
+<span>bitcoin · standing-call · short-squeeze · 200-day-mean · okx · track-record</span>
+<span>numbers from code · prose by the desk · not investment advice</span>
+</div></footer>
+
+<script>
+(function(){
+"use strict";
+var b=document.getElementById("copy-link");
+if(!b)return;
+b.addEventListener("click",function(){
+  var url=b.getAttribute("data-url");
+  function done(){var t=b.textContent;b.textContent="copied ✓";b.setAttribute("data-ok","copied");
+    setTimeout(function(){b.textContent=t;b.removeAttribute("data-ok")},1600)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(done,function(){fallback()});
+  } else fallback();
+  function fallback(){
+    var i=document.createElement("input");i.value=url;document.body.appendChild(i);
+    i.select();try{document.execCommand("copy");done()}catch(e){}
+    document.body.removeChild(i);
+  }
+});
+})();
+
+(function(){
+"use strict";
+var d=document.querySelector(".toc details");
+if(!d)return;
+var mq=window.matchMedia?window.matchMedia("(max-width:900px)"):null;
+function narrow(){return mq?mq.matches:window.innerWidth<=900}
+if(narrow())d.removeAttribute("open");
+if(mq&&mq.addEventListener)mq.addEventListener("change",function(e){
+  if(e.matches)d.removeAttribute("open")});
+d.addEventListener("click",function(e){
+  if(e.target&&e.target.closest&&e.target.closest("a")&&narrow())
+    d.removeAttribute("open")});
+var links=[].slice.call(d.querySelectorAll("a[href^='#']"));
+var heads=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1))});
+var cur=null;
+function spy(){
+  var hit=null;
+  for(var i=0;i<heads.length;i++){var h=heads[i];
+    if(h&&h.getBoundingClientRect().top<=110)hit=links[i]}
+  if(hit===cur)return;
+  cur=hit;
+  for(var i=0;i<links.length;i++)links[i].classList.toggle("cur",links[i]===hit);
+}
+var tick=false;
+window.addEventListener("scroll",function(){
+  if(tick)return;tick=true;
+  requestAnimationFrame(function(){spy();tick=false})},{passive:true});
+spy();
+})();
+</script>
+</body>
+</html>
