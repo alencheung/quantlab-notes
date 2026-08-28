@@ -733,5 +733,42 @@
     "teaser": "The one-paragraph version. The standing call\nliquidity-dv63-back-under-2x (issued 2026-08-19, 60 sessions) says the\n16-ETF universe's 63-day dollar volume falls back under twice its\nfull-sample median. Through Wednesday it prints 2.46x - $96.7 billion a\nday against a $39.4 billio",
     "search": "2.46x median and drifting down: the liquidity call's long road back our standing call says 63-day dollar volume falls back under 2x its long-run median; it has printed 2.46x through wednesday - and the decomposition says the call is secretly a price call, because share volume is 0.80x its own median while prices run 2.77x theirs. liquidity dollar-volume standing-call volume-decomposition etf-panel participation fig_ratio.svg fig_decomp.svg fig_2026.svg calls-grader-parity pandas matplotlib the one-paragraph version. the standing call\nliquidity-dv63-back-under-2x (issued 2026-08-19, 60 sessions) says the\n16-etf universe's 63-day dollar volume falls back under twice its\nfull-sample median. through wednesday it prints 2.46x - $96.7 billion a\nday against a $39.4 billio",
     "url": "articles/liquidity-dv63-drift/"
+  },
+  {
+    "slug": "live-desk-first-drawdown",
+    "title": "-1.03%: the live book's first drawdown",
+    "date": "2026-08-28",
+    "series": "Live Desk",
+    "issue": "2",
+    "deck": "Six sessions in, the paper-live book just took its first drawdown - three straight red days totaling -1.03%, the 7.1st percentile of its own backtest's three-day noise, with 96% of the distance to the first kill-switch latch still in reserve.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "live-ledger",
+      "drawdown",
+      "kill-switch",
+      "paper-trading",
+      "evidence-clock",
+      "library-book"
+    ],
+    "assets": [
+      "fig_ledger.svg",
+      "fig_r3.svg",
+      "fig_clock.svg"
+    ],
+    "tools": [
+      "quantlab-live-engine",
+      "min-track-record-length",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1191,
+    "sources_internal": 2,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. The live ledger wrote its sixth session\nFriday, and it was the book's worst: -0.62% on the day, the third\nconsecutive red session, taking the compounded streak to -1.03% and the\ncumulative return to -0.46% (NAV $995,369 against the $1.0M start). The\nmac",
+    "search": "-1.03%: the live book's first drawdown six sessions in, the paper-live book just took its first drawdown - three straight red days totaling -1.03%, the 7.1st percentile of its own backtest's three-day noise, with 96% of the distance to the first kill-switch latch still in reserve. live-ledger drawdown kill-switch paper-trading evidence-clock library-book fig_ledger.svg fig_r3.svg fig_clock.svg quantlab-live-engine min-track-record-length matplotlib the one-paragraph version. the live ledger wrote its sixth session\nfriday, and it was the book's worst: -0.62% on the day, the third\nconsecutive red session, taking the compounded streak to -1.03% and the\ncumulative return to -0.46% (nav $995,369 against the $1.0m start). the\nmac",
+    "url": "articles/live-desk-first-drawdown/"
   }
 ]

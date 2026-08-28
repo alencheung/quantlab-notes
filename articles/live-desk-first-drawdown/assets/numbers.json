@@ -1,0 +1,66 @@
+{
+  "numbers": {
+    "ledger_rows": 6,
+    "chain_valid": true,
+    "kill_stage": "GREEN",
+    "halted": false,
+    "cumulative_net_return": -0.004630695037176724,
+    "current_drawdown": -0.010253939672594692,
+    "tracking_error_last": 0.20465728715287823,
+    "weights_source": "member_weights_v1",
+    "orders": 16,
+    "rejected": 0,
+    "rows_red": 4,
+    "worst_row": -0.0061956131247357,
+    "worst_row_date": "2026-08-28",
+    "row_nets": [
+      -0.0017670132968786,
+      0.0038232707473149,
+      0.0036245721715228,
+      -0.0026698722682534,
+      -0.0014175395028046,
+      -0.0061956131247357
+    ],
+    "te_pre_migration": 0.0028124892873534,
+    "te_weight_rms": 0.2046572871528782,
+    "streak_len": 3,
+    "streak_compound": -0.010253939672594692,
+    "nav_last": 995369.3049628232,
+    "book_members": 28,
+    "r3_live": -0.010253939672594692,
+    "r3_pctile": 0.07108140947752126,
+    "r3_worse_count": 351,
+    "r3_total": 4938,
+    "r3_min": -0.04593853151219163,
+    "r3_episodes": 184,
+    "r3_years": 19.595238095238095,
+    "r3_episodes_per_year": 9.39003645200486,
+    "book_mdd": -0.18101195207002407,
+    "book_ann_vol": 0.07216897306348072,
+    "latch_level": -0.2715179281050361,
+    "latch_distance": 0.9622347601716084,
+    "mintrl_years": 2.1453355611164584,
+    "mintrl_sessions": 541,
+    "mintrl_sessions_issue1": 585,
+    "book_sharpe_issue1": 1.090617118770297,
+    "confidence_pct": 95,
+    "clock_share": 0.011090573012939002,
+    "book_sharpe_full": 1.1333501708685785
+  },
+  "lineage": [
+    {
+      "source": "live ledger (hash-chained)",
+      "path": "data/loop/live/live_returns.csv",
+      "rows": 6,
+      "first": "2026-08-21 00:00:00",
+      "last": "2026-08-28 00:00:00"
+    },
+    {
+      "source": "equal-weight 28-member library book (net T1)",
+      "path": "data/loop/library/*_T1.csv",
+      "rows": 4940,
+      "first": "2007-01-04 00:00:00",
+      "last": "2026-08-24 00:00:00"
+    }
+  ]
+}
