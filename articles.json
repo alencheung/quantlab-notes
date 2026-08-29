@@ -770,5 +770,42 @@
     "teaser": "The one-paragraph version. The live ledger wrote its sixth session\nFriday, and it was the book's worst: -0.62% on the day, the third\nconsecutive red session, taking the compounded streak to -1.03% and the\ncumulative return to -0.46% (NAV $995,369 against the $1.0M start). The\nmac",
     "search": "-1.03%: the live book's first drawdown six sessions in, the paper-live book just took its first drawdown - three straight red days totaling -1.03%, the 7.1st percentile of its own backtest's three-day noise, with 96% of the distance to the first kill-switch latch still in reserve. live-ledger drawdown kill-switch paper-trading evidence-clock library-book fig_ledger.svg fig_r3.svg fig_clock.svg quantlab-live-engine min-track-record-length matplotlib the one-paragraph version. the live ledger wrote its sixth session\nfriday, and it was the book's worst: -0.62% on the day, the third\nconsecutive red session, taking the compounded streak to -1.03% and the\ncumulative return to -0.46% (nav $995,369 against the $1.0m start). the\nmac",
     "url": "articles/live-desk-first-drawdown/"
+  },
+  {
+    "slug": "regime-radar-002",
+    "title": "P(risk) 0.0004: the regime model's verdict on the pullback",
+    "date": "2026-08-29",
+    "series": "Regime Radar",
+    "issue": "2",
+    "deck": "Seven sessions after issue 1, SPY has given back 1.10% and the live book took its first drawdown - and the causal HMM's risk posterior FELL from 0.0006 to 0.0004, staying in the bull state: the radar's verdict is that this is not a regime event.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "regime",
+      "hmm",
+      "drawdown",
+      "market-state",
+      "radar",
+      "causal-model"
+    ],
+    "assets": [
+      "fig_spy.svg",
+      "fig_hmm.svg",
+      "fig_gauges.svg"
+    ],
+    "tools": [
+      "quantlab-hmm-regime",
+      "macro-operands",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1297,
+    "sources_internal": 4,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. Regime Radar issue 1 (August 19) read a\nmarket 0.20% off its record with a risk posterior of 0.0006. Seven\nsessions later the tape has done its first real work of the cycle: SPY\nis 1.10% below the August 13 high, the paper-live library book just took\nit",
+    "search": "p(risk) 0.0004: the regime model's verdict on the pullback seven sessions after issue 1, spy has given back 1.10% and the live book took its first drawdown - and the causal hmm's risk posterior fell from 0.0006 to 0.0004, staying in the bull state: the radar's verdict is that this is not a regime event. regime hmm drawdown market-state radar causal-model fig_spy.svg fig_hmm.svg fig_gauges.svg quantlab-hmm-regime macro-operands matplotlib the one-paragraph version. regime radar issue 1 (august 19) read a\nmarket 0.20% off its record with a risk posterior of 0.0006. seven\nsessions later the tape has done its first real work of the cycle: spy\nis 1.10% below the august 13 high, the paper-live library book just took\nit",
+    "url": "articles/regime-radar-002/"
   }
 ]

@@ -1,0 +1,74 @@
+{
+  "numbers": {
+    "base_spy_off_ath": -0.00198,
+    "base_breadth_above_200d_frac": 0.625,
+    "base_spy_current_dd": -0.00198,
+    "base_hmm_p_risk_now": 0.000599,
+    "base_hmm_state_now": 1.0,
+    "base_spy_ytd_2026": 0.142418,
+    "base_vrp_vix_minus_rv20_pts": 1.269801,
+    "base_panel_last": "2026-08-14",
+    "base_below_200d_names": "['AGG', 'GLD', 'IEF', 'LQD', 'TLT', 'XLU']",
+    "voldesk_vrp_last": 1.4723532176324792,
+    "voldesk_vrp_last_date": "2026-08-20",
+    "livedesk_current_dd": -0.010253939672594692,
+    "livedesk_rows": 6,
+    "panel_last_date": "2026-08-28",
+    "spy_ytd_2026": 0.13213192013427832,
+    "spy_ath_date": "2026-08-13",
+    "spy_off_ath": -0.010965739244268247,
+    "breadth_above_200d_frac": 0.625,
+    "breadth_below_200d_names": [
+      "AGG",
+      "GLD",
+      "IEF",
+      "LQD",
+      "TLT",
+      "XLU"
+    ],
+    "spy_current_dd": -0.010965739244268247,
+    "sessions_since_issue1": 7,
+    "hmm_refit_seconds": 171.8,
+    "hmm_seed": 42,
+    "hmm_iter": 20,
+    "hmm_min_train": 756,
+    "vol_lookback": 21,
+    "ma_window": 200,
+    "hmm_p_risk_now": 0.00035742271978234504,
+    "hmm_state_now": 1,
+    "hmm_bear_days_frac": 0.19399370307580527,
+    "hmm_state0_ret_ann": 0.033547162356920436,
+    "hmm_state0_rv_ann": 0.30227104811135824,
+    "hmm_state1_ret_ann": 0.17438577769473199,
+    "hmm_state1_rv_ann": 0.11986062788911302,
+    "vix_last": 14.63,
+    "vix_last_date": "2026-08-20",
+    "spy_rv20_ann_pct": 10.448260034511673,
+    "spy_rv20_pct_rank_since_2007": 0.3132994923857868,
+    "vrp_vix_minus_rv20_pts": 4.181739965488328
+  },
+  "lineage": [
+    {
+      "source": "issue-1 baselines",
+      "path": "articles/2026-08-19-regime-radar/assets/numbers.json"
+    },
+    {
+      "source": "cross-note figures (Vol Desk, Live Desk)",
+      "path": "articles/2026-08-26-vrp-compression-watch + 2026-08-28-live-desk-first-drawdown"
+    },
+    {
+      "source": "funnel panel (16 ETF, OHLCV)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4945,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-08-28 00:00:00"
+    },
+    {
+      "source": "FRED rates/vol cache",
+      "path": "data/rates/rates.parquet",
+      "rows": 26588,
+      "first": "1934-01-01 00:00:00",
+      "last": "2026-08-13 00:00:00"
+    }
+  ]
+}
