@@ -807,5 +807,42 @@
     "teaser": "The one-paragraph version. Regime Radar issue 1 (August 19) read a\nmarket 0.20% off its record with a risk posterior of 0.0006. Seven\nsessions later the tape has done its first real work of the cycle: SPY\nis 1.10% below the August 13 high, the paper-live library book just took\nit",
     "search": "p(risk) 0.0004: the regime model's verdict on the pullback seven sessions after issue 1, spy has given back 1.10% and the live book took its first drawdown - and the causal hmm's risk posterior fell from 0.0006 to 0.0004, staying in the bull state: the radar's verdict is that this is not a regime event. regime hmm drawdown market-state radar causal-model fig_spy.svg fig_hmm.svg fig_gauges.svg quantlab-hmm-regime macro-operands matplotlib the one-paragraph version. regime radar issue 1 (august 19) read a\nmarket 0.20% off its record with a risk posterior of 0.0006. seven\nsessions later the tape has done its first real work of the cycle: spy\nis 1.10% below the august 13 high, the paper-live library book just took\nit",
     "url": "articles/regime-radar-002/"
+  },
+  {
+    "slug": "sector-lab-august-scoreboard",
+    "title": "9.5 points top to bottom: August's sector scoreboard",
+    "date": "2026-08-30",
+    "series": "Sector Lab",
+    "issue": "2",
+    "deck": "August through Friday splits the nine sector SPDRs by 9.5 points - tech +5.9% and the materials/health/energy cluster just behind, utilities -3.7% dead last and alone below its 200-day mean - while energy still runs +42.1% year-to-date.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "sector-rotation",
+      "august-2026",
+      "scoreboard",
+      "200-day",
+      "etf",
+      "dispersion"
+    ],
+    "assets": [
+      "fig_aug.svg",
+      "fig_aug_ytd.svg",
+      "fig_200d.svg"
+    ],
+    "tools": [
+      "yfinance",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1200,
+    "sources_internal": 2,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. August through Friday (month base =\nJuly's close, compounded daily) splits the sector book by 9.5 points:\ntech leads at +5.90%, with materials (+5.45%), health care (+5.30%) and\nenergy (+5.26%) packed just behind it; industrials (-1.50%) and\nutilities (",
+    "search": "9.5 points top to bottom: august's sector scoreboard august through friday splits the nine sector spdrs by 9.5 points - tech +5.9% and the materials/health/energy cluster just behind, utilities -3.7% dead last and alone below its 200-day mean - while energy still runs +42.1% year-to-date. sector-rotation august-2026 scoreboard 200-day etf dispersion fig_aug.svg fig_aug_ytd.svg fig_200d.svg yfinance pandas matplotlib the one-paragraph version. august through friday (month base =\njuly's close, compounded daily) splits the sector book by 9.5 points:\ntech leads at +5.90%, with materials (+5.45%), health care (+5.30%) and\nenergy (+5.26%) packed just behind it; industrials (-1.50%) and\nutilities (",
+    "url": "articles/sector-lab-august-scoreboard/"
   }
 ]
