@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About the desk | QuantLab Research Notes</title>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="What the QuantLab Research Notes desk is, how its numbers are produced and machine-graded, what is live versus backtest, and where to start reading.">
+<meta name="keywords" content="about, methodology, quant research desk, track record">
+<link rel="canonical" href="https://alencheung.github.io/quantlab-notes/about/">
+<meta property="og:site_name" content="QuantLab Research Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://alencheung.github.io/quantlab-notes/about/">
+<meta property="og:title" content="About the desk | QuantLab Research Notes">
+<meta property="og:description" content="What the QuantLab Research Notes desk is, how its numbers are produced and machine-graded, what is live versus backtest, and where to start reading.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About the desk | QuantLab Research Notes">
+<meta name="twitter:description" content="What the QuantLab Research Notes desk is, how its numbers are produced and machine-graded, what is live versus backtest, and where to start reading.">
+<link rel="alternate" type="application/atom+xml" title="QuantLab Research Notes" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f4ec;--paper2:#efe9d9;--ink:#1c1917;--ink2:#5c5648;
+--hair:#d8d1bd;--hair2:#c4bca3;--ox:#8c2f39;--moss:#3f6b52;--code:#ece6d4;
+--serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+--disp:'Fraunces',Georgia,serif;
+--mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:var(--serif);font-size:17px;line-height:1.7;
+-webkit-font-smoothing:antialiased}
+a{color:var(--ox);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ox) 35%,transparent)}
+a:hover{border-bottom-color:var(--ox)}
+code{font-family:var(--mono);font-size:.85em;background:var(--code);
+padding:.1em .35em;border-radius:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2)}
+.masthead{border-bottom:1px solid var(--ink);padding:18px 0 14px}
+.masthead .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.masthead .brand{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.01em}
+.masthead .brand em{font-style:normal;color:var(--ox)}
+.masthead .cadence{font-family:var(--mono);font-size:11.5px;color:var(--ink2);letter-spacing:.06em}
+.rule-double{border-top:3px double var(--ink);margin:0}
+footer{border-top:1px solid var(--hair2);margin-top:64px;padding:20px 0 40px;
+font-family:var(--mono);font-size:11.5px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+/* shared trust/CTA blocks — used by the hub, every article end, and the
+   about page (the contact path must not live only on the hub) */
+.verify{margin-top:36px;border-top:3px double var(--ink);padding-top:14px}
+.verify .t{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink2);margin:0 0 10px}
+.verify ol{margin:0;padding-left:22px;columns:2;column-gap:40px;font-size:14.5px;
+color:var(--ink2)}
+.verify li{margin:0 0 10px;break-inside:avoid}
+.verify b{color:var(--ink);font-weight:600}
+.engage{margin:28px 0 0;font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.engage a{display:inline-block;border:1px solid var(--ox);color:var(--ox);
+border-radius:999px;padding:6px 16px;transition:all .12s}
+.engage a:hover{background:var(--ox);color:var(--paper)}
+.feedline{margin:10px 0 0;font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.feedline a{border-bottom:0}
+
+.backline{padding:18px 0 0;font-family:var(--mono);font-size:11.5px}
+.about-head{padding:44px 0 6px;max-width:1000px}
+.about-head h1{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.4vw,44px);
+line-height:1.12;margin:12px 0 16px;letter-spacing:-.01em}
+.about-head .deck{font-size:19.5px;line-height:1.55;color:var(--ink2);margin:0 0 18px;font-style:italic}
+.prose{max-width:72ch;font-size:15.5px;color:var(--ink2);margin:0 0 10px}
+.start{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:14px}
+.start li{border-left:3px solid var(--hair2);padding:2px 0 2px 14px}
+.start a{font-weight:600;border-bottom:0}
+.start a:hover{color:var(--ox)}
+.start span{display:block;font-size:14px;color:var(--ink2)}
+@media(max-width:640px){.verify ol{columns:1}}
+</style>
+</head>
+<body>
+
+<div class="masthead"><div class="wrap">
+<div class="brand"><a href="../index.html" style="border-bottom:0;color:inherit">
+QuantLab <em>·</em> Research Notes</a></div>
+<div class="cadence">every 12 hours · editor-reviewed</div>
+</div></div>
+<div class="rule-double"></div>
+<div class="wrap">
+<div class="backline"><a href="../index.html">← all notes</a></div>
+<header class="about-head">
+<span class="kicker">about the desk</span>
+<h1>An independent desk that publishes its own scorecard.</h1>
+<p class="deck">QuantLab Research Notes is the public surface of a one-desk
+quantitative research platform. Every investigation shows its data, its method
+and its blind spots — and every falsifiable claim becomes a timestamped,
+machine-graded standing call. It is written for allocators, researchers and
+collaborators evaluating the work.</p>
+</header>
+<div class="verify">
+<p class="t">How the numbers work</p>
+<ol>
+<li><b>Statistics are pure code.</b> Prose interprets, never invents: every number
+on this site regenerates from one analysis script per note, over auditable
+house data.</li>
+<li><b>Calls are timestamped and graded by code.</b> Every falsifiable line the
+desk publishes becomes a standing call; a deterministic grader scores it the
+moment its window matures — and a graded call is never revised.</li>
+<li><b>An editor gate before publication.</b> Each note passes an adversarial
+editor-role review that checks every quoted number against the machine output;
+a note that fails the gate stays a draft.</li>
+<li><b>Tamper-evident records.</b> Results append to a hash-chained, append-only
+ledger; the chain refuses to extend if any entry is altered after the fact.</li>
+</ol>
+</div>
+<div class="verify">
+<p class="t">What is live and what is backtest</p>
+<p class="prose">The strategy-library results on the hub are full-sample
+backtests, net of modeled trading costs. The live book is paper-forward: it
+trades in simulation on real-time data, writes every session to a public
+hash-chained ledger, and carries a mechanical evidence clock that states how
+much live evidence the book still owes before its backtest statistics can
+transfer to capital. No client money is managed. The Live Desk series reports
+the ledger session by session.</p>
+</div>
+<div class="verify">
+<p class="t">Start here</p>
+<ul class="start">
+<li><a href="../articles/regime-radar-001/">Zero Fear at Record Highs — and the
+Hedge That Stopped Working</a><span>the flagship: one tape, six data sources,
+every number computed, every blind spot disclosed</span></li>
+<li><a href="../articles/stock-bond-correlation/">220 Days of Broken Hedge</a>
+<span>the stock–bond correlation break, and what it does to a 60/40's risk
+reduction</span></li>
+<li><a href="../articles/crypto-hourly-structure/">Crypto Doesn't Sleep. It
+Takes a Lunch Break.</a><span>intraday and weekend structure across the crypto
+book, from hourly bars</span></li>
+<li><a href="../articles/library-three-bets/">Twenty Strategies, Two Bets</a>
+<span>the diversification math of the certified strategy library — what
+twenty lines on a factsheet really buy</span></li>
+<li><a href="../articles/track-record-first-hit/">1 hit, 0 misses: the Track
+Record's first graded call</a><span>the first standing call resolved by the
+grader — the accountability machinery working in public</span></li>
+</ul>
+<p class="prose">The full ledger of standing calls — issued, deadline, graded —
+lives on the <a href="../calls/">Track Record</a> page.</p>
+</div>
+<p class="engage">Work with the desk — allocations, commissions, collaborations:
+<a href="https://www.linkedin.com/in/alen-cheung/" target="_blank" rel="noopener">
+reach the desk on LinkedIn</a></p>
+<p class="feedline">Never miss an issue — subscribe with the
+<a href="../feed.xml">RSS/Atom feed</a>.</p>
+</div>
+<footer><div class="wrap">
+<span>QuantLab — statistics are pure code; prose interprets, never invents.</span>
+<span><a href="../index.html">all notes</a> · <a href="../calls/">track record</a>
+· <a href="../feed.xml">RSS</a> · <a href="../articles.json">articles.json</a></span>
+</div></footer>
+
+
+</body>
+</html>
