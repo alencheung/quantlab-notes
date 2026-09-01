@@ -1,0 +1,105 @@
+{
+  "numbers": {
+    "hits": 1,
+    "misses": 0,
+    "open": 6,
+    "total": 7,
+    "hit_ids": [
+      "crypto-btc-holds-75k"
+    ],
+    "open_ids": [
+      "rotation-breadth-70",
+      "rates-corr-below-zero",
+      "vol-vrp-recovers-2",
+      "crypto-btc-reclaims-200d",
+      "liquidity-dv63-back-under-2x",
+      "recovery-spy-reclaim-ath"
+    ],
+    "hit_id": "crypto-btc-holds-75k",
+    "hit_issued": "2026-08-22",
+    "hit_level": 75000.0,
+    "hit_deadline_sessions": 10,
+    "hit_evidence": "hit: BTC close > 75000.00; 77525.10 on 2026-08-23 (session 1 of 10) [panel=unused, ticker=BTC]",
+    "hit_graded_at": "2026-09-01",
+    "hit_close": 77525.1,
+    "hit_close_date": "2026-08-23",
+    "hit_session": "1",
+    "ledger_rows": [
+      {
+        "id": "rotation-breadth-70",
+        "issued": "2026-08-19",
+        "status": "open",
+        "deadline": "2026-09-16",
+        "sessions": 20
+      },
+      {
+        "id": "rates-corr-below-zero",
+        "issued": "2026-08-19",
+        "status": "open",
+        "deadline": "2027-04-08",
+        "sessions": 166
+      },
+      {
+        "id": "vol-vrp-recovers-2",
+        "issued": "2026-08-19",
+        "status": "open",
+        "deadline": "2026-11-11",
+        "sessions": 60
+      },
+      {
+        "id": "crypto-btc-reclaims-200d",
+        "issued": "2026-08-19",
+        "status": "open",
+        "deadline": "2026-12-17",
+        "sessions": 120
+      },
+      {
+        "id": "liquidity-dv63-back-under-2x",
+        "issued": "2026-08-19",
+        "status": "open",
+        "deadline": "-",
+        "sessions": 60
+      },
+      {
+        "id": "recovery-spy-reclaim-ath",
+        "issued": "2026-08-20",
+        "status": "open",
+        "deadline": "-",
+        "sessions": 20
+      },
+      {
+        "id": "crypto-btc-holds-75k",
+        "issued": "2026-08-22",
+        "status": "hit",
+        "deadline": "-",
+        "sessions": 10
+      }
+    ],
+    "recovery_deadline_sessions": 20,
+    "recovery_issued": "2026-08-20",
+    "sister_anchor_date": "2026-08-20",
+    "sister_observed": 12,
+    "sister_above_200d": 12,
+    "last_day_bars": 12,
+    "last_complete_day": "2026-08-31",
+    "window_len": 10,
+    "window_min_close": 77525.1,
+    "window_min_date": "2026-08-23",
+    "window_last_close": 77964.7,
+    "window_last_date": "2026-09-01",
+    "margin_at_min": 0.03366800000000003
+  },
+  "lineage": [
+    {
+      "source": "calls ledger (graded read-only via grade_calls)",
+      "path": "articles/calls.json"
+    },
+    {
+      "source": "OKX 1h BTC/USDT (daily closes)",
+      "path": "data/ccxt_1h/BTC_USDT_okx1h.parquet",
+      "rows": 2801,
+      "first": "2019-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    }
+  ]
+}

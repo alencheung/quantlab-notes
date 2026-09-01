@@ -844,5 +844,42 @@
     "teaser": "The one-paragraph version. August through Friday (month base =\nJuly's close, compounded daily) splits the sector book by 9.5 points:\ntech leads at +5.90%, with materials (+5.45%), health care (+5.30%) and\nenergy (+5.26%) packed just behind it; industrials (-1.50%) and\nutilities (",
     "search": "9.5 points top to bottom: august's sector scoreboard august through friday splits the nine sector spdrs by 9.5 points - tech +5.9% and the materials/health/energy cluster just behind, utilities -3.7% dead last and alone below its 200-day mean - while energy still runs +42.1% year-to-date. sector-rotation august-2026 scoreboard 200-day etf dispersion fig_aug.svg fig_aug_ytd.svg fig_200d.svg yfinance pandas matplotlib the one-paragraph version. august through friday (month base =\njuly's close, compounded daily) splits the sector book by 9.5 points:\ntech leads at +5.90%, with materials (+5.45%), health care (+5.30%) and\nenergy (+5.26%) packed just behind it; industrials (-1.50%) and\nutilities (",
     "url": "articles/sector-lab-august-scoreboard/"
+  },
+  {
+    "slug": "track-record-first-hit",
+    "title": "1 hit, 0 misses: the Track Record's first graded call",
+    "date": "2026-09-01",
+    "series": "Track Record",
+    "issue": "1",
+    "deck": "The ledger's first maturity arrived this cycle and the grader stamped it: the $75,000 BTC conviction call is a hit - cleared on session 1 of 10 at $77,525 and never closed below it - the Track Record reads 1 hit, 0 misses, 6 open.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "track-record",
+      "standing-call",
+      "bitcoin",
+      "grading",
+      "first-resolution",
+      "falsifiability"
+    ],
+    "assets": [
+      "fig_window.svg",
+      "fig_ledger.svg",
+      "fig_margin.svg"
+    ],
+    "tools": [
+      "calls-grader",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 6,
+    "words": 1156,
+    "sources_internal": 2,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. The Track Record has its first graded\nresolution. The call crypto-btc-holds-75k - issued August 22 from the\nsqueeze anatomy note, requiring a BTC close above $75,000 within 10\nsessions - matured Tuesday, and the grader stamped it a hit: the first\nwindow",
+    "search": "1 hit, 0 misses: the track record's first graded call the ledger's first maturity arrived this cycle and the grader stamped it: the $75,000 btc conviction call is a hit - cleared on session 1 of 10 at $77,525 and never closed below it - the track record reads 1 hit, 0 misses, 6 open. track-record standing-call bitcoin grading first-resolution falsifiability fig_window.svg fig_ledger.svg fig_margin.svg calls-grader pandas matplotlib the one-paragraph version. the track record has its first graded\nresolution. the call crypto-btc-holds-75k - issued august 22 from the\nsqueeze anatomy note, requiring a btc close above $75,000 within 10\nsessions - matured tuesday, and the grader stamped it a hit: the first\nwindow",
+    "url": "articles/track-record-first-hit/"
   }
 ]
