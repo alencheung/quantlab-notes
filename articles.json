@@ -846,6 +846,43 @@
     "url": "articles/sector-lab-august-scoreboard/"
   },
   {
+    "slug": "rates-corr-september-state",
+    "title": "+0.31 into the drawdown: bonds still refuse to hedge",
+    "date": "2026-09-01",
+    "series": "Rates & Credit Watch",
+    "issue": "3",
+    "deck": "The 60-day stock-bond correlation printed its call-window minimum on Tuesday (+0.31) as the streak reached 164 sessions - and the five-session equity dip put the non-hedge on tape: SPY -0.54% with TLT -1.92% beside it.",
+    "authors": [
+      "QuantLab Research Desk"
+    ],
+    "tags": [
+      "stock-bond-correlation",
+      "standing-call",
+      "drawdown",
+      "tlt",
+      "non-hedge",
+      "regime"
+    ],
+    "assets": [
+      "fig_corr_full.svg",
+      "fig_corr_recent.svg",
+      "fig_spy_tlt.svg"
+    ],
+    "tools": [
+      "calls-grader-parity",
+      "pandas",
+      "matplotlib"
+    ],
+    "reading_minutes": 5,
+    "words": 1077,
+    "sources_internal": 2,
+    "sources_external": 2,
+    "status": "published",
+    "teaser": "The one-paragraph version. Rates & Credit Watch returns to its\nstanding call (rates-corr-below-zero: the 60-day SPY-TLT correlation\nprints below zero before the positive spell ties the record) with the\nfirst genuinely two-sided reading. The correlation stands at +0.31 -\nthe LOWES",
+    "search": "+0.31 into the drawdown: bonds still refuse to hedge the 60-day stock-bond correlation printed its call-window minimum on tuesday (+0.31) as the streak reached 164 sessions - and the five-session equity dip put the non-hedge on tape: spy -0.54% with tlt -1.92% beside it. stock-bond-correlation standing-call drawdown tlt non-hedge regime fig_corr_full.svg fig_corr_recent.svg fig_spy_tlt.svg calls-grader-parity pandas matplotlib the one-paragraph version. rates & credit watch returns to its\nstanding call (rates-corr-below-zero: the 60-day spy-tlt correlation\nprints below zero before the positive spell ties the record) with the\nfirst genuinely two-sided reading. the correlation stands at +0.31 -\nthe lowes",
+    "url": "articles/rates-corr-september-state/"
+  },
+  {
     "slug": "track-record-first-hit",
     "title": "1 hit, 0 misses: the Track Record's first graded call",
     "date": "2026-09-01",

@@ -1,0 +1,53 @@
+{
+  "numbers": {
+    "call_issued": "2026-08-19",
+    "call_window": 60,
+    "call_below": 0.0,
+    "call_deadline_sessions": 166,
+    "call_deadline_date": "2027-04-08",
+    "panel_last": "2026-09-01",
+    "corr_last": 0.30699602320469366,
+    "corr126_last": 0.44015375612778435,
+    "corr252_last": 0.237998419394817,
+    "streak_sessions": 164,
+    "streak_start": "2026-01-07",
+    "streak_calendar_days_inclusive": 238,
+    "record_sessions": 266,
+    "record_start": "2023-07-21",
+    "record_end": "2024-08-09",
+    "record_calendar_days_inclusive": 386,
+    "sessions_to_tie": 102,
+    "current_run_rank": 2,
+    "anchor_date": "2026-08-19",
+    "sessions_observed": 9,
+    "sessions_remaining": 157,
+    "min_since_issue": 0.30699602320469366,
+    "min_since_date": "2026-09-01",
+    "spy_5d": -0.005392205340662093,
+    "tlt_5d": -0.019168544994872305,
+    "spy_aug": 0.01974485552325511,
+    "tlt_aug": -0.0006102956967871664,
+    "dip_amplification": 3.5548618392412066,
+    "prior_corr_last": 0.3329321648860341,
+    "prior_corr_last_date": "2026-08-21",
+    "prior_streak_sessions": 157,
+    "prior_corr22_max": 0.3187060885171297
+  },
+  "lineage": [
+    {
+      "source": "standing call terms",
+      "path": "articles/calls.json (rates-corr-below-zero)"
+    },
+    {
+      "source": "16-ETF daily panel (Close)",
+      "path": "data/cache_panel_2007_2026.parquet",
+      "rows": 4947,
+      "first": "2007-01-03 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    },
+    {
+      "source": "prior-issue baselines (Rates & Credit #2)",
+      "path": "articles/2026-08-24-stock-bond-corr-60d/assets/numbers.json"
+    }
+  ]
+}
