@@ -63,7 +63,20 @@ font-family:var(--serif);font-size:15px;color:var(--ink)}
 border-bottom-width:2px;border-radius:3px;padding:1px 6px;color:var(--ink2)}
 select{font-family:var(--mono);font-size:12px;color:var(--ink);
 border:1px solid var(--hair2);background:#fff;border-radius:4px;padding:8px 10px;cursor:pointer}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+/* tag sections collapse by default: a fully expanded chip wall pinned over
+   the card grid blocked scrolling; each group is a native disclosure whose
+   header shows the active-filter count */
+.chip-group{margin-top:8px}
+.chip-group summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;
+padding:2px 0;-webkit-user-select:none;user-select:none}
+.chip-group summary::-webkit-details-marker{display:none}
+.chip-group summary:hover .group-label{color:var(--ink)}
+.chip-group .g-count{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--ox)}
+.chip-group summary::after{content:"";width:0;height:0;margin-left:2px;
+border-left:4px solid var(--ink2);border-top:3px solid transparent;
+border-bottom:3px solid transparent;transition:transform .12s}
+.chip-group[open] summary::after{transform:rotate(90deg)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}
 .chip{font-family:var(--mono);font-size:11px;letter-spacing:.03em;cursor:pointer;
 border:1px solid var(--hair2);background:transparent;color:var(--ink2);
 padding:3px 10px;border-radius:999px;transition:all .12s}
@@ -133,7 +146,7 @@ claim is backed by a public, machine-graded track record. Built for allocators,
 researchers and collaborators evaluating the work; search, filter and sort below.</p>
 <ul class="proof"><li><b>20-strategy certified library.</b> Equal-weight book Sharpe 1.09 net of T1 costs, 2007–2026 full sample.</li><li><b>Net alpha 6.14% p.a.</b> after costs and market/vol beta (HAC t&nbsp;=&nbsp;5.17).</li><li><b>Capacity ceiling $985.0m</b> at 10% of ADV participation (base turnover) — the honest size limit of the edge.</li></ul>
 
-<p class="trackline"><a href="calls/">Track record: 7 standing calls — 0 hit · 0 miss · 7 open</a></p>
+<p class="trackline"><a href="calls/">Track record: 7 standing calls — 1 hit · 0 miss · 6 open</a></p>
 <div class="verify">
 <p class="t">How you can trust these numbers</p>
 <ol>
@@ -166,10 +179,12 @@ aria-label="Search notes"><kbd>/</kbd></label>
 </select>
 <button id="reset" class="chip reset" type="button" style="display:none">clear filters ✕</button>
 </div>
-<div class="chips"><span class="group-label">topic</span><span id="tag-chips"
-style="display:contents"></span></div>
-<div class="chips"><span class="group-label">asset</span><span id="asset-chips"
-style="display:contents"></span></div>
+<details class="chip-group" id="grp-tags"><summary><span class="group-label">topic</span>
+<span class="g-count" id="tag-count"></span></summary>
+<div class="chips"><span id="tag-chips" style="display:contents"></span></div></details>
+<details class="chip-group" id="grp-assets"><summary><span class="group-label">asset</span>
+<span class="g-count" id="asset-count"></span></summary>
+<div class="chips"><span id="asset-chips" style="display:contents"></span></div></details>
 </div></div>
 <div class="count"><span id="count"></span><span class="active" id="active-filters"></span></div>
 <div class="grid" id="grid"></div>
@@ -192,6 +207,10 @@ var elGrid = document.getElementById("grid");
 var elCount = document.getElementById("count");
 var elReset = document.getElementById("reset");
 var elActive = document.getElementById("active-filters");
+var grpTags = document.getElementById("grp-tags");
+var grpAssets = document.getElementById("grp-assets");
+var elTagCount = document.getElementById("tag-count");
+var elAssetCount = document.getElementById("asset-count");
 
 function freq(key){
   var m = new Map();
@@ -265,6 +284,8 @@ function apply(){
   elCount.textContent=rows.length+(rows.length===1?" note":" notes");
   var n=activeCount();
   elActive.textContent=n?("· "+n+" filter"+(n===1?"":"s")+" active"):"";
+  elTagCount.textContent=state.tags.size?state.tags.size+" active":"";
+  elAssetCount.textContent=state.assets.size?state.assets.size+" active":"";
   elReset.style.display=n?"inline-block":"none";
   syncHash();
 }
@@ -306,7 +327,12 @@ document.addEventListener("keydown",function(e){
     elSearch.value="";state.q="";apply();elSearch.blur();
   }
 });
-buildChips();fromHash();markPressed(elTags,"tags");markPressed(elAssets,"assets");apply();
+buildChips();fromHash();markPressed(elTags,"tags");markPressed(elAssets,"assets");
+/* a shared/filtered link shouldn't hide its own active chips behind the
+   collapsed headers — open whichever group carries filters */
+if(state.tags.size)grpTags.open=true;
+if(state.assets.size)grpAssets.open=true;
+apply();
 })();
 </script>
 
